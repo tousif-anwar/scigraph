@@ -46,6 +46,14 @@ Generate the data-quality report:
 python -m scigraph.preprocessing.quality --config configs/dev.yaml
 ```
 
+Run the Spark Bronze/Silver/Gold pipeline:
+
+```powershell
+python -m scigraph.preprocessing.pipeline --config configs/dev.yaml
+```
+
+This command requires PySpark and a working Java runtime. If either is missing, it writes a blocked pipeline report instead of silently pretending the Spark stages ran.
+
 Run smoke tests:
 
 ```powershell
@@ -58,11 +66,13 @@ Configuration lives in `configs/`. The development config controls sample size, 
 
 ## Current Environment Notes
 
-During initial setup on 2026-10-05, Python was available as `python 3.14.4`. `git` and `java` were not available on PATH in this shell. PySpark is configured as a project dependency, but full Spark execution will require a compatible Java runtime in later milestones.
+During initial setup on 2026-10-05, Python was available as `python 3.14.4`. `git` and `java` were not available on PATH in this shell. PySpark is configured as a project dependency, but full Spark execution requires a compatible Java runtime.
 
 The Milestone 1 development sample was retrieved on 2026-10-05. It contains 100 OpenAlex article records from publication years 2020-2026, with 100 unique publication IDs, 379 unique author IDs observed, 2,101 referenced works, 0 missing abstracts, 0 missing titles, 2 records with missing authorship arrays, and 0 duplicate publication IDs.
 
 The Milestone 2 quality report ran 31 checks on the same sample. It found 0 error checks and 7 warning checks, including missing authorships, authorship entries without nested author IDs, empty reference arrays, one self-reference, missing DOIs, missing language metadata, and one missing primary source ID.
+
+Milestone 3 adds the Spark Bronze/Silver/Gold pipeline implementation. In this environment PySpark 4.2.0 was installed successfully, but the configured `JAVA_HOME` did not contain a Java executable and `java` was not on PATH, so the Spark execution preflight wrote a blocked report instead of producing Parquet outputs.
 
 ## Repository Layout
 
@@ -84,4 +94,4 @@ scigraph/
 
 ## Reproducibility
 
-The acquisition script records source metadata, retrieval date, request URL, sample size, and seed in `data/raw/openalex_sample_metadata.json`. The schema inspection script writes machine-readable statistics to `reports/results/schema_summary.json` and updates `docs/DATA_DICTIONARY.md` from observed fields only. The quality script writes `reports/results/data_quality_report.json` and `docs/DATA_QUALITY_REPORT.md`.
+The acquisition script records source metadata, retrieval date, request URL, sample size, and seed in `data/raw/openalex_sample_metadata.json`. The schema inspection script writes machine-readable statistics to `reports/results/schema_summary.json` and updates `docs/DATA_DICTIONARY.md` from observed fields only. The quality script writes `reports/results/data_quality_report.json` and `docs/DATA_QUALITY_REPORT.md`. The Spark pipeline writes `reports/results/bronze_silver_gold_report.json` and `docs/BRONZE_SILVER_GOLD_PIPELINE.md`.

@@ -42,7 +42,16 @@ paths:
   data_dictionary_md: docs/DATA_DICTIONARY.md
   data_quality_json: reports/results/data_quality_report.json
   data_quality_md: docs/DATA_QUALITY_REPORT.md
+  bronze_works: data/bronze/openalex_works
+  silver_publications: data/silver/publications
+  gold_publications: data/gold/publications
+  gold_authors: data/gold/authors
+  gold_author_publications: data/gold/author_publications
+  gold_citation_edges: data/gold/citation_edges
+  gold_topics: data/gold/topics
+  pipeline_report_json: reports/results/bronze_silver_gold_report.json
+  pipeline_report_md: docs/BRONZE_SILVER_GOLD_PIPELINE.md
 
 spark:
-  app_name: SciGraphMilestone1
+  app_name: SciGraphMilestone3
   master: local[*]
