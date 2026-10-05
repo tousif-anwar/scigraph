@@ -2,19 +2,31 @@
 
 Generated on 2026-10-05.
 
-Status: blocked
+## Stage Counts
 
-## Runtime Blocker
+- Raw records read: 100
+- Bronze records written: 100
+- Silver publications written: 100
+- Gold publications written: 100
+- Gold authors written: 379
+- Gold author-publication rows written: 379
+- Gold citation edges written: 2100
+- Gold topic rows written: 276
 
-Spark pipeline was not executed because the local Spark runtime preflight failed.
+## Transform Accounting
 
-## Preflight Checks
+- Records removed in Silver: 0
+- Records with quality flags: 2
+- Self-citations removed from Gold citation edges: 1
 
-| check | status | details |
-| --- | --- | --- |
-| pyspark_import | pass | 4.2.0 |
-| java_executable | fail | No Java executable found on PATH or under JAVA_HOME/bin. |
+Quality flag counts:
 
-## Planned Outputs
+```json
+{
+  "missing_authorships": 2
+}
+```
 
-When Spark can run, this pipeline writes Bronze, Silver, and Gold Parquet datasets using the paths configured in `configs/dev.yaml`.
+## Notes
+
+Bronze preserves raw nested OpenAlex fields plus ingestion metadata. Silver normalizes publication-level columns and records validation flags. Gold creates publication, author, author-publication, citation-edge, and topic tables for later analysis.

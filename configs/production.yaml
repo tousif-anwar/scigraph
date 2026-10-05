@@ -51,7 +51,17 @@ paths:
   gold_topics: data/gold/topics
   pipeline_report_json: reports/results/bronze_silver_gold_report.json
   pipeline_report_md: docs/BRONZE_SILVER_GOLD_PIPELINE.md
+  scalability_results_json: experiments/scalability/results/scalability_results.json
+  scalability_results_csv: experiments/scalability/results/scalability_results.csv
+  scalability_report_md: docs/SCALABILITY_BENCHMARKS.md
+  scalability_runs_dir: experiments/scalability/runs
 
 spark:
   app_name: SciGraphProduction
   master: local[*]
+  java_home: C:/Users/tousi/.jdks/openjdk-23.0.2
+  hadoop_home: tools/hadoop
+  benchmark_scale_records:
+    - 100000
+    - 500000
+    - 1000000

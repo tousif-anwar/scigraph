@@ -23,3 +23,5 @@ reports/figures/*
 !reports/figures/.gitkeep
 
 experiments/*/results/*
+experiments/scalability/runs/*
+!experiments/scalability/runs/.gitkeep

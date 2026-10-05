@@ -22,3 +22,5 @@ OpenAlex Works API
 ```
 
 Later milestones will add scalability benchmarks, text analytics, graph analytics, temporal analysis, streaming, and retrieval.
+
+Milestone 4 adds measured preprocessing benchmarks under `experiments/scalability/` and documents the local Windows Spark runtime requirements.

@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
+import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -17,21 +19,161 @@ def _spark_imports():
     try:
         from pyspark.sql import SparkSession
         from pyspark.sql import functions as F
+        from pyspark.sql import types as T
     except ModuleNotFoundError as exc:
         raise RuntimeError(
             "PySpark is not installed. Install project requirements with "
             "`python -m pip install -r requirements.txt` before running the Spark pipeline."
         ) from exc
-    return SparkSession, F
+    return SparkSession, F, T
 
 
-def find_java_executable() -> str | None:
+def openalex_work_schema():
+    """Return the subset OpenAlex Works schema used by the project."""
+    _, _, T = _spark_imports()
+    source_schema = T.StructType(
+        [
+            T.StructField("id", T.StringType(), True),
+            T.StructField("display_name", T.StringType(), True),
+        ]
+    )
+    return T.StructType(
+        [
+            T.StructField("id", T.StringType(), True),
+            T.StructField("doi", T.StringType(), True),
+            T.StructField("title", T.StringType(), True),
+            T.StructField("display_name", T.StringType(), True),
+            T.StructField("publication_date", T.StringType(), True),
+            T.StructField("publication_year", T.IntegerType(), True),
+            T.StructField("type", T.StringType(), True),
+            T.StructField("cited_by_count", T.IntegerType(), True),
+            T.StructField("language", T.StringType(), True),
+            T.StructField(
+                "abstract_inverted_index",
+                T.MapType(T.StringType(), T.ArrayType(T.IntegerType()), True),
+                True,
+            ),
+            T.StructField("referenced_works", T.ArrayType(T.StringType()), True),
+            T.StructField(
+                "authorships",
+                T.ArrayType(
+                    T.StructType(
+                        [
+                            T.StructField(
+                                "author",
+                                T.StructType(
+                                    [
+                                        T.StructField("id", T.StringType(), True),
+                                        T.StructField("display_name", T.StringType(), True),
+                                    ]
+                                ),
+                                True,
+                            )
+                        ]
+                    )
+                ),
+                True,
+            ),
+            T.StructField(
+                "primary_location",
+                T.StructType([T.StructField("source", source_schema, True)]),
+                True,
+            ),
+            T.StructField(
+                "locations",
+                T.ArrayType(T.StructType([T.StructField("source", source_schema, True)])),
+                True,
+            ),
+            T.StructField(
+                "concepts",
+                T.ArrayType(
+                    T.StructType(
+                        [
+                            T.StructField("id", T.StringType(), True),
+                            T.StructField("display_name", T.StringType(), True),
+                            T.StructField("level", T.IntegerType(), True),
+                            T.StructField("score", T.DoubleType(), True),
+                        ]
+                    )
+                ),
+                True,
+            ),
+            T.StructField(
+                "topics",
+                T.ArrayType(
+                    T.StructType(
+                        [
+                            T.StructField("id", T.StringType(), True),
+                            T.StructField("display_name", T.StringType(), True),
+                            T.StructField("domain", source_schema, True),
+                            T.StructField("field", source_schema, True),
+                            T.StructField("subfield", source_schema, True),
+                        ]
+                    )
+                ),
+                True,
+            ),
+            T.StructField(
+                "open_access",
+                T.StructType(
+                    [
+                        T.StructField("is_oa", T.BooleanType(), True),
+                        T.StructField("oa_status", T.StringType(), True),
+                        T.StructField("oa_url", T.StringType(), True),
+                    ]
+                ),
+                True,
+            ),
+        ]
+    )
+
+
+def configure_runtime_environment(config: dict[str, Any]) -> None:
+    """Configure Java and PySpark executables from project config when present."""
+    java_home = config.get("spark", {}).get("java_home")
+    if java_home and Path(java_home).exists():
+        os.environ["JAVA_HOME"] = str(Path(java_home))
+        java_bin = str(Path(java_home) / "bin")
+        path_entries = os.environ.get("PATH", "").split(os.pathsep)
+        if java_bin not in path_entries:
+            os.environ["PATH"] = java_bin + os.pathsep + os.environ.get("PATH", "")
+
+    hadoop_home = config.get("spark", {}).get("hadoop_home")
+    if hadoop_home:
+        hadoop_path = resolve_project_path(config, hadoop_home)
+        if hadoop_path.exists():
+            os.environ["HADOOP_HOME"] = str(hadoop_path)
+            os.environ["hadoop.home.dir"] = str(hadoop_path)
+            hadoop_bin = str(hadoop_path / "bin")
+            path_entries = os.environ.get("PATH", "").split(os.pathsep)
+            if hadoop_bin not in path_entries:
+                os.environ["PATH"] = hadoop_bin + os.pathsep + os.environ.get("PATH", "")
+
+    system32 = Path(os.environ.get("SystemRoot", r"C:\Windows")) / "System32"
+    if system32.exists():
+        path_entries = os.environ.get("PATH", "").split(os.pathsep)
+        if str(system32) not in path_entries:
+            os.environ["PATH"] = str(system32) + os.pathsep + os.environ.get("PATH", "")
+
+    os.environ.setdefault("PYSPARK_PYTHON", sys.executable)
+    os.environ.setdefault("PYSPARK_DRIVER_PYTHON", sys.executable)
+
+
+def find_java_executable(config: dict[str, Any] | None = None) -> str | None:
     """Find a Java executable from PATH or JAVA_HOME."""
+    if config:
+        java_home = config.get("spark", {}).get("java_home")
+        if java_home:
+            java_path = Path(java_home) / "bin" / "java.exe"
+            if java_path.exists():
+                return str(java_path)
+            java_path = Path(java_home) / "bin" / "java"
+            if java_path.exists():
+                return str(java_path)
+
     java = shutil.which("java")
     if java:
         return java
-
-    import os
 
     java_home = os.environ.get("JAVA_HOME")
     if java_home:
@@ -44,8 +186,11 @@ def find_java_executable() -> str | None:
     return None
 
 
-def preflight_environment() -> dict[str, Any]:
+def preflight_environment(config: dict[str, Any] | None = None) -> dict[str, Any]:
     """Check whether Spark dependencies required for execution are available."""
+    if config:
+        configure_runtime_environment(config)
+
     result: dict[str, Any] = {"ok": True, "checks": []}
     try:
         import pyspark
@@ -59,7 +204,7 @@ def preflight_environment() -> dict[str, Any]:
             {"name": "pyspark_import", "status": "fail", "details": "PySpark is not installed."}
         )
 
-    java = find_java_executable()
+    java = find_java_executable(config)
     if java:
         result["checks"].append({"name": "java_executable", "status": "pass", "details": java})
     else:
@@ -71,12 +216,29 @@ def preflight_environment() -> dict[str, Any]:
                 "details": "No Java executable found on PATH or under JAVA_HOME/bin.",
             }
         )
+    hadoop_home = config.get("spark", {}).get("hadoop_home") if config else None
+    hadoop_path = resolve_project_path(config, hadoop_home) if config and hadoop_home else None
+    winutils_path = hadoop_path / "bin" / "winutils.exe" if hadoop_path else None
+    if winutils_path and winutils_path.exists():
+        result["checks"].append(
+            {"name": "winutils_executable", "status": "pass", "details": str(winutils_path)}
+        )
+    elif config and hadoop_home:
+        result["ok"] = False
+        result["checks"].append(
+            {
+                "name": "winutils_executable",
+                "status": "fail",
+                "details": f"No winutils.exe found under configured hadoop_home: {hadoop_home}",
+            }
+        )
     return result
 
 
 def create_spark_session(config: dict[str, Any]):
     """Create a local SparkSession from config."""
-    SparkSession, _ = _spark_imports()
+    configure_runtime_environment(config)
+    SparkSession, _, _ = _spark_imports()
     return (
         SparkSession.builder.appName(config["spark"]["app_name"])
         .master(config["spark"]["master"])
@@ -95,10 +257,10 @@ def _write_parquet(df, path: str) -> None:
 
 def build_bronze(spark, config: dict[str, Any]):
     """Read raw JSONL and write minimally processed Bronze records."""
-    _, F = _spark_imports()
+    _, F, _ = _spark_imports()
     raw_path = _path(config, "raw_sample_jsonl")
     bronze_path = _path(config, "bronze_works")
-    raw_df = spark.read.json(raw_path)
+    raw_df = spark.read.schema(openalex_work_schema()).json(raw_path)
     bronze_df = (
         raw_df.withColumn("_bronze_ingested_at_utc", F.current_timestamp())
         .withColumn("_source_dataset", F.lit(config["dataset"]["name"]))
@@ -110,7 +272,7 @@ def build_bronze(spark, config: dict[str, Any]):
 
 def build_silver(bronze_df, config: dict[str, Any]):
     """Validate and normalize publications into a Silver table."""
-    _, F = _spark_imports()
+    _, F, _ = _spark_imports()
     silver_path = _path(config, "silver_publications")
 
     source = F.col("primary_location.source")
@@ -170,7 +332,7 @@ def build_silver(bronze_df, config: dict[str, Any]):
 
 def build_gold(silver_df, config: dict[str, Any]) -> dict[str, Any]:
     """Create analysis-ready Gold tables."""
-    _, F = _spark_imports()
+    _, F, _ = _spark_imports()
     paths = config["paths"]
 
     publications = silver_df.select(
@@ -234,7 +396,7 @@ def build_gold(silver_df, config: dict[str, Any]) -> dict[str, Any]:
 
 
 def _count_quality_flags(silver_df) -> dict[str, int]:
-    _, F = _spark_imports()
+    _, F, _ = _spark_imports()
     rows = (
         silver_df.select(F.explode_outer("quality_flags").alias("flag"))
         .where(F.col("flag").isNotNull())
@@ -315,7 +477,7 @@ def write_pipeline_report(report: dict[str, Any], markdown_path: Path) -> None:
 
 def run_pipeline(config: dict[str, Any]) -> dict[str, Any]:
     """Run the Spark Bronze/Silver/Gold pipeline and write reports."""
-    preflight = preflight_environment()
+    preflight = preflight_environment(config)
     if not preflight["ok"]:
         report = {
             "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -337,7 +499,7 @@ def run_pipeline(config: dict[str, Any]) -> dict[str, Any]:
 
     spark = create_spark_session(config)
     try:
-        raw_records = spark.read.json(_path(config, "raw_sample_jsonl")).count()
+        raw_records = spark.read.schema(openalex_work_schema()).json(_path(config, "raw_sample_jsonl")).count()
         bronze_df = build_bronze(spark, config)
         bronze_count = bronze_df.count()
         silver_df = build_silver(bronze_df, config)
