@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.egg-info/
+
+# Data artifacts are reproducible from scripts/configs; keep placeholders.
+data/raw/*
+data/bronze/*
+data/silver/*
+data/gold/*
+!data/raw/.gitkeep
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+
+reports/results/*
+reports/tables/*
+reports/figures/*
+!reports/results/.gitkeep
+!reports/tables/.gitkeep
+!reports/figures/.gitkeep
+
+experiments/*/results/*

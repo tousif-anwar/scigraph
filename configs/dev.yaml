@@ -1,0 +1,46 @@
+project:
+  name: scigraph
+
+dataset:
+  name: openalex_works
+  source_name: OpenAlex Works API
+  source_url: https://api.openalex.org/works
+  documentation_url: https://help.openalex.org/data/works/attributes/
+  license: CC0
+  sample_size: 100
+  seed: 660
+  api_page_size: 100
+  contact_email: ""
+  filters:
+    from_publication_date: "2020-01-01"
+    type: "article"
+    has_abstract: true
+  select_fields:
+    - id
+    - doi
+    - title
+    - display_name
+    - publication_date
+    - publication_year
+    - type
+    - authorships
+    - primary_location
+    - locations
+    - cited_by_count
+    - referenced_works
+    - concepts
+    - topics
+    - abstract_inverted_index
+    - language
+    - open_access
+
+paths:
+  raw_dir: data/raw
+  raw_sample_jsonl: data/raw/openalex_works_sample.jsonl
+  raw_metadata_json: data/raw/openalex_sample_metadata.json
+  schema_summary_json: reports/results/schema_summary.json
+  data_dictionary_md: docs/DATA_DICTIONARY.md
+
+spark:
+  app_name: SciGraphMilestone1
+  master: local[*]
