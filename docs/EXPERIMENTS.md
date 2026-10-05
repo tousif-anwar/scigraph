@@ -46,8 +46,60 @@ Method: reconstruct abstracts from OpenAlex inverted indexes, join them to Silve
 
 Metric: token count, vocabulary size, document-term TF-IDF row count, top global/year/topic terms.
 
-Result: 100 documents analyzed, 13,024 retained tokens, 5,209 vocabulary terms, and 8,766 document-term TF-IDF rows. Top global terms include `data`, `model`, `patients`, `time`, `analysis`, and `cancer`.
+Result: after increasing the development sample to 1,000 OpenAlex records and filtering text analysis to English-language records, 738 documents were analyzed, with 99,587 retained tokens and 16,091 vocabulary terms. Top global terms include `data`, `patients`, `analysis`, `model`, `high`, and `development`.
 
 Interpretation: the sample is heterogeneous, so the top terms reflect mixed scientific domains rather than one coherent field.
 
 Limitations: no clustering or semantic validation yet; the dev sample is too small for stable topic conclusions.
+
+## Milestone 6: K-means Text Clustering
+
+Research question: can distributed K-means over TF-IDF features discover coherent groups of scientific publications?
+
+Hypothesis: K-means may separate broad biomedical and methods/data-heavy documents, but the heterogeneous sample will likely produce weak cluster separation.
+
+Independent variable: number of clusters K.
+
+Dependent variables: silhouette score, training cost, cluster size distribution, representative terms, representative papers.
+
+Controlled variables: same 1,000-record OpenAlex development sample, English-language text subset, same tokenization and stop-word filtering, same random seed.
+
+Dataset: 738 English-language documents from the 1,000-record development sample.
+
+Baseline: K=3.
+
+Method: reconstruct title+abstract text, tokenize, remove stop words, hash tokens, compute IDF-weighted vectors, L2-normalize features, train K-means for K = 3, 5, and 8, and compare silhouette scores.
+
+Metric: silhouette score with squared Euclidean distance, training cost, cluster sizes.
+
+Result: K=3 had the best silhouette score among tested values, but the score was weak (-0.0062). Cluster sizes were 601, 2, and 135. Representative terms suggest a large general methods/data cluster and a smaller biomedical/clinical cluster, plus tiny outlier clusters.
+
+Interpretation: K-means produced exploratory groupings but not robust scientific topic clusters. The result supports the project requirement to avoid claiming that clusters are meaningful disciplines solely from silhouette score.
+
+Limitations: sample heterogeneity, hashed features, residual metadata/noisy records, and weak silhouette make these clusters qualitative artifacts only.
+
+## Milestone 7: Citation Graph and PageRank
+
+Research question: can citation edges from the OpenAlex sample identify central publications using graph degree and PageRank?
+
+Hypothesis: citation graph centrality should differ from raw `cited_by_count`, but a random heterogeneous development sample may be too sparse internally for meaningful sample-only PageRank.
+
+Independent variable: graph construction strategy, including sample-only citation edges versus expanded edges that include externally referenced OpenAlex work IDs.
+
+Dependent variables: vertex count, edge count, in-degree, out-degree, PageRank score, and ratio of PageRank to in-degree.
+
+Controlled variables: same 1,000-record OpenAlex development sample, same Spark runtime, same citation edge extraction, same PageRank iteration count and damping factor.
+
+Dataset: 1,000 OpenAlex records and their 22,321 outgoing citation edges.
+
+Baseline: raw citation metadata and in-sample in-degree/out-degree.
+
+Method: build publication vertices from Gold publications, construct directed citation edges from Gold citation edges, remove self-citations during preprocessing, compute degree metrics, and run iterative Spark PageRank with dangling-mass handling on an expanded graph containing sampled publications and external referenced work IDs.
+
+Metric: graph size, in-sample edge count, expanded edge count, PageRank rankings, and comparison with sampled-paper citation metadata.
+
+Result: the sampled publication graph has 1,000 sampled vertices but 0 in-sample citation edges. The expanded graph has 23,177 vertices and 22,321 citation edges, all pointing from sampled publications to external referenced works.
+
+Interpretation: this is a useful negative result for the sampling strategy. The citation extraction and PageRank implementation work, but the current sample is not citation-closed enough for meaningful sample-only graph centrality. Expanded PageRank mostly ranks external referenced work IDs that do not yet have local title/year metadata.
+
+Limitations: PageRank values for sampled papers are tied in the current run because no sampled paper receives an in-sample citation. Future graph analysis should use a larger sample, a field/year-constrained sample, or a citation-neighborhood crawl that fetches metadata for referenced works.

@@ -243,6 +243,7 @@ def create_spark_session(config: dict[str, Any]):
         SparkSession.builder.appName(config["spark"]["app_name"])
         .master(config["spark"]["master"])
         .config("spark.sql.session.timeZone", "UTC")
+        .config("spark.sql.shuffle.partitions", str(config["spark"].get("shuffle_partitions", 200)))
         .getOrCreate()
     )
 

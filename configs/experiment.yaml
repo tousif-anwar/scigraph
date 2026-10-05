@@ -62,10 +62,21 @@ paths:
   text_tfidf_terms: data/gold/text_tfidf_terms
   text_report_json: reports/results/text_analysis_report.json
   text_report_md: docs/TEXT_ANALYSIS.md
+  cluster_assignments: data/gold/cluster_assignments
+  cluster_terms: data/gold/cluster_terms
+  cluster_representative_papers: data/gold/cluster_representative_papers
+  cluster_report_json: reports/results/clustering_report.json
+  cluster_report_md: docs/CLUSTERING.md
+  citation_degrees: data/gold/citation_degrees
+  citation_pagerank: data/gold/citation_pagerank
+  citation_unusual_pagerank: data/gold/citation_unusual_pagerank
+  citation_graph_report_json: reports/results/citation_graph_report.json
+  citation_graph_report_md: docs/CITATION_GRAPH.md
 
 spark:
   app_name: SciGraphExperiment
   master: local[*]
+  shuffle_partitions: 64
   java_home: C:/Users/tousi/.jdks/openjdk-23.0.2
   hadoop_home: tools/hadoop
   benchmark_scale_records:
@@ -75,3 +86,20 @@ spark:
   text:
     min_token_length: 3
     top_n_terms: 50
+    language: en
+  clustering:
+    k_values:
+      - 5
+      - 8
+      - 12
+    max_iter: 30
+    seed: 660
+    num_features: 8192
+    min_token_length: 3
+    language: en
+    top_terms_per_cluster: 20
+    representative_papers_per_cluster: 10
+  graph:
+    pagerank_iterations: 20
+    pagerank_damping: 0.85
+    top_n: 50

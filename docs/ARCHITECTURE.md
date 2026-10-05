@@ -26,3 +26,17 @@ Later milestones will add scalability benchmarks, text analytics, graph analytic
 Milestone 4 adds measured preprocessing benchmarks under `experiments/scalability/` and documents the local Windows Spark runtime requirements.
 
 Milestone 5 adds distributed text analytics outputs under `data/gold/text_*`, with reports in `reports/results/text_analysis_report.json` and `docs/TEXT_ANALYSIS.md`.
+
+Milestone 6 adds K-means clustering outputs under `data/gold/cluster_*`, with reports in `reports/results/clustering_report.json` and `docs/CLUSTERING.md`.
+
+Milestone 7 adds citation graph analytics. Gold citation edges feed degree computation and iterative Spark PageRank, with outputs under:
+
+```text
+data/gold/citation_degrees/
+data/gold/citation_pagerank/
+data/gold/citation_unusual_pagerank/
+reports/results/citation_graph_report.json
+docs/CITATION_GRAPH.md
+```
+
+The current PageRank job runs on an expanded graph containing sampled publications plus externally referenced OpenAlex work IDs, because the 1,000-record sample has no citation edges between sampled publications.

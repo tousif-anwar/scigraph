@@ -10,6 +10,8 @@ Milestone 1 created the repository foundation, configuration system, OpenAlex da
 
 Milestone 2 adds explicit data-quality checks and produces both machine-readable and human-readable reports without cleaning or dropping records.
 
+Milestones 3 through 7 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, and citation graph analytics.
+
 ## Dataset
 
 The project uses [OpenAlex Works](https://help.openalex.org/api/) metadata. OpenAlex describes its API as a REST API over works, authors, sources, institutions, topics, and related entities, and states that its data is CC0. Work records may include `abstract_inverted_index`; OpenAlex documents that plaintext abstracts are not shipped directly and must be reconstructed from this inverted index when available.
@@ -76,7 +78,11 @@ Milestone 3 adds the Spark Bronze/Silver/Gold pipeline implementation. In this e
 
 Milestone 4 repaired the local Spark runtime by configuring the project to use the existing OpenJDK at `C:/Users/tousi/.jdks/openjdk-23.0.2` and project-local Hadoop Windows helper binaries under `tools/hadoop/bin`. Spark now writes Parquet locally. The dev benchmark measured 25, 50, and 100 record pipeline runs; the 100-record run completed in 3.3065 seconds at 30.2435 records/second.
 
-Milestone 5 adds distributed text analytics over titles and reconstructed abstracts. The dev run analyzed 100 documents, retained 13,024 tokens, produced a 5,209-term vocabulary, and wrote 8,766 document-term TF-IDF rows.
+Milestone 5 adds distributed text analytics over titles and reconstructed abstracts. After increasing the dev corpus to 1,000 OpenAlex records, the English-filtered text run analyzed 738 documents, retained 99,587 tokens, produced a 16,091-term vocabulary, and wrote document-term TF-IDF outputs.
+
+Milestone 6 adds K-means text clustering over normalized TF-IDF features. It evaluated K = 3, 5, and 8 on the 738 English-language documents and selected K = 3 by silhouette, but the silhouette scores were weak and cluster balance remained uneven, so the clusters are treated as exploratory rather than validated research fields.
+
+Milestone 7 adds citation graph analytics and iterative Spark PageRank. The 1,000-record sample produced 22,321 outgoing citation edges and 23,177 expanded graph vertices after including externally referenced OpenAlex work IDs. However, none of the sampled publications cite another sampled publication, so the in-sample citation edge count is 0. PageRank is therefore computed on the expanded citation graph, and sampled-paper PageRank values are tied/uninformative in the current sample.
 
 ## Repository Layout
 
@@ -103,3 +109,7 @@ The acquisition script records source metadata, retrieval date, request URL, sam
 Scalability benchmarks write `experiments/scalability/results/scalability_results.json`, `experiments/scalability/results/scalability_results.csv`, and `docs/SCALABILITY_BENCHMARKS.md`.
 
 Text analysis writes `reports/results/text_analysis_report.json`, `docs/TEXT_ANALYSIS.md`, and Parquet outputs under `data/gold/text_*`.
+
+Clustering writes `reports/results/clustering_report.json`, `docs/CLUSTERING.md`, and Parquet outputs under `data/gold/cluster_*`.
+
+Citation graph analysis writes `reports/results/citation_graph_report.json`, `docs/CITATION_GRAPH.md`, and Parquet outputs under `data/gold/citation_*`.

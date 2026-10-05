@@ -187,6 +187,9 @@ def build_text_documents(spark, config: dict[str, Any]):
             "document_text",
         )
     )
+    language = config["spark"].get("text", {}).get("language")
+    if language:
+        documents = documents.where(F.col("language") == F.lit(language))
     documents.write.mode("overwrite").parquet(_path(config, "text_documents"))
     return documents
 
