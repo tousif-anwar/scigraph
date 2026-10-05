@@ -40,6 +40,8 @@ paths:
   raw_metadata_json: data/raw/openalex_sample_metadata.json
   schema_summary_json: reports/results/schema_summary.json
   data_dictionary_md: docs/DATA_DICTIONARY.md
+  data_quality_json: reports/results/data_quality_report.json
+  data_quality_md: docs/DATA_QUALITY_REPORT.md
 
 spark:
   app_name: SciGraphMilestone1

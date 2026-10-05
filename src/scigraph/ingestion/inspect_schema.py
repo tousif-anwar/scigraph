@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from collections import Counter, defaultdict
+from collections import Counter
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -105,7 +105,8 @@ def compact_example(value: Any, max_length: int = 140) -> str:
     text = text.replace("\n", " ")
     if len(text) > max_length:
         text = text[: max_length - 3] + "..."
-    return f"`{text.replace('|', '\\|')}`"
+    escaped = text.replace("|", "\\|")
+    return f"`{escaped}`"
 
 
 def summarize_schema(records: list[dict[str, Any]]) -> dict[str, Any]:
