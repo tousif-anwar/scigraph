@@ -10,7 +10,7 @@ Milestone 1 created the repository foundation, configuration system, OpenAlex da
 
 Milestone 2 adds explicit data-quality checks and produces both machine-readable and human-readable reports without cleaning or dropping records.
 
-Milestones 3 through 7 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, and citation graph analytics.
+Milestones 3 through 11 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, citation graph analytics, author collaboration graph analytics, temporal trend analysis, streaming-style micro-batch monitoring, and sparse retrieval experiments.
 
 ## Dataset
 
@@ -68,7 +68,7 @@ Configuration lives in `configs/`. The development config controls sample size, 
 
 ## Current Environment Notes
 
-During initial setup on 2026-10-05, Python was available as `python 3.14.4`. `git` and `java` were not available on PATH in this shell. PySpark is configured as a project dependency, but full Spark execution requires a compatible Java runtime.
+During initial setup on 2026-10-05, Python was available as `python 3.14.4`. Java and Git were initially not available on PATH in this shell. Later milestones configured Spark to use the existing OpenJDK at `C:/Users/tousi/.jdks/openjdk-23.0.2`, added project-local Hadoop Windows helper binaries under `tools/hadoop/bin`, and added `C:\Program Files\Git\cmd` plus `C:\Windows\System32` to the user PATH so Git is available in new terminals.
 
 The Milestone 1 development sample was retrieved on 2026-10-05. It contains 100 OpenAlex article records from publication years 2020-2026, with 100 unique publication IDs, 379 unique author IDs observed, 2,101 referenced works, 0 missing abstracts, 0 missing titles, 2 records with missing authorship arrays, and 0 duplicate publication IDs.
 
@@ -83,6 +83,14 @@ Milestone 5 adds distributed text analytics over titles and reconstructed abstra
 Milestone 6 adds K-means text clustering over normalized TF-IDF features. It evaluated K = 3, 5, and 8 on the 738 English-language documents and selected K = 3 by silhouette, but the silhouette scores were weak and cluster balance remained uneven, so the clusters are treated as exploratory rather than validated research fields.
 
 Milestone 7 adds citation graph analytics and iterative Spark PageRank. The 1,000-record sample produced 22,321 outgoing citation edges and 23,177 expanded graph vertices after including externally referenced OpenAlex work IDs. However, none of the sampled publications cite another sampled publication, so the in-sample citation edge count is 0. PageRank is therefore computed on the expanded citation graph, and sampled-paper PageRank values are tied/uninformative in the current sample.
+
+Milestone 8 adds an undirected weighted author collaboration graph. The current sample contains 3,721 authors with usable author IDs, 3,726 author-publication rows across 948 publications, 709 multi-author publications, 239 solo-author publications, and 11,508 observed coauthor edges. Edge weights count shared sampled publications; in this heterogeneous development sample, the strongest observed edge weight is 1.
+
+Milestone 9 adds temporal trend analysis. The 1,000-record sample spans publication years 2020-2026, with 7 yearly buckets, 2,477 topic-year rows, and 395 latest-year topic candidates. The latest sampled year is 2026; citation counts for recent publications are low because they have had less time to accumulate citations.
+
+Milestone 10 adds deterministic streaming-style micro-batch monitoring over the Gold publication table. The current run replayed 1,000 records in 10 batches of 100 records, computed per-batch quality and citation/reference metrics, and produced 0 alerts using a missing-title threshold of 0.0 and a missing-author threshold of 0.05.
+
+Milestone 11 adds a sparse TF-IDF retrieval baseline over the saved English-language text documents. Five fixed scientific queries produced 372 ranked query-document rows. Using OpenAlex topic-name substring matches as a rough relevance proxy, mean precision@10 was 0.32; the strongest query was tuberculosis diagnosis/treatment at precision@10 = 0.50.
 
 ## Repository Layout
 
@@ -113,3 +121,11 @@ Text analysis writes `reports/results/text_analysis_report.json`, `docs/TEXT_ANA
 Clustering writes `reports/results/clustering_report.json`, `docs/CLUSTERING.md`, and Parquet outputs under `data/gold/cluster_*`.
 
 Citation graph analysis writes `reports/results/citation_graph_report.json`, `docs/CITATION_GRAPH.md`, and Parquet outputs under `data/gold/citation_*`.
+
+Author collaboration analysis writes `reports/results/author_collaboration_report.json`, `docs/AUTHOR_COLLABORATION_GRAPH.md`, and Parquet outputs under `data/gold/author_collaboration_*`.
+
+Temporal analysis writes `reports/results/temporal_analysis_report.json`, `docs/TEMPORAL_ANALYSIS.md`, and Parquet outputs under `data/gold/temporal_*`.
+
+Streaming simulation writes `reports/results/streaming_simulation_report.json`, `docs/STREAMING_SIMULATION.md`, and Parquet outputs under `data/gold/streaming_*`.
+
+Sparse retrieval writes `reports/results/retrieval_report.json`, `docs/RETRIEVAL.md`, and Parquet outputs under `data/gold/retrieval_*`.

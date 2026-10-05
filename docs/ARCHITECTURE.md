@@ -40,3 +40,48 @@ docs/CITATION_GRAPH.md
 ```
 
 The current PageRank job runs on an expanded graph containing sampled publications plus externally referenced OpenAlex work IDs, because the 1,000-record sample has no citation edges between sampled publications.
+
+Milestone 8 adds author collaboration graph analytics. Gold author-publication rows feed an undirected weighted coauthor graph, with outputs under:
+
+```text
+data/gold/author_collaboration_edges/
+data/gold/author_collaboration_metrics/
+reports/results/author_collaboration_report.json
+docs/AUTHOR_COLLABORATION_GRAPH.md
+```
+
+Collaboration edge weight is the number of sampled publications shared by an author pair. Author metrics combine publication counts, solo-publication counts, collaborator counts, and weighted collaboration counts.
+
+Milestone 9 adds temporal trend analysis. Gold publications and topics feed yearly publication/citation aggregates and topic-year trend tables, with outputs under:
+
+```text
+data/gold/temporal_yearly_metrics/
+data/gold/temporal_topic_trends/
+data/gold/temporal_emerging_topics/
+reports/results/temporal_analysis_report.json
+docs/TEMPORAL_ANALYSIS.md
+```
+
+Temporal outputs are descriptive aggregates over the current sample. They are not full-corpus time-series estimates.
+
+Milestone 10 adds deterministic streaming-style micro-batch monitoring. Gold publications are replayed in fixed-size batches to produce monitoring metrics and alert outputs under:
+
+```text
+data/gold/streaming_batch_metrics/
+data/gold/streaming_alerts/
+reports/results/streaming_simulation_report.json
+docs/STREAMING_SIMULATION.md
+```
+
+This stage validates batch-level monitoring logic without requiring an external broker or long-running streaming service.
+
+Milestone 11 adds sparse retrieval experiments. Saved text documents, document-term TF-IDF rows, and Gold topics feed query-document rankings and approximate topic-proxy evaluation outputs under:
+
+```text
+data/gold/retrieval_rankings/
+data/gold/retrieval_evaluation/
+reports/results/retrieval_report.json
+docs/RETRIEVAL.md
+```
+
+The retrieval stage is a lexical baseline. It does not perform semantic embedding search or generated-answer RAG.

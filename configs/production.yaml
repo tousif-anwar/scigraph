@@ -72,6 +72,23 @@ paths:
   citation_unusual_pagerank: data/gold/citation_unusual_pagerank
   citation_graph_report_json: reports/results/citation_graph_report.json
   citation_graph_report_md: docs/CITATION_GRAPH.md
+  author_collaboration_edges: data/gold/author_collaboration_edges
+  author_collaboration_metrics: data/gold/author_collaboration_metrics
+  author_collaboration_report_json: reports/results/author_collaboration_report.json
+  author_collaboration_report_md: docs/AUTHOR_COLLABORATION_GRAPH.md
+  temporal_yearly_metrics: data/gold/temporal_yearly_metrics
+  temporal_topic_trends: data/gold/temporal_topic_trends
+  temporal_emerging_topics: data/gold/temporal_emerging_topics
+  temporal_report_json: reports/results/temporal_analysis_report.json
+  temporal_report_md: docs/TEMPORAL_ANALYSIS.md
+  streaming_batch_metrics: data/gold/streaming_batch_metrics
+  streaming_alerts: data/gold/streaming_alerts
+  streaming_report_json: reports/results/streaming_simulation_report.json
+  streaming_report_md: docs/STREAMING_SIMULATION.md
+  retrieval_rankings: data/gold/retrieval_rankings
+  retrieval_evaluation: data/gold/retrieval_evaluation
+  retrieval_report_json: reports/results/retrieval_report.json
+  retrieval_report_md: docs/RETRIEVAL.md
 
 spark:
   app_name: SciGraphProduction
@@ -103,3 +120,34 @@ spark:
     pagerank_iterations: 30
     pagerank_damping: 0.85
     top_n: 100
+  streaming:
+    batch_size: 5000
+    alert_missing_title_rate: 0.0
+    alert_missing_author_rate: 0.05
+  retrieval:
+    top_k: 50
+    queries:
+      - query_id: q_ai_healthcare
+        text: artificial intelligence healthcare education
+        expected_topic_contains:
+          - artificial intelligence
+          - healthcare
+      - query_id: q_climate_policy
+        text: climate change policy economics
+        expected_topic_contains:
+          - climate change
+          - policy
+      - query_id: q_tuberculosis
+        text: tuberculosis diagnosis treatment
+        expected_topic_contains:
+          - tuberculosis
+      - query_id: q_digital_marketing
+        text: digital marketing social media
+        expected_topic_contains:
+          - digital marketing
+          - social media
+      - query_id: q_dementia
+        text: dementia cognitive impairment
+        expected_topic_contains:
+          - dementia
+          - cognitive impairment
