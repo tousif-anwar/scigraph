@@ -76,6 +76,8 @@ Milestone 3 adds the Spark Bronze/Silver/Gold pipeline implementation. In this e
 
 Milestone 4 repaired the local Spark runtime by configuring the project to use the existing OpenJDK at `C:/Users/tousi/.jdks/openjdk-23.0.2` and project-local Hadoop Windows helper binaries under `tools/hadoop/bin`. Spark now writes Parquet locally. The dev benchmark measured 25, 50, and 100 record pipeline runs; the 100-record run completed in 3.3065 seconds at 30.2435 records/second.
 
+Milestone 5 adds distributed text analytics over titles and reconstructed abstracts. The dev run analyzed 100 documents, retained 13,024 tokens, produced a 5,209-term vocabulary, and wrote 8,766 document-term TF-IDF rows.
+
 ## Repository Layout
 
 ```text
@@ -99,3 +101,5 @@ scigraph/
 The acquisition script records source metadata, retrieval date, request URL, sample size, and seed in `data/raw/openalex_sample_metadata.json`. The schema inspection script writes machine-readable statistics to `reports/results/schema_summary.json` and updates `docs/DATA_DICTIONARY.md` from observed fields only. The quality script writes `reports/results/data_quality_report.json` and `docs/DATA_QUALITY_REPORT.md`. The Spark pipeline writes `reports/results/bronze_silver_gold_report.json` and `docs/BRONZE_SILVER_GOLD_PIPELINE.md`.
 
 Scalability benchmarks write `experiments/scalability/results/scalability_results.json`, `experiments/scalability/results/scalability_results.csv`, and `docs/SCALABILITY_BENCHMARKS.md`.
+
+Text analysis writes `reports/results/text_analysis_report.json`, `docs/TEXT_ANALYSIS.md`, and Parquet outputs under `data/gold/text_*`.

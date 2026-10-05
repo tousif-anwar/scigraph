@@ -55,6 +55,13 @@ paths:
   scalability_results_csv: experiments/scalability/results/scalability_results.csv
   scalability_report_md: docs/SCALABILITY_BENCHMARKS.md
   scalability_runs_dir: experiments/scalability/runs
+  text_documents: data/gold/text_documents
+  text_terms_global: data/gold/text_terms_global
+  text_terms_by_year: data/gold/text_terms_by_year
+  text_terms_by_topic: data/gold/text_terms_by_topic
+  text_tfidf_terms: data/gold/text_tfidf_terms
+  text_report_json: reports/results/text_analysis_report.json
+  text_report_md: docs/TEXT_ANALYSIS.md
 
 spark:
   app_name: SciGraphExperiment
@@ -65,3 +72,6 @@ spark:
     - 1000
     - 10000
     - 100000
+  text:
+    min_token_length: 3
+    top_n_terms: 50
