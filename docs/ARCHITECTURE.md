@@ -96,3 +96,13 @@ docs/ML_CITATION_PREDICTION.md
 ```
 
 This stage is a diagnostic ML baseline for citation-count labels within the current sample, not a causal model of scientific quality.
+
+Milestone 13 adds transparent composite publication ranking. Gold publications and sampled-paper citation PageRank feed normalized component scores and final ranking outputs under:
+
+```text
+data/gold/ranking_publications/
+reports/results/ranking_report.json
+docs/RANKING.md
+```
+
+The ranking stage is an inspectable weighted baseline. It is not a field-normalized impact score or expert relevance judgment.

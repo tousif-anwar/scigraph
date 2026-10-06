@@ -93,6 +93,9 @@ paths:
   ml_citation_predictions: data/gold/ml_citation_predictions
   ml_citation_report_json: reports/results/ml_citation_prediction_report.json
   ml_citation_report_md: docs/ML_CITATION_PREDICTION.md
+  ranking_publications: data/gold/ranking_publications
+  ranking_report_json: reports/results/ranking_report.json
+  ranking_report_md: docs/RANKING.md
 
 spark:
   app_name: SciGraphMilestone3
@@ -159,3 +162,12 @@ spark:
     seed: 660
     test_fraction: 0.3
     high_citation_quantile: 0.75
+  ranking:
+    top_n: 25
+    weights:
+      citation_count: 0.45
+      pagerank: 0.15
+      recency: 0.15
+      reference_count: 0.10
+      author_count: 0.05
+      topic_count: 0.10

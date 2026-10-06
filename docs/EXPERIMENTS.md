@@ -233,3 +233,29 @@ Result: the held-out test split contained 287 records. The model achieved area u
 Interpretation: the model has ranking signal, as shown by AUC, but the accuracy gain over the majority baseline is modest. The model is conservative about predicting high-citation papers and misses many positives. The negative coefficient for publication year is consistent with newer publications having had less time to accumulate citations.
 
 Limitations: this is not causal and does not predict scientific quality. The target is `cited_by_count` within a small sample, citation windows are unequal across publication years, and the model does not include field-normalized citations or external metadata.
+
+## Milestone 13: Composite Publication Ranking
+
+Research question: can multiple existing project signals be combined into a transparent ranked list of sampled publications?
+
+Hypothesis: citation count and reference richness will dominate the current sample because sampled-paper PageRank is tied and sparse, while recency and metadata completeness can still affect the ordering.
+
+Independent variable: normalized scoring components and their configured weights.
+
+Dependent variables: composite score, rank, component scores, and top-ranked publications.
+
+Controlled variables: same 1,000-record Gold publication table, same citation PageRank output, same configured ranking weights, and same min-max normalization logic.
+
+Dataset: 1,000 sampled publications with Gold metadata and sampled-paper citation PageRank values.
+
+Baseline: raw `cited_by_count` sorting.
+
+Method: join Gold publication metadata to sampled-paper PageRank, min-max normalize citation count, PageRank, publication year, reference count, author count, and topic count, then compute a weighted composite score. The development weights are 0.45 citation count, 0.15 PageRank, 0.15 recency, 0.10 reference count, 0.05 author count, and 0.10 topic count.
+
+Metric: ranked publication count, mean composite score, maximum composite score, and inspection of the top-ranked publications.
+
+Result: the ranking stage scored all 1,000 sampled publications. Mean composite score was 0.1861 and maximum score was 0.6401. The top-ranked paper was "The global costs of extreme weather that are attributable to climate change" with 554 cited-by count and composite score 0.6401.
+
+Interpretation: the ranking is inspectable and reproducible, but it is not an authority metric. In the current sample, citation count and reference count drive the top ranks. PageRank contributes little because all sampled papers have tied PageRank after the citation graph milestone found no in-sample citation edges.
+
+Limitations: weights are manually configured, components are min-max normalized within one small sample, and the score is not field-normalized or validated against human relevance judgments.

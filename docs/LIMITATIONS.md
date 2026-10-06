@@ -1,6 +1,6 @@
 # Limitations
 
-Current Milestone 12 limitations:
+Current Milestone 13 limitations:
 
 - The development sample is small and is not representative of the full OpenAlex corpus.
 - API sampling is deterministic for the request parameters and current OpenAlex API state, but the live corpus can change over time.
@@ -26,4 +26,7 @@ Current Milestone 12 limitations:
 - Sparse retrieval is implemented, but relevance is measured with OpenAlex topic-name substring proxies rather than human relevance judgments.
 - Citation prediction is implemented only as a small supervised baseline; it predicts within-sample citation labels, not scientific quality or causal impact.
 - Citation prediction uses unequal citation windows across years and does not field-normalize citation counts.
+- Composite ranking is implemented as a transparent weighted baseline, not an authority score or scientific-quality metric.
+- Ranking weights are manually configured and min-max normalization is sample-local, so rankings can shift substantially when the sample changes.
+- Citation PageRank contributes little to the current composite ranking because sampled-paper PageRank is tied in the 1,000-record sample.
 - Retrieval is lexical TF-IDF only; semantic embeddings, dense retrieval, reranking, RAG, live streaming infrastructure, and advanced downstream ML interpretation have not been implemented yet.

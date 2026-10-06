@@ -10,7 +10,7 @@ Milestone 1 created the repository foundation, configuration system, OpenAlex da
 
 Milestone 2 adds explicit data-quality checks and produces both machine-readable and human-readable reports without cleaning or dropping records.
 
-Milestones 3 through 12 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, citation graph analytics, author collaboration graph analytics, temporal trend analysis, streaming-style micro-batch monitoring, sparse retrieval experiments, and a supervised citation-outcome baseline.
+Milestones 3 through 13 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, citation graph analytics, author collaboration graph analytics, temporal trend analysis, streaming-style micro-batch monitoring, sparse retrieval experiments, a supervised citation-outcome baseline, and a transparent composite publication ranking.
 
 ## Dataset
 
@@ -94,6 +94,8 @@ Milestone 11 adds a sparse TF-IDF retrieval baseline over the saved English-lang
 
 Milestone 12 adds a Spark ML logistic-regression baseline for predicting whether a sampled paper is in the high-citation group. The high-citation threshold was `cited_by_count >= 4`, producing 264 positive labels and 736 negative labels. On the held-out test split, the model reached area under ROC 0.8559 and accuracy 0.7735, compared with a majority-class baseline accuracy of 0.7360.
 
+Milestone 13 adds a transparent composite publication ranking. It ranked all 1,000 sampled publications using normalized citation count, citation PageRank, recency, reference count, author count, and topic count. The mean composite score was 0.1861 and the maximum score was 0.6401. In this sample, PageRank contributes little because sampled-paper PageRank is constant after Milestone 7's zero in-sample citation-edge result.
+
 ## Repository Layout
 
 ```text
@@ -133,3 +135,5 @@ Streaming simulation writes `reports/results/streaming_simulation_report.json`, 
 Sparse retrieval writes `reports/results/retrieval_report.json`, `docs/RETRIEVAL.md`, and Parquet outputs under `data/gold/retrieval_*`.
 
 Citation prediction writes `reports/results/ml_citation_prediction_report.json`, `docs/ML_CITATION_PREDICTION.md`, and Parquet outputs under `data/gold/ml_citation_*`.
+
+Composite ranking writes `reports/results/ranking_report.json`, `docs/RANKING.md`, and Parquet outputs under `data/gold/ranking_*`.
