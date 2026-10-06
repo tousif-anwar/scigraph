@@ -106,3 +106,26 @@ docs/RANKING.md
 ```
 
 The ranking stage is an inspectable weighted baseline. It is not a field-normalized impact score or expert relevance judgment.
+
+Milestone 14 adds an integrated publication feature mart. Gold publications are left-joined to text, clustering, citation graph, temporal, ML, and ranking outputs under:
+
+```text
+data/gold/feature_publication_mart/
+reports/results/feature_mart_report.json
+docs/FEATURE_MART.md
+```
+
+The mart preserves one row per sampled publication and records availability flags for sparse downstream signals.
+
+Milestones 15 through 18 add the final retrieval comparison and project audit. English text documents feed BM25, Spark Word2Vec dense retrieval, reciprocal-rank-fusion hybrid retrieval, transparent reranking, graph-aware ranking, ablation evaluation, error analysis, and a demo query artifact under:
+
+```text
+reports/results/advanced_retrieval_results.json
+reports/results/demo_results.json
+docs/ADVANCED_RETRIEVAL.md
+docs/ERROR_ANALYSIS.md
+docs/DEMO.md
+docs/PROJECT_REPORT.md
+```
+
+Optional RAG is not implemented. The project remains focused on scalable data analysis and retrieval evaluation rather than generated answers.

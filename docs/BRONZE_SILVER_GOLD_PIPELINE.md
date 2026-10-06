@@ -1,29 +1,29 @@
 # Bronze/Silver/Gold Pipeline Report
 
-Generated on 2026-10-05.
+Generated on 2026-10-06.
 
 ## Stage Counts
 
-- Raw records read: 1000
-- Bronze records written: 1000
-- Silver publications written: 1000
-- Gold publications written: 1000
-- Gold authors written: 3721
-- Gold author-publication rows written: 3742
-- Gold citation edges written: 22321
-- Gold topic rows written: 2736
+- Raw records read: 2500
+- Bronze records written: 2500
+- Silver publications written: 2500
+- Gold publications written: 2500
+- Gold authors written: 9274
+- Gold author-publication rows written: 9337
+- Gold citation edges written: 53877
+- Gold topic rows written: 6853
 
 ## Transform Accounting
 
 - Records removed in Silver: 0
-- Records with quality flags: 18
-- Self-citations removed from Gold citation edges: 8
+- Records with quality flags: 39
+- Self-citations removed from Gold citation edges: 23
 
 Quality flag counts:
 
 ```json
 {
-  "missing_authorships": 18
+  "missing_authorships": 39
 }
 ```
 

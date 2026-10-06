@@ -259,3 +259,55 @@ Result: the ranking stage scored all 1,000 sampled publications. Mean composite 
 Interpretation: the ranking is inspectable and reproducible, but it is not an authority metric. In the current sample, citation count and reference count drive the top ranks. PageRank contributes little because all sampled papers have tied PageRank after the citation graph milestone found no in-sample citation edges.
 
 Limitations: weights are manually configured, components are min-max normalized within one small sample, and the score is not field-normalized or validated against human relevance judgments.
+
+## Milestone 14: Integrated Publication Feature Mart
+
+Research question: can outputs from the previous analysis milestones be integrated into a single publication-level dataset for downstream inspection and modeling?
+
+Hypothesis: a one-row-per-publication feature mart should preserve all sampled publications while making feature availability explicit for English-filtered, test-split, and graph-derived signals.
+
+Independent variable: feature source from prior milestones.
+
+Dependent variables: publication row count, feature column count, feature availability rates, and top-ranked joined rows.
+
+Controlled variables: same 1,000-record sample, same existing Gold outputs, same deterministic outputs from text, clustering, graph, temporal, ML, and ranking stages.
+
+Dataset: 1,000 Gold publication records plus prior milestone outputs.
+
+Baseline: separate Parquet outputs that require manual joins for cross-signal inspection.
+
+Method: left-join Gold publications to text features, cluster assignments, citation degree metrics, citation-prediction labels/predictions, composite ranking scores, and yearly temporal aggregates. Preserve one row per sampled publication and add availability flags for sparse downstream features.
+
+Metric: row preservation, number of columns, feature availability rates, and average document word count.
+
+Result: the feature mart preserved all 1,000 sampled publication rows and produced 34 columns. Text features and cluster assignments were available for 738 publications, ML predictions for 287 held-out test rows, and composite ranking rows for all 1,000 publications. Average document word count across all publication rows was 163.8220, including zero-filled missing text rows.
+
+Interpretation: the feature mart gives the project a single downstream table for inspection and later modeling. Sparse availability is expected because text/clustering are English-filtered and ML predictions are only produced for the held-out split.
+
+Limitations: the mart inherits limitations from all upstream stages. It is a convenience integration layer, not a new ground-truth dataset, and some features are intentionally sparse.
+
+## Milestones 15-18: Dense, Hybrid, Reranked, Graph-Aware Retrieval And Final Audit
+
+Research question: do dense retrieval, hybrid retrieval, reranking, or graph-aware ranking improve over a BM25 lexical baseline on the shared scientific query set?
+
+Hypothesis: BM25 should remain competitive on narrow terminology-heavy scientific queries; dense retrieval may help terminology mismatch but can be weaker when trained only on the small development corpus; graph-aware ranking may improve NDCG but can introduce citation/age bias.
+
+Independent variable: retrieval system variant.
+
+Dependent variables: precision@10, recall@10, MRR, NDCG@10, and mean latency.
+
+Controlled variables: same 738 English text documents, same five configured queries, same OpenAlex topic-name proxy relevance labels, same top-K cutoff, and same evaluation code.
+
+Dataset: 738 English-language title+abstract text documents.
+
+Baseline: BM25.
+
+Method: evaluate BM25, Spark ML Word2Vec dense retrieval, Reciprocal Rank Fusion hybrid retrieval, a transparent candidate reranker, and graph-aware score blending. Run all systems against the same query set and relevance proxy labels. Produce an ablation table, error analysis, and demo query output.
+
+Metric: precision@10, recall@10, MRR, NDCG@10, and mean latency in seconds.
+
+Result: BM25 reached precision@10 0.38, recall@10 0.4732, MRR 0.7667, and NDCG@10 0.6450. Dense Word2Vec retrieval was weaker, with precision@10 0.14 and NDCG@10 0.2321. Hybrid RRF alone reached precision@10 0.24 and NDCG@10 0.4177. Transparent reranking improved NDCG@10 to 0.6562. The best NDCG@10 was hybrid reranked graph-aware retrieval at 0.6609, with precision@10 0.34 and recall@10 0.4265.
+
+Interpretation: the small local dense model did not outperform BM25. Hybrid RRF alone also did not help. Reranking and graph-aware blending improved NDCG modestly, but the gain is small and should be interpreted cautiously because relevance labels are proxy labels.
+
+Limitations: dense retrieval uses local Spark Word2Vec rather than a large pretrained scientific sentence embedding model. Evaluation labels are OpenAlex topic-name substring proxies, not human judgments. Graph-aware ranking can favor older or more cited papers. Optional RAG was not implemented because the project focus is scalable analytics and retrieval evaluation.

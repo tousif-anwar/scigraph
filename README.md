@@ -10,7 +10,7 @@ Milestone 1 created the repository foundation, configuration system, OpenAlex da
 
 Milestone 2 adds explicit data-quality checks and produces both machine-readable and human-readable reports without cleaning or dropping records.
 
-Milestones 3 through 13 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, citation graph analytics, author collaboration graph analytics, temporal trend analysis, streaming-style micro-batch monitoring, sparse retrieval experiments, a supervised citation-outcome baseline, and a transparent composite publication ranking.
+Milestones 3 through 18 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, citation graph analytics, author collaboration graph analytics, temporal trend analysis, streaming-style micro-batch monitoring, sparse and dense retrieval experiments, hybrid retrieval, reranking, graph-aware ranking, ablation/error analysis, a supervised citation-outcome baseline, a transparent composite publication ranking, an integrated publication feature mart, a demo artifact, and final reporting.
 
 ## Dataset
 
@@ -96,6 +96,10 @@ Milestone 12 adds a Spark ML logistic-regression baseline for predicting whether
 
 Milestone 13 adds a transparent composite publication ranking. It ranked all 1,000 sampled publications using normalized citation count, citation PageRank, recency, reference count, author count, and topic count. The mean composite score was 0.1861 and the maximum score was 0.6401. In this sample, PageRank contributes little because sampled-paper PageRank is constant after Milestone 7's zero in-sample citation-edge result.
 
+Milestone 14 adds an integrated publication feature mart. It preserves all 1,000 sampled publication rows and joins 34 publication-level columns from prior milestones. Text and cluster features are available for 738 English-language publications, ML test predictions are available for 287 held-out rows, and composite ranking features are available for all 1,000 rows.
+
+Milestones 15 through 18 complete the retrieval comparison and final audit. BM25, Spark Word2Vec dense retrieval, RRF hybrid retrieval, a transparent reranker, and graph-aware ranking were evaluated on the same five-query set. BM25 reached precision@10 0.38 and NDCG@10 0.6450. Dense Word2Vec retrieval was weaker, with precision@10 0.14 and NDCG@10 0.2321. The best NDCG@10 was the hybrid reranked graph-aware system at 0.6609. Error analysis and a demo query artifact were generated. Optional RAG was intentionally not implemented because the non-RAG analytics and retrieval objectives were the priority.
+
 ## Repository Layout
 
 ```text
@@ -115,6 +119,8 @@ scigraph/
 ```
 
 ## Reproducibility
+
+A consolidated project report is available at `docs/PROJECT_REPORT.md`.
 
 The acquisition script records source metadata, retrieval date, request URL, sample size, and seed in `data/raw/openalex_sample_metadata.json`. The schema inspection script writes machine-readable statistics to `reports/results/schema_summary.json` and updates `docs/DATA_DICTIONARY.md` from observed fields only. The quality script writes `reports/results/data_quality_report.json` and `docs/DATA_QUALITY_REPORT.md`. The Spark pipeline writes `reports/results/bronze_silver_gold_report.json` and `docs/BRONZE_SILVER_GOLD_PIPELINE.md`.
 
@@ -137,3 +143,17 @@ Sparse retrieval writes `reports/results/retrieval_report.json`, `docs/RETRIEVAL
 Citation prediction writes `reports/results/ml_citation_prediction_report.json`, `docs/ML_CITATION_PREDICTION.md`, and Parquet outputs under `data/gold/ml_citation_*`.
 
 Composite ranking writes `reports/results/ranking_report.json`, `docs/RANKING.md`, and Parquet outputs under `data/gold/ranking_*`.
+
+The publication feature mart writes `reports/results/feature_mart_report.json`, `docs/FEATURE_MART.md`, and Parquet outputs under `data/gold/feature_*`.
+
+Advanced retrieval, ablation, error analysis, and demo outputs are written to `reports/results/advanced_retrieval_results.json`, `docs/ADVANCED_RETRIEVAL.md`, `docs/ERROR_ANALYSIS.md`, `reports/results/demo_results.json`, and `docs/DEMO.md`.
+
+Visualizations for the full project are generated from measured report artifacts with:
+
+```powershell
+python -m scigraph.visualization.figures --config configs/dev.yaml
+```
+
+The gallery is written to `docs/VISUALIZATIONS.md`, with PNG figures under `reports/figures/`.
+
+Spreadsheet-friendly summary tables are available in `reports/tables/`. The `notebooks/` directory contains a lightweight visual summary notebook that reads those tables and displays the generated figures.

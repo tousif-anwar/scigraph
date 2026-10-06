@@ -7,7 +7,7 @@ dataset:
   source_url: https://api.openalex.org/works
   documentation_url: https://help.openalex.org/data/works/attributes/
   license: CC0
-  sample_size: 1000
+  sample_size: 2500
   seed: 660
   api_page_size: 200
   contact_email: ""
@@ -96,6 +96,14 @@ paths:
   ranking_publications: data/gold/ranking_publications
   ranking_report_json: reports/results/ranking_report.json
   ranking_report_md: docs/RANKING.md
+  feature_publication_mart: data/gold/feature_publication_mart
+  feature_mart_report_json: reports/results/feature_mart_report.json
+  feature_mart_report_md: docs/FEATURE_MART.md
+  advanced_retrieval_results_json: reports/results/advanced_retrieval_results.json
+  advanced_retrieval_report_md: docs/ADVANCED_RETRIEVAL.md
+  error_analysis_md: docs/ERROR_ANALYSIS.md
+  demo_results_json: reports/results/demo_results.json
+  demo_report_md: docs/DEMO.md
 
 spark:
   app_name: SciGraphMilestone3
@@ -104,9 +112,9 @@ spark:
   java_home: C:/Users/tousi/.jdks/openjdk-23.0.2
   hadoop_home: tools/hadoop
   benchmark_scale_records:
-    - 100
     - 500
     - 1000
+    - 2500
   text:
     min_token_length: 3
     top_n_terms: 25
@@ -128,7 +136,7 @@ spark:
     pagerank_damping: 0.85
     top_n: 25
   streaming:
-    batch_size: 100
+    batch_size: 250
     alert_missing_title_rate: 0.0
     alert_missing_author_rate: 0.05
   retrieval:
@@ -171,3 +179,15 @@ spark:
       reference_count: 0.10
       author_count: 0.05
       topic_count: 0.10
+  advanced_retrieval:
+    top_k: 10
+    candidate_k: 50
+    dense_vector_size: 32
+    dense_min_count: 1
+    dense_max_iter: 5
+    rrf_k: 60
+    graph_alphas:
+      - 0.0
+      - 0.25
+      - 0.5
+    demo_query: retrieval augmented generation for clinical decision support

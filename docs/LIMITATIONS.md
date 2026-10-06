@@ -1,6 +1,6 @@
 # Limitations
 
-Current Milestone 13 limitations:
+Current Milestone 18 limitations:
 
 - The development sample is small and is not representative of the full OpenAlex corpus.
 - API sampling is deterministic for the request parameters and current OpenAlex API state, but the live corpus can change over time.
@@ -29,4 +29,9 @@ Current Milestone 13 limitations:
 - Composite ranking is implemented as a transparent weighted baseline, not an authority score or scientific-quality metric.
 - Ranking weights are manually configured and min-max normalization is sample-local, so rankings can shift substantially when the sample changes.
 - Citation PageRank contributes little to the current composite ranking because sampled-paper PageRank is tied in the 1,000-record sample.
-- Retrieval is lexical TF-IDF only; semantic embeddings, dense retrieval, reranking, RAG, live streaming infrastructure, and advanced downstream ML interpretation have not been implemented yet.
+- The integrated feature mart inherits every upstream limitation and should be treated as a convenience table, not a source of new labels or ground truth.
+- Feature mart columns are intentionally sparse where upstream outputs are sparse, including English-filtered text/clustering features and held-out-only ML predictions.
+- Dense retrieval is implemented with locally trained Spark Word2Vec, not a large pretrained scientific embedding model.
+- Hybrid retrieval, reranking, and graph-aware ranking are implemented, but improvements are modest and evaluated only against proxy relevance labels.
+- Optional RAG is not implemented; this is intentional because the project prioritizes scalable analytics and retrieval evaluation over generated answers.
+- Live streaming infrastructure and advanced downstream ML interpretation have not been implemented yet.

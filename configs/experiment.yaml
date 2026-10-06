@@ -96,6 +96,14 @@ paths:
   ranking_publications: data/gold/ranking_publications
   ranking_report_json: reports/results/ranking_report.json
   ranking_report_md: docs/RANKING.md
+  feature_publication_mart: data/gold/feature_publication_mart
+  feature_mart_report_json: reports/results/feature_mart_report.json
+  feature_mart_report_md: docs/FEATURE_MART.md
+  advanced_retrieval_results_json: reports/results/advanced_retrieval_results.json
+  advanced_retrieval_report_md: docs/ADVANCED_RETRIEVAL.md
+  error_analysis_md: docs/ERROR_ANALYSIS.md
+  demo_results_json: reports/results/demo_results.json
+  demo_report_md: docs/DEMO.md
 
 spark:
   app_name: SciGraphExperiment
@@ -171,3 +179,15 @@ spark:
       reference_count: 0.10
       author_count: 0.05
       topic_count: 0.10
+  advanced_retrieval:
+    top_k: 10
+    candidate_k: 50
+    dense_vector_size: 64
+    dense_min_count: 1
+    dense_max_iter: 8
+    rrf_k: 60
+    graph_alphas:
+      - 0.0
+      - 0.25
+      - 0.5
+    demo_query: retrieval augmented generation for clinical decision support
