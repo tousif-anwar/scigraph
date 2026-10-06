@@ -207,3 +207,29 @@ Result: five configured queries produced 372 ranked query-document rows. Mean pr
 Interpretation: sparse retrieval is a useful baseline but is sensitive to exact word overlap and broad query terms. The tuberculosis query performed best because its terminology is narrow and distinctive in titles/abstracts.
 
 Limitations: relevance labels are approximate topic-name substring matches, not human judgments. This is not semantic retrieval and not RAG; it does not use embeddings, reranking, generated answers, or citation-aware ranking.
+
+## Milestone 12: Citation Outcome Prediction Baseline
+
+Research question: can simple structured metadata predict whether a sampled publication belongs to the high-citation group within the current OpenAlex sample?
+
+Hypothesis: publication year, reference count, author count, and topic/concept counts should provide some predictive signal, but recency effects and sample bias will limit interpretation.
+
+Independent variable: publication-level metadata features.
+
+Dependent variable: binary label indicating whether `cited_by_count` is at or above the configured high-citation quantile threshold.
+
+Controlled variables: same 1,000-record Gold publication table, same deterministic random seed, same train/test split fraction, same logistic-regression configuration.
+
+Dataset: 1,000 Gold publication records. The 0.75 quantile threshold was `cited_by_count >= 4`, yielding 264 positive labels and 736 negative labels because of ties at the threshold.
+
+Baseline: majority-class accuracy from always predicting the more frequent class.
+
+Method: build numeric features for publication year index, reference count, author count, concept count, topic count, and abstract availability; split rows into train/test sets; fit Spark ML logistic regression; evaluate area under ROC, accuracy, and confusion matrix on the test split.
+
+Metric: area under ROC, test accuracy, majority baseline accuracy, and confusion matrix.
+
+Result: the held-out test split contained 287 records. The model achieved area under ROC 0.8559 and accuracy 0.7735, compared with majority baseline accuracy 0.7360. The confusion matrix was 30 true positives, 6 false positives, 192 true negatives, and 59 false negatives.
+
+Interpretation: the model has ranking signal, as shown by AUC, but the accuracy gain over the majority baseline is modest. The model is conservative about predicting high-citation papers and misses many positives. The negative coefficient for publication year is consistent with newer publications having had less time to accumulate citations.
+
+Limitations: this is not causal and does not predict scientific quality. The target is `cited_by_count` within a small sample, citation windows are unequal across publication years, and the model does not include field-normalized citations or external metadata.

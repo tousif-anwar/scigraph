@@ -89,6 +89,10 @@ paths:
   retrieval_evaluation: data/gold/retrieval_evaluation
   retrieval_report_json: reports/results/retrieval_report.json
   retrieval_report_md: docs/RETRIEVAL.md
+  ml_citation_features: data/gold/ml_citation_features
+  ml_citation_predictions: data/gold/ml_citation_predictions
+  ml_citation_report_json: reports/results/ml_citation_prediction_report.json
+  ml_citation_report_md: docs/ML_CITATION_PREDICTION.md
 
 spark:
   app_name: SciGraphExperiment
@@ -151,3 +155,7 @@ spark:
         expected_topic_contains:
           - dementia
           - cognitive impairment
+  ml:
+    seed: 660
+    test_fraction: 0.3
+    high_citation_quantile: 0.75

@@ -85,3 +85,14 @@ docs/RETRIEVAL.md
 ```
 
 The retrieval stage is a lexical baseline. It does not perform semantic embedding search or generated-answer RAG.
+
+Milestone 12 adds a supervised citation-outcome baseline. Gold publications feed Spark ML feature assembly, logistic-regression training, held-out prediction, and evaluation outputs under:
+
+```text
+data/gold/ml_citation_features/
+data/gold/ml_citation_predictions/
+reports/results/ml_citation_prediction_report.json
+docs/ML_CITATION_PREDICTION.md
+```
+
+This stage is a diagnostic ML baseline for citation-count labels within the current sample, not a causal model of scientific quality.

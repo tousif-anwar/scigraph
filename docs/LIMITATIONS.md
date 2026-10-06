@@ -1,6 +1,6 @@
 # Limitations
 
-Current Milestone 11 limitations:
+Current Milestone 12 limitations:
 
 - The development sample is small and is not representative of the full OpenAlex corpus.
 - API sampling is deterministic for the request parameters and current OpenAlex API state, but the live corpus can change over time.
@@ -24,4 +24,6 @@ Current Milestone 11 limitations:
 - Streaming-style monitoring is implemented as deterministic micro-batch replay over static Gold records, not as a live external message-broker stream.
 - The streaming simulation uses local Spark and deterministic ordering by publication year and paper ID, so it validates monitoring behavior but not event-time disorder, retries, checkpoint recovery, or production backpressure.
 - Sparse retrieval is implemented, but relevance is measured with OpenAlex topic-name substring proxies rather than human relevance judgments.
-- Retrieval is lexical TF-IDF only; semantic embeddings, dense retrieval, reranking, RAG, live streaming infrastructure, and downstream ML interpretation have not been implemented yet.
+- Citation prediction is implemented only as a small supervised baseline; it predicts within-sample citation labels, not scientific quality or causal impact.
+- Citation prediction uses unequal citation windows across years and does not field-normalize citation counts.
+- Retrieval is lexical TF-IDF only; semantic embeddings, dense retrieval, reranking, RAG, live streaming infrastructure, and advanced downstream ML interpretation have not been implemented yet.

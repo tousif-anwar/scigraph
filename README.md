@@ -10,7 +10,7 @@ Milestone 1 created the repository foundation, configuration system, OpenAlex da
 
 Milestone 2 adds explicit data-quality checks and produces both machine-readable and human-readable reports without cleaning or dropping records.
 
-Milestones 3 through 11 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, citation graph analytics, author collaboration graph analytics, temporal trend analysis, streaming-style micro-batch monitoring, and sparse retrieval experiments.
+Milestones 3 through 12 add the local Spark Bronze/Silver/Gold pipeline, scalability benchmarking, distributed TF-IDF text analysis, K-means clustering, citation graph analytics, author collaboration graph analytics, temporal trend analysis, streaming-style micro-batch monitoring, sparse retrieval experiments, and a supervised citation-outcome baseline.
 
 ## Dataset
 
@@ -92,6 +92,8 @@ Milestone 10 adds deterministic streaming-style micro-batch monitoring over the 
 
 Milestone 11 adds a sparse TF-IDF retrieval baseline over the saved English-language text documents. Five fixed scientific queries produced 372 ranked query-document rows. Using OpenAlex topic-name substring matches as a rough relevance proxy, mean precision@10 was 0.32; the strongest query was tuberculosis diagnosis/treatment at precision@10 = 0.50.
 
+Milestone 12 adds a Spark ML logistic-regression baseline for predicting whether a sampled paper is in the high-citation group. The high-citation threshold was `cited_by_count >= 4`, producing 264 positive labels and 736 negative labels. On the held-out test split, the model reached area under ROC 0.8559 and accuracy 0.7735, compared with a majority-class baseline accuracy of 0.7360.
+
 ## Repository Layout
 
 ```text
@@ -129,3 +131,5 @@ Temporal analysis writes `reports/results/temporal_analysis_report.json`, `docs/
 Streaming simulation writes `reports/results/streaming_simulation_report.json`, `docs/STREAMING_SIMULATION.md`, and Parquet outputs under `data/gold/streaming_*`.
 
 Sparse retrieval writes `reports/results/retrieval_report.json`, `docs/RETRIEVAL.md`, and Parquet outputs under `data/gold/retrieval_*`.
+
+Citation prediction writes `reports/results/ml_citation_prediction_report.json`, `docs/ML_CITATION_PREDICTION.md`, and Parquet outputs under `data/gold/ml_citation_*`.
