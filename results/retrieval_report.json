@@ -1,0 +1,338 @@
+{
+  "evaluation": [
+    {
+      "avg_matched_query_terms": 1.8,
+      "precision_at_k": 0.4,
+      "query_id": "q_ai_healthcare",
+      "query_text": "artificial intelligence healthcare education",
+      "relevant_retrieved_count": 4,
+      "retrieved_count": 10,
+      "top_score": 54.854656927748444
+    },
+    {
+      "avg_matched_query_terms": 2.1,
+      "precision_at_k": 0.6,
+      "query_id": "q_climate_policy",
+      "query_text": "climate change policy economics",
+      "relevant_retrieved_count": 6,
+      "retrieved_count": 10,
+      "top_score": 70.04656640787779
+    },
+    {
+      "avg_matched_query_terms": 1.9,
+      "precision_at_k": 0.4,
+      "query_id": "q_dementia",
+      "query_text": "dementia cognitive impairment",
+      "relevant_retrieved_count": 4,
+      "retrieved_count": 10,
+      "top_score": 78.51214145522499
+    },
+    {
+      "avg_matched_query_terms": 2.4,
+      "precision_at_k": 0.3,
+      "query_id": "q_digital_marketing",
+      "query_text": "digital marketing social media",
+      "relevant_retrieved_count": 3,
+      "retrieved_count": 10,
+      "top_score": 81.94066620709498
+    },
+    {
+      "avg_matched_query_terms": 1.7,
+      "precision_at_k": 0.2,
+      "query_id": "q_tuberculosis",
+      "query_text": "tuberculosis diagnosis treatment",
+      "relevant_retrieved_count": 2,
+      "retrieved_count": 10,
+      "top_score": 80.42122815976133
+    }
+  ],
+  "generated_at_utc": "2026-10-06T16:13:27.570105+00:00",
+  "mean_precision_at_k": 0.38,
+  "outputs": {
+    "retrieval_evaluation": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\retrieval_evaluation",
+    "retrieval_rankings": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\retrieval_rankings",
+    "retrieval_report_json": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\reports\\results\\retrieval_report.json",
+    "retrieval_report_md": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\docs\\RETRIEVAL.md"
+  },
+  "preflight": {
+    "checks": [
+      {
+        "details": "4.2.0",
+        "name": "pyspark_import",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\.jdks\\openjdk-23.0.2\\bin\\java.exe",
+        "name": "java_executable",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\tools\\hadoop\\bin\\winutils.exe",
+        "name": "winutils_executable",
+        "status": "pass"
+      }
+    ],
+    "ok": true
+  },
+  "query_count": 5,
+  "ranking_row_count": 886,
+  "status": "success",
+  "top_k": 10,
+  "top_results": [
+    {
+      "is_relevant": false,
+      "language": "en",
+      "matched_query_terms": 1,
+      "paper_id": "https://openalex.org/W7104178194",
+      "publication_year": 2025,
+      "query_id": "q_ai_healthcare",
+      "query_text": "artificial intelligence healthcare education",
+      "rank": 1,
+      "retrieval_score": 54.854656927748444,
+      "title": "\u2018Our bodies are sacred\u2026 the information we share with healthcare providers is sacred\u2019: Envisioning the future of culturally safe healthcare systems for Indigenous women, Two-Spirit, Indigiqueer and gender diverse peoples",
+      "topic_names": [
+        "Cultural Competency in Health Care",
+        "Indigenous Health, Education, and Rights",
+        "Indigenous Cultures and History"
+      ]
+    },
+    {
+      "is_relevant": false,
+      "language": "en",
+      "matched_query_terms": 1,
+      "paper_id": "https://openalex.org/W4293858407",
+      "publication_year": 2022,
+      "query_id": "q_ai_healthcare",
+      "query_text": "artificial intelligence healthcare education",
+      "rank": 2,
+      "retrieval_score": 45.07027916833811,
+      "title": "Nurse educator education in six European countries: a descriptive study / Ausbildung von Pflegep\u00e4dagog/-innen in sechs europ\u00e4ischen L\u00e4ndern \u2013 eine deskriptive Studie",
+      "topic_names": [
+        "Nursing education and management",
+        "Nursing Education, Practice, and Leadership",
+        "Innovations in Medical Education"
+      ]
+    },
+    {
+      "is_relevant": true,
+      "language": "en",
+      "matched_query_terms": 3,
+      "paper_id": "https://openalex.org/W7140455457",
+      "publication_year": 2026,
+      "query_id": "q_ai_healthcare",
+      "query_text": "artificial intelligence healthcare education",
+      "rank": 3,
+      "retrieval_score": 40.51030716567044,
+      "title": "\u201cAidemics\u201d examined analytically through the connectivist theory: institutional AI-Mediation in higher education via an artificial intelligence center (CILT-AI)",
+      "topic_names": [
+        "Artificial Intelligence in Education",
+        "Educational Innovations and Challenges",
+        "Digital Education and Society"
+      ]
+    },
+    {
+      "is_relevant": true,
+      "language": "en",
+      "matched_query_terms": 2,
+      "paper_id": "https://openalex.org/W4394959772",
+      "publication_year": 2024,
+      "query_id": "q_climate_policy",
+      "query_text": "climate change policy economics",
+      "rank": 1,
+      "retrieval_score": 70.04656640787779,
+      "title": "Climate Change and Mental Health: An Interactive Educational Session",
+      "topic_names": [
+        "Climate Change and Health Impacts",
+        "Climate Change Communication and Perception",
+        "Innovations in Medical Education"
+      ]
+    },
+    {
+      "is_relevant": true,
+      "language": "en",
+      "matched_query_terms": 3,
+      "paper_id": "https://openalex.org/W4407937195",
+      "publication_year": 2025,
+      "query_id": "q_climate_policy",
+      "query_text": "climate change policy economics",
+      "rank": 2,
+      "retrieval_score": 52.70000455626779,
+      "title": "Simulating and mapping the risks and impact of fall army worm (Spodoptera frugiperda) and white grub (Holotrichia serrata) in maize production outlooks for Nigeria under climate change",
+      "topic_names": [
+        "Insect-Plant Interactions and Control",
+        "Climate change impacts on agriculture",
+        "Remote Sensing in Agriculture"
+      ]
+    },
+    {
+      "is_relevant": false,
+      "language": "en",
+      "matched_query_terms": 3,
+      "paper_id": "https://openalex.org/W7204495206",
+      "publication_year": 2026,
+      "query_id": "q_climate_policy",
+      "query_text": "climate change policy economics",
+      "rank": 3,
+      "retrieval_score": 41.64854616212847,
+      "title": "Climate-sensitive urban energy poverty indicator framework",
+      "topic_names": [
+        "Energy and Environment Impacts",
+        "Urban Heat Island Mitigation",
+        "Building Energy and Comfort Optimization"
+      ]
+    },
+    {
+      "is_relevant": true,
+      "language": "en",
+      "matched_query_terms": 2,
+      "paper_id": "https://openalex.org/W4405901731",
+      "publication_year": 2024,
+      "query_id": "q_dementia",
+      "query_text": "dementia cognitive impairment",
+      "rank": 1,
+      "retrieval_score": 78.51214145522499,
+      "title": "Functional health and cognitive impairment: insights from elderly residents in old-age homes in Delhi",
+      "topic_names": [
+        "Aging, Health, and Disability",
+        "Dementia and Cognitive Impairment Research",
+        "Geriatric Care and Nursing Homes"
+      ]
+    },
+    {
+      "is_relevant": true,
+      "language": "en",
+      "matched_query_terms": 3,
+      "paper_id": "https://openalex.org/W4310462531",
+      "publication_year": 2022,
+      "query_id": "q_dementia",
+      "query_text": "dementia cognitive impairment",
+      "rank": 2,
+      "retrieval_score": 64.52282161755411,
+      "title": "Dementia detection from brain activity during sleep",
+      "topic_names": [
+        "Sleep and related disorders",
+        "Dementia and Cognitive Impairment Research",
+        "EEG and Brain-Computer Interfaces"
+      ]
+    },
+    {
+      "is_relevant": false,
+      "language": "en",
+      "matched_query_terms": 2,
+      "paper_id": "https://openalex.org/W4394757401",
+      "publication_year": 2024,
+      "query_id": "q_dementia",
+      "query_text": "dementia cognitive impairment",
+      "rank": 3,
+      "retrieval_score": 40.348218312221455,
+      "title": "Music and the aging brain \u2013 Exploring the role of long-term Carnatic music training on cognition and gray matter volumes",
+      "topic_names": [
+        "Diverse Music Education Insights",
+        "Music Therapy and Health",
+        "Neuroscience and Music Perception"
+      ]
+    },
+    {
+      "is_relevant": true,
+      "language": "en",
+      "matched_query_terms": 3,
+      "paper_id": "https://openalex.org/W4372295162",
+      "publication_year": 2023,
+      "query_id": "q_digital_marketing",
+      "query_text": "digital marketing social media",
+      "rank": 1,
+      "retrieval_score": 81.94066620709498,
+      "title": "Impact of Hate Speech on Building the Value of Pro-Social Activities. Perspective of Author and Social Media User",
+      "topic_names": [
+        "Public Relations and Crisis Communication",
+        "Hate Speech and Cyberbullying Detection",
+        "Digital Marketing and Social Media"
+      ]
+    },
+    {
+      "is_relevant": false,
+      "language": "en",
+      "matched_query_terms": 2,
+      "paper_id": "https://openalex.org/W4399249222",
+      "publication_year": 2024,
+      "query_id": "q_digital_marketing",
+      "query_text": "digital marketing social media",
+      "rank": 2,
+      "retrieval_score": 65.15451256961296,
+      "title": "The Effect of Social Media on Students' School Life in Indonesia",
+      "topic_names": [
+        "Educational Outcomes and Influences",
+        "Impact of Technology on Adolescents",
+        "Educational Technology in Learning"
+      ]
+    },
+    {
+      "is_relevant": false,
+      "language": "en",
+      "matched_query_terms": 3,
+      "paper_id": "https://openalex.org/W7126237896",
+      "publication_year": 2026,
+      "query_id": "q_digital_marketing",
+      "query_text": "digital marketing social media",
+      "rank": 3,
+      "retrieval_score": 56.90550778858896,
+      "title": "Exploring the use of digital media to improve English speaking skills among Thai students in English Education Study Program",
+      "topic_names": [
+        "EFL/ESL Teaching and Learning",
+        "English Language Learning and Teaching",
+        "Foreign Language Teaching Methods"
+      ]
+    },
+    {
+      "is_relevant": true,
+      "language": "en",
+      "matched_query_terms": 2,
+      "paper_id": "https://openalex.org/W4297081763",
+      "publication_year": 2022,
+      "query_id": "q_tuberculosis",
+      "query_text": "tuberculosis diagnosis treatment",
+      "rank": 1,
+      "retrieval_score": 80.42122815976133,
+      "title": "Tuberculosis Modeling in East Java Based on Geographically Weighted Regression Approach",
+      "topic_names": [
+        "Tuberculosis Research and Epidemiology",
+        "Spatial and Panel Data Analysis",
+        "Global Cancer Incidence and Screening"
+      ]
+    },
+    {
+      "is_relevant": false,
+      "language": "en",
+      "matched_query_terms": 2,
+      "paper_id": "https://openalex.org/W4414988173",
+      "publication_year": 2025,
+      "query_id": "q_tuberculosis",
+      "query_text": "tuberculosis diagnosis treatment",
+      "rank": 2,
+      "retrieval_score": 64.20222737727484,
+      "title": "Caregiver Perceived Barriers to Diagnosis and Care in Down Syndrome Regression Disorder",
+      "topic_names": [
+        "Down syndrome and intellectual disability research",
+        "Dementia and Cognitive Impairment Research",
+        "Family and Disability Support Research"
+      ]
+    },
+    {
+      "is_relevant": false,
+      "language": "en",
+      "matched_query_terms": 2,
+      "paper_id": "https://openalex.org/W4322743601",
+      "publication_year": 2023,
+      "query_id": "q_tuberculosis",
+      "query_text": "tuberculosis diagnosis treatment",
+      "rank": 3,
+      "retrieval_score": 45.357690146034074,
+      "title": "The treatment of relapsed/refractory anaplastic large cell lymphoma expressing the anaplastic lymphoma kinase: a single-center experience",
+      "topic_names": [
+        "CNS Lymphoma Diagnosis and Treatment",
+        "Lymphoma Diagnosis and Treatment",
+        "Viral-associated cancers and disorders"
+      ]
+    }
+  ]
+}

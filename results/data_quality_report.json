@@ -1,0 +1,493 @@
+{
+  "checks": [
+    {
+      "category": "schema",
+      "count": 0,
+      "denominator": 17,
+      "description": "Configured fields that were not observed in any raw record.",
+      "examples": [],
+      "name": "missing_expected_fields",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "schema",
+      "count": 0,
+      "denominator": 17,
+      "description": "Observed fields that are not declared in the acquisition config.",
+      "examples": [],
+      "name": "unexpected_fields",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "identity",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Records without a non-empty OpenAlex work ID.",
+      "examples": [],
+      "name": "missing_ids",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "identity",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Non-empty work IDs that do not match the expected OpenAlex work URL pattern.",
+      "examples": [],
+      "name": "malformed_openalex_ids",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "identity",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Records whose OpenAlex work ID appears more than once in the sample.",
+      "examples": [],
+      "name": "duplicate_ids",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "text",
+      "count": 5,
+      "denominator": 100000,
+      "description": "Records missing both title and display_name.",
+      "examples": [
+        "https://openalex.org/W2150865801",
+        "https://openalex.org/W1518641734",
+        "https://openalex.org/W2397770138",
+        "https://openalex.org/W2402962589",
+        "https://openalex.org/W2611715903"
+      ],
+      "name": "missing_titles",
+      "percentage": 0.01,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "text",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Records without an abstract inverted index.",
+      "examples": [],
+      "name": "missing_or_empty_abstract_index",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "text",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Abstract inverted indexes with unexpected token/position structure.",
+      "examples": [],
+      "name": "malformed_abstract_index",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "temporal",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Records missing publication_date.",
+      "examples": [],
+      "name": "missing_publication_dates",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "temporal",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Non-empty publication_date values that are not YYYY-MM-DD dates.",
+      "examples": [],
+      "name": "malformed_publication_dates",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "temporal",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Publication dates after the local run date.",
+      "examples": [],
+      "name": "future_publication_dates",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "temporal",
+      "count": 0,
+      "denominator": 100000,
+      "description": "publication_year does not match the year component of publication_date.",
+      "examples": [],
+      "name": "publication_year_mismatch",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "temporal",
+      "count": 0,
+      "denominator": 100000,
+      "description": "publication_year is missing, non-integer, or outside a plausible range.",
+      "examples": [],
+      "name": "invalid_publication_year",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "authors",
+      "count": 174,
+      "denominator": 100000,
+      "description": "Records with no authorship entries.",
+      "examples": [
+        "https://openalex.org/W4292528167",
+        "https://openalex.org/W2801085490",
+        "https://openalex.org/W2018838463",
+        "https://openalex.org/W3216401400",
+        "https://openalex.org/W4245784696"
+      ],
+      "name": "missing_authorships",
+      "percentage": 0.17,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "authors",
+      "count": 0,
+      "denominator": 100000,
+      "description": "authorships values that are not arrays.",
+      "examples": [],
+      "name": "malformed_authorships",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "authors",
+      "count": 38209,
+      "denominator": 862246,
+      "description": "Individual authorship entries missing nested author.id.",
+      "examples": [],
+      "name": "authorship_entries_missing_author_id",
+      "percentage": 4.43,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "authors",
+      "count": 713,
+      "denominator": 100000,
+      "description": "Records with repeated author IDs inside one paper.",
+      "examples": [
+        "https://openalex.org/W2104549677",
+        "https://openalex.org/W2133416234",
+        "https://openalex.org/W3193598686",
+        "https://openalex.org/W3003217347",
+        "https://openalex.org/W2125826054"
+      ],
+      "name": "duplicate_author_ids_within_paper",
+      "percentage": 0.71,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "references",
+      "count": 0,
+      "denominator": 100000,
+      "description": "referenced_works values that are not arrays.",
+      "examples": [],
+      "name": "malformed_referenced_works",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "references",
+      "count": 0,
+      "denominator": 100000,
+      "description": "cited_by_count values that are missing, non-integer, or negative.",
+      "examples": [],
+      "name": "invalid_cited_by_count",
+      "percentage": 0.0,
+      "severity": "error",
+      "status": "pass"
+    },
+    {
+      "category": "references",
+      "count": 2165,
+      "denominator": 100000,
+      "description": "Records with no outgoing references in OpenAlex metadata.",
+      "examples": [
+        "https://openalex.org/W4385245566",
+        "https://openalex.org/W2964121744",
+        "https://openalex.org/W1849190772",
+        "https://openalex.org/W4292528167",
+        "https://openalex.org/W4392145873"
+      ],
+      "name": "empty_referenced_works",
+      "percentage": 2.17,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "references",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Records with repeated referenced work IDs.",
+      "examples": [],
+      "name": "duplicate_references_within_paper",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "references",
+      "count": 1991,
+      "denominator": 100000,
+      "description": "Records whose referenced_works include their own work ID.",
+      "examples": [
+        "https://openalex.org/W2092157292",
+        "https://openalex.org/W639708223",
+        "https://openalex.org/W3177828909",
+        "https://openalex.org/W2018289835",
+        "https://openalex.org/W2034285706"
+      ],
+      "name": "self_references",
+      "percentage": 1.99,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "identifiers",
+      "count": 1891,
+      "denominator": 100000,
+      "description": "Records without DOI metadata.",
+      "examples": [
+        "https://openalex.org/W1849190772",
+        "https://openalex.org/W2095705004",
+        "https://openalex.org/W3106250896",
+        "https://openalex.org/W2047735993",
+        "https://openalex.org/W3099878876"
+      ],
+      "name": "missing_doi",
+      "percentage": 1.89,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "identifiers",
+      "count": 0,
+      "denominator": 100000,
+      "description": "Non-empty DOI values that do not match a basic DOI pattern.",
+      "examples": [],
+      "name": "malformed_doi",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "metadata",
+      "count": 3,
+      "denominator": 100000,
+      "description": "Records without detected language metadata.",
+      "examples": [
+        "https://openalex.org/W2963730812",
+        "https://openalex.org/W4206212643",
+        "https://openalex.org/W7126028315"
+      ],
+      "name": "missing_language",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "metadata",
+      "count": 0,
+      "denominator": 100000,
+      "description": "primary_location values that are not objects.",
+      "examples": [],
+      "name": "malformed_primary_location",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "metadata",
+      "count": 0,
+      "denominator": 100000,
+      "description": "locations values that are not arrays.",
+      "examples": [],
+      "name": "malformed_locations",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "metadata",
+      "count": 1274,
+      "denominator": 100000,
+      "description": "Records without nested primary_location.source.id.",
+      "examples": [
+        "https://openalex.org/W1849190772",
+        "https://openalex.org/W2095705004",
+        "https://openalex.org/W3106250896",
+        "https://openalex.org/W3118608800",
+        "https://openalex.org/W2047735993"
+      ],
+      "name": "missing_primary_source",
+      "percentage": 1.27,
+      "severity": "warn",
+      "status": "warn"
+    },
+    {
+      "category": "metadata",
+      "count": 0,
+      "denominator": 100000,
+      "description": "open_access values that are not objects.",
+      "examples": [],
+      "name": "malformed_open_access",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "topics",
+      "count": 0,
+      "denominator": 100000,
+      "description": "concepts values that are not arrays.",
+      "examples": [],
+      "name": "malformed_concepts",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    },
+    {
+      "category": "topics",
+      "count": 0,
+      "denominator": 100000,
+      "description": "topics values that are not arrays.",
+      "examples": [],
+      "name": "malformed_topics",
+      "percentage": 0.0,
+      "severity": "warn",
+      "status": "pass"
+    }
+  ],
+  "expected_fields": [
+    "id",
+    "doi",
+    "title",
+    "display_name",
+    "publication_date",
+    "publication_year",
+    "type",
+    "authorships",
+    "primary_location",
+    "locations",
+    "cited_by_count",
+    "referenced_works",
+    "concepts",
+    "topics",
+    "abstract_inverted_index",
+    "language",
+    "open_access"
+  ],
+  "field_type_counts": {
+    "abstract_inverted_index": {
+      "dict": 100000
+    },
+    "authorships": {
+      "list": 100000
+    },
+    "cited_by_count": {
+      "int": 100000
+    },
+    "concepts": {
+      "list": 100000
+    },
+    "display_name": {
+      "str": 100000
+    },
+    "doi": {
+      "NoneType": 1891,
+      "str": 98109
+    },
+    "id": {
+      "str": 100000
+    },
+    "language": {
+      "NoneType": 3,
+      "str": 99997
+    },
+    "locations": {
+      "list": 100000
+    },
+    "open_access": {
+      "dict": 100000
+    },
+    "primary_location": {
+      "dict": 100000
+    },
+    "publication_date": {
+      "str": 100000
+    },
+    "publication_year": {
+      "int": 100000
+    },
+    "referenced_works": {
+      "list": 100000
+    },
+    "title": {
+      "str": 100000
+    },
+    "topics": {
+      "list": 100000
+    },
+    "type": {
+      "str": 100000
+    }
+  },
+  "observed_fields": [
+    "abstract_inverted_index",
+    "authorships",
+    "cited_by_count",
+    "concepts",
+    "display_name",
+    "doi",
+    "id",
+    "language",
+    "locations",
+    "open_access",
+    "primary_location",
+    "publication_date",
+    "publication_year",
+    "referenced_works",
+    "title",
+    "topics",
+    "type"
+  ],
+  "record_count": 100000,
+  "summary": {
+    "error_checks": 0,
+    "passed_checks": 22,
+    "records_with_any_author": 99826,
+    "records_with_any_reference": 97835,
+    "total_checks": 31,
+    "warning_checks": 9
+  }
+}

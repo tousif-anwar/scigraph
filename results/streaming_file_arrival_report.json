@@ -1,0 +1,31 @@
+{
+  "checkpoint_dir": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\streaming_file_arrival_checkpoint",
+  "file_count": 0,
+  "files": [],
+  "generated_at_utc": "2026-10-06T16:18:48.809129+00:00",
+  "input_dir": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\streaming\\file_arrivals",
+  "missing_author_rate": 0.0,
+  "missing_title_rate": 0.0,
+  "preflight": {
+    "checks": [
+      {
+        "details": "4.2.0",
+        "name": "pyspark_import",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\.jdks\\openjdk-23.0.2\\bin\\java.exe",
+        "name": "java_executable",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\tools\\hadoop\\bin\\winutils.exe",
+        "name": "winutils_executable",
+        "status": "pass"
+      }
+    ],
+    "ok": true
+  },
+  "record_count": 0,
+  "status": "empty"
+}

@@ -1,0 +1,52 @@
+{
+  "generated_at_utc": "2026-10-06T17:00:11.234176+00:00",
+  "outputs": {
+    "bronze_works": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\bronze\\openalex_works",
+    "gold_author_publications": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\author_publications",
+    "gold_authors": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\authors",
+    "gold_citation_edges": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\citation_edges",
+    "gold_publications": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\publications",
+    "gold_topics": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\topics",
+    "silver_publications": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\silver\\publications"
+  },
+  "preflight": {
+    "checks": [
+      {
+        "details": "4.2.0",
+        "name": "pyspark_import",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\.jdks\\openjdk-23.0.2\\bin\\java.exe",
+        "name": "java_executable",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\tools\\hadoop\\bin\\winutils.exe",
+        "name": "winutils_executable",
+        "status": "pass"
+      }
+    ],
+    "ok": true
+  },
+  "quality_flag_counts": {
+    "missing_authorships": 174,
+    "missing_title": 5
+  },
+  "stage_counts": {
+    "bronze_records": 100000,
+    "gold_author_publications": 824037,
+    "gold_authors": 464323,
+    "gold_citation_edges": 9111549,
+    "gold_publications": 100000,
+    "gold_topics": 300000,
+    "raw_records": 100000,
+    "silver_publications": 100000
+  },
+  "status": "success",
+  "transform_counts": {
+    "records_removed_in_silver": 0,
+    "records_with_quality_flags": 179,
+    "self_citations_removed": 1991
+  }
+}

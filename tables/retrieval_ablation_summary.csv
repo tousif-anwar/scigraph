@@ -1,0 +1,6 @@
+system,precision_at_10,recall_at_10,mrr,ndcg_at_10,mean_latency_seconds
+BM25,0.4800,0.3654,0.6167,0.5351,0.0380
+Dense Word2Vec,0.1800,0.0787,0.4074,0.2011,16.5668
+Hybrid RRF,0.3600,0.2429,0.7333,0.4285,0.0000
+Hybrid + reranker,0.4400,0.3154,0.7167,0.5747,0.0010
+Hybrid + reranker + graph,0.4600,0.3654,0.7667,0.6188,0.0000

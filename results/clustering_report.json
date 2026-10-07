@@ -1,0 +1,1875 @@
+{
+  "cluster_sizes": {
+    "0": 2122,
+    "1": 49804,
+    "2": 11890,
+    "3": 14405,
+    "4": 2527,
+    "5": 3405,
+    "6": 13695,
+    "7": 1324
+  },
+  "cluster_terms": [
+    {
+      "cluster": 0,
+      "rank": 1,
+      "term_frequency": 8943,
+      "token": "covid"
+    },
+    {
+      "cluster": 0,
+      "rank": 2,
+      "term_frequency": 4803,
+      "token": "cov"
+    },
+    {
+      "cluster": 0,
+      "rank": 3,
+      "term_frequency": 4669,
+      "token": "sars"
+    },
+    {
+      "cluster": 0,
+      "rank": 4,
+      "term_frequency": 3907,
+      "token": "patients"
+    },
+    {
+      "cluster": 0,
+      "rank": 5,
+      "term_frequency": 2927,
+      "token": "coronavirus"
+    },
+    {
+      "cluster": 0,
+      "rank": 6,
+      "term_frequency": 2537,
+      "token": "disease"
+    },
+    {
+      "cluster": 0,
+      "rank": 7,
+      "term_frequency": 2445,
+      "token": "health"
+    },
+    {
+      "cluster": 0,
+      "rank": 8,
+      "term_frequency": 2003,
+      "token": "infection"
+    },
+    {
+      "cluster": 0,
+      "rank": 9,
+      "term_frequency": 1964,
+      "token": "severe"
+    },
+    {
+      "cluster": 0,
+      "rank": 10,
+      "term_frequency": 1829,
+      "token": "respiratory"
+    },
+    {
+      "cluster": 0,
+      "rank": 11,
+      "term_frequency": 1760,
+      "token": "pandemic"
+    },
+    {
+      "cluster": 0,
+      "rank": 12,
+      "term_frequency": 1372,
+      "token": "acute"
+    },
+    {
+      "cluster": 0,
+      "rank": 13,
+      "term_frequency": 1345,
+      "token": "cases"
+    },
+    {
+      "cluster": 0,
+      "rank": 14,
+      "term_frequency": 1309,
+      "token": "syndrome"
+    },
+    {
+      "cluster": 0,
+      "rank": 15,
+      "term_frequency": 1305,
+      "token": "risk"
+    },
+    {
+      "cluster": 0,
+      "rank": 16,
+      "term_frequency": 1272,
+      "token": "clinical"
+    },
+    {
+      "cluster": 0,
+      "rank": 17,
+      "term_frequency": 1138,
+      "token": "data"
+    },
+    {
+      "cluster": 0,
+      "rank": 18,
+      "term_frequency": 1119,
+      "token": "virus"
+    },
+    {
+      "cluster": 0,
+      "rank": 19,
+      "term_frequency": 1099,
+      "token": "vaccine"
+    },
+    {
+      "cluster": 0,
+      "rank": 20,
+      "term_frequency": 1073,
+      "token": "associated"
+    },
+    {
+      "cluster": 0,
+      "rank": 21,
+      "term_frequency": 1029,
+      "token": "symptoms"
+    },
+    {
+      "cluster": 0,
+      "rank": 22,
+      "term_frequency": 954,
+      "token": "viral"
+    },
+    {
+      "cluster": 0,
+      "rank": 23,
+      "term_frequency": 923,
+      "token": "care"
+    },
+    {
+      "cluster": 0,
+      "rank": 24,
+      "term_frequency": 899,
+      "token": "china"
+    },
+    {
+      "cluster": 0,
+      "rank": 25,
+      "term_frequency": 788,
+      "token": "reported"
+    },
+    {
+      "cluster": 1,
+      "rank": 1,
+      "term_frequency": 32526,
+      "token": "data"
+    },
+    {
+      "cluster": 1,
+      "rank": 2,
+      "term_frequency": 17430,
+      "token": "analysis"
+    },
+    {
+      "cluster": 1,
+      "rank": 3,
+      "term_frequency": 17418,
+      "token": "new"
+    },
+    {
+      "cluster": 1,
+      "rank": 4,
+      "term_frequency": 16942,
+      "token": "model"
+    },
+    {
+      "cluster": 1,
+      "rank": 5,
+      "term_frequency": 15194,
+      "token": "high"
+    },
+    {
+      "cluster": 1,
+      "rank": 6,
+      "term_frequency": 14298,
+      "token": "review"
+    },
+    {
+      "cluster": 1,
+      "rank": 7,
+      "term_frequency": 13631,
+      "token": "studies"
+    },
+    {
+      "cluster": 1,
+      "rank": 8,
+      "term_frequency": 13142,
+      "token": "methods"
+    },
+    {
+      "cluster": 1,
+      "rank": 9,
+      "term_frequency": 12935,
+      "token": "different"
+    },
+    {
+      "cluster": 1,
+      "rank": 10,
+      "term_frequency": 12538,
+      "token": "time"
+    },
+    {
+      "cluster": 1,
+      "rank": 11,
+      "term_frequency": 11900,
+      "token": "two"
+    },
+    {
+      "cluster": 1,
+      "rank": 12,
+      "term_frequency": 11872,
+      "token": "systems"
+    },
+    {
+      "cluster": 1,
+      "rank": 13,
+      "term_frequency": 11418,
+      "token": "models"
+    },
+    {
+      "cluster": 1,
+      "rank": 14,
+      "term_frequency": 10981,
+      "token": "health"
+    },
+    {
+      "cluster": 1,
+      "rank": 15,
+      "term_frequency": 10871,
+      "token": "social"
+    },
+    {
+      "cluster": 1,
+      "rank": 16,
+      "term_frequency": 10807,
+      "token": "information"
+    },
+    {
+      "cluster": 1,
+      "rank": 17,
+      "term_frequency": 10310,
+      "token": "system"
+    },
+    {
+      "cluster": 1,
+      "rank": 18,
+      "term_frequency": 10277,
+      "token": "human"
+    },
+    {
+      "cluster": 1,
+      "rank": 19,
+      "term_frequency": 10253,
+      "token": "development"
+    },
+    {
+      "cluster": 1,
+      "rank": 20,
+      "term_frequency": 10240,
+      "token": "one"
+    },
+    {
+      "cluster": 1,
+      "rank": 21,
+      "term_frequency": 9931,
+      "token": "effects"
+    },
+    {
+      "cluster": 1,
+      "rank": 22,
+      "term_frequency": 9872,
+      "token": "large"
+    },
+    {
+      "cluster": 1,
+      "rank": 23,
+      "term_frequency": 9795,
+      "token": "including"
+    },
+    {
+      "cluster": 1,
+      "rank": 24,
+      "term_frequency": 9737,
+      "token": "global"
+    },
+    {
+      "cluster": 1,
+      "rank": 25,
+      "term_frequency": 9424,
+      "token": "provide"
+    },
+    {
+      "cluster": 2,
+      "rank": 1,
+      "term_frequency": 11655,
+      "token": "high"
+    },
+    {
+      "cluster": 2,
+      "rank": 2,
+      "term_frequency": 10079,
+      "token": "materials"
+    },
+    {
+      "cluster": 2,
+      "rank": 3,
+      "term_frequency": 8915,
+      "token": "energy"
+    },
+    {
+      "cluster": 2,
+      "rank": 4,
+      "term_frequency": 8371,
+      "token": "metal"
+    },
+    {
+      "cluster": 2,
+      "rank": 5,
+      "term_frequency": 7163,
+      "token": "carbon"
+    },
+    {
+      "cluster": 2,
+      "rank": 6,
+      "term_frequency": 6684,
+      "token": "graphene"
+    },
+    {
+      "cluster": 2,
+      "rank": 7,
+      "term_frequency": 6284,
+      "token": "applications"
+    },
+    {
+      "cluster": 2,
+      "rank": 8,
+      "term_frequency": 6042,
+      "token": "properties"
+    },
+    {
+      "cluster": 2,
+      "rank": 9,
+      "term_frequency": 5299,
+      "token": "performance"
+    },
+    {
+      "cluster": 2,
+      "rank": 10,
+      "term_frequency": 5203,
+      "token": "surface"
+    },
+    {
+      "cluster": 2,
+      "rank": 11,
+      "term_frequency": 4747,
+      "token": "organic"
+    },
+    {
+      "cluster": 2,
+      "rank": 12,
+      "term_frequency": 4741,
+      "token": "water"
+    },
+    {
+      "cluster": 2,
+      "rank": 13,
+      "term_frequency": 4241,
+      "token": "reaction"
+    },
+    {
+      "cluster": 2,
+      "rank": 14,
+      "term_frequency": 4119,
+      "token": "batteries"
+    },
+    {
+      "cluster": 2,
+      "rank": 15,
+      "term_frequency": 3987,
+      "token": "ion"
+    },
+    {
+      "cluster": 2,
+      "rank": 16,
+      "term_frequency": 3937,
+      "token": "hydrogen"
+    },
+    {
+      "cluster": 2,
+      "rank": 17,
+      "term_frequency": 3813,
+      "token": "low"
+    },
+    {
+      "cluster": 2,
+      "rank": 18,
+      "term_frequency": 3635,
+      "token": "activity"
+    },
+    {
+      "cluster": 2,
+      "rank": 19,
+      "term_frequency": 3564,
+      "token": "synthesis"
+    },
+    {
+      "cluster": 2,
+      "rank": 20,
+      "term_frequency": 3510,
+      "token": "catalysts"
+    },
+    {
+      "cluster": 2,
+      "rank": 21,
+      "term_frequency": 3448,
+      "token": "oxygen"
+    },
+    {
+      "cluster": 2,
+      "rank": 22,
+      "term_frequency": 3441,
+      "token": "structure"
+    },
+    {
+      "cluster": 2,
+      "rank": 23,
+      "term_frequency": 3436,
+      "token": "review"
+    },
+    {
+      "cluster": 2,
+      "rank": 24,
+      "term_frequency": 3386,
+      "token": "storage"
+    },
+    {
+      "cluster": 2,
+      "rank": 25,
+      "term_frequency": 3324,
+      "token": "electrochemical"
+    },
+    {
+      "cluster": 3,
+      "rank": 1,
+      "term_frequency": 45696,
+      "token": "patients"
+    },
+    {
+      "cluster": 3,
+      "rank": 2,
+      "term_frequency": 20121,
+      "token": "risk"
+    },
+    {
+      "cluster": 3,
+      "rank": 3,
+      "term_frequency": 16932,
+      "token": "disease"
+    },
+    {
+      "cluster": 3,
+      "rank": 4,
+      "term_frequency": 15915,
+      "token": "treatment"
+    },
+    {
+      "cluster": 3,
+      "rank": 5,
+      "term_frequency": 14504,
+      "token": "cancer"
+    },
+    {
+      "cluster": 3,
+      "rank": 6,
+      "term_frequency": 13889,
+      "token": "group"
+    },
+    {
+      "cluster": 3,
+      "rank": 7,
+      "term_frequency": 13836,
+      "token": "clinical"
+    },
+    {
+      "cluster": 3,
+      "rank": 8,
+      "term_frequency": 13553,
+      "token": "years"
+    },
+    {
+      "cluster": 3,
+      "rank": 9,
+      "term_frequency": 13139,
+      "token": "health"
+    },
+    {
+      "cluster": 3,
+      "rank": 10,
+      "term_frequency": 10771,
+      "token": "data"
+    },
+    {
+      "cluster": 3,
+      "rank": 11,
+      "term_frequency": 10708,
+      "token": "care"
+    },
+    {
+      "cluster": 3,
+      "rank": 12,
+      "term_frequency": 10598,
+      "token": "associated"
+    },
+    {
+      "cluster": 3,
+      "rank": 13,
+      "term_frequency": 9992,
+      "token": "evidence"
+    },
+    {
+      "cluster": 3,
+      "rank": 14,
+      "term_frequency": 9707,
+      "token": "age"
+    },
+    {
+      "cluster": 3,
+      "rank": 15,
+      "term_frequency": 9475,
+      "token": "studies"
+    },
+    {
+      "cluster": 3,
+      "rank": 16,
+      "term_frequency": 9445,
+      "token": "mortality"
+    },
+    {
+      "cluster": 3,
+      "rank": 17,
+      "term_frequency": 8241,
+      "token": "therapy"
+    },
+    {
+      "cluster": 3,
+      "rank": 18,
+      "term_frequency": 8045,
+      "token": "outcomes"
+    },
+    {
+      "cluster": 3,
+      "rank": 19,
+      "term_frequency": 7872,
+      "token": "methods"
+    },
+    {
+      "cluster": 3,
+      "rank": 20,
+      "term_frequency": 7297,
+      "token": "high"
+    },
+    {
+      "cluster": 3,
+      "rank": 21,
+      "term_frequency": 7170,
+      "token": "survival"
+    },
+    {
+      "cluster": 3,
+      "rank": 22,
+      "term_frequency": 6941,
+      "token": "compared"
+    },
+    {
+      "cluster": 3,
+      "rank": 23,
+      "term_frequency": 6813,
+      "token": "participants"
+    },
+    {
+      "cluster": 3,
+      "rank": 24,
+      "term_frequency": 6790,
+      "token": "primary"
+    },
+    {
+      "cluster": 3,
+      "rank": 25,
+      "term_frequency": 6750,
+      "token": "months"
+    },
+    {
+      "cluster": 4,
+      "rank": 1,
+      "term_frequency": 6739,
+      "token": "plant"
+    },
+    {
+      "cluster": 4,
+      "rank": 2,
+      "term_frequency": 5558,
+      "token": "soil"
+    },
+    {
+      "cluster": 4,
+      "rank": 3,
+      "term_frequency": 3960,
+      "token": "plants"
+    },
+    {
+      "cluster": 4,
+      "rank": 4,
+      "term_frequency": 2493,
+      "token": "stress"
+    },
+    {
+      "cluster": 4,
+      "rank": 5,
+      "term_frequency": 1927,
+      "token": "growth"
+    },
+    {
+      "cluster": 4,
+      "rank": 6,
+      "term_frequency": 1889,
+      "token": "drought"
+    },
+    {
+      "cluster": 4,
+      "rank": 7,
+      "term_frequency": 1769,
+      "token": "species"
+    },
+    {
+      "cluster": 4,
+      "rank": 8,
+      "term_frequency": 1381,
+      "token": "root"
+    },
+    {
+      "cluster": 4,
+      "rank": 9,
+      "term_frequency": 1380,
+      "token": "crop"
+    },
+    {
+      "cluster": 4,
+      "rank": 10,
+      "term_frequency": 1367,
+      "token": "water"
+    },
+    {
+      "cluster": 4,
+      "rank": 11,
+      "term_frequency": 1331,
+      "token": "carbon"
+    },
+    {
+      "cluster": 4,
+      "rank": 12,
+      "term_frequency": 1280,
+      "token": "review"
+    },
+    {
+      "cluster": 4,
+      "rank": 13,
+      "term_frequency": 1277,
+      "token": "microbial"
+    },
+    {
+      "cluster": 4,
+      "rank": 14,
+      "term_frequency": 1102,
+      "token": "effects"
+    },
+    {
+      "cluster": 4,
+      "rank": 15,
+      "term_frequency": 1060,
+      "token": "production"
+    },
+    {
+      "cluster": 4,
+      "rank": 16,
+      "term_frequency": 1054,
+      "token": "global"
+    },
+    {
+      "cluster": 4,
+      "rank": 17,
+      "term_frequency": 1050,
+      "token": "responses"
+    },
+    {
+      "cluster": 4,
+      "rank": 18,
+      "term_frequency": 1039,
+      "token": "different"
+    },
+    {
+      "cluster": 4,
+      "rank": 19,
+      "term_frequency": 1014,
+      "token": "climate"
+    },
+    {
+      "cluster": 4,
+      "rank": 20,
+      "term_frequency": 1013,
+      "token": "environmental"
+    },
+    {
+      "cluster": 4,
+      "rank": 21,
+      "term_frequency": 946,
+      "token": "mechanisms"
+    },
+    {
+      "cluster": 4,
+      "rank": 22,
+      "term_frequency": 908,
+      "token": "conditions"
+    },
+    {
+      "cluster": 4,
+      "rank": 23,
+      "term_frequency": 903,
+      "token": "soils"
+    },
+    {
+      "cluster": 4,
+      "rank": 24,
+      "term_frequency": 896,
+      "token": "important"
+    },
+    {
+      "cluster": 4,
+      "rank": 25,
+      "term_frequency": 891,
+      "token": "role"
+    },
+    {
+      "cluster": 5,
+      "rank": 1,
+      "term_frequency": 11788,
+      "token": "learning"
+    },
+    {
+      "cluster": 5,
+      "rank": 2,
+      "term_frequency": 4933,
+      "token": "data"
+    },
+    {
+      "cluster": 5,
+      "rank": 3,
+      "term_frequency": 4303,
+      "token": "deep"
+    },
+    {
+      "cluster": 5,
+      "rank": 4,
+      "term_frequency": 2863,
+      "token": "machine"
+    },
+    {
+      "cluster": 5,
+      "rank": 5,
+      "term_frequency": 2589,
+      "token": "image"
+    },
+    {
+      "cluster": 5,
+      "rank": 6,
+      "term_frequency": 2537,
+      "token": "model"
+    },
+    {
+      "cluster": 5,
+      "rank": 7,
+      "term_frequency": 2470,
+      "token": "methods"
+    },
+    {
+      "cluster": 5,
+      "rank": 8,
+      "term_frequency": 2312,
+      "token": "neural"
+    },
+    {
+      "cluster": 5,
+      "rank": 9,
+      "term_frequency": 2289,
+      "token": "network"
+    },
+    {
+      "cluster": 5,
+      "rank": 10,
+      "term_frequency": 2149,
+      "token": "networks"
+    },
+    {
+      "cluster": 5,
+      "rank": 11,
+      "term_frequency": 1988,
+      "token": "models"
+    },
+    {
+      "cluster": 5,
+      "rank": 12,
+      "term_frequency": 1824,
+      "token": "performance"
+    },
+    {
+      "cluster": 5,
+      "rank": 13,
+      "term_frequency": 1696,
+      "token": "classification"
+    },
+    {
+      "cluster": 5,
+      "rank": 14,
+      "term_frequency": 1620,
+      "token": "proposed"
+    },
+    {
+      "cluster": 5,
+      "rank": 15,
+      "term_frequency": 1590,
+      "token": "images"
+    },
+    {
+      "cluster": 5,
+      "rank": 16,
+      "term_frequency": 1494,
+      "token": "training"
+    },
+    {
+      "cluster": 5,
+      "rank": 17,
+      "term_frequency": 1427,
+      "token": "detection"
+    },
+    {
+      "cluster": 5,
+      "rank": 18,
+      "term_frequency": 1400,
+      "token": "method"
+    },
+    {
+      "cluster": 5,
+      "rank": 19,
+      "term_frequency": 1328,
+      "token": "features"
+    },
+    {
+      "cluster": 5,
+      "rank": 20,
+      "term_frequency": 1290,
+      "token": "applications"
+    },
+    {
+      "cluster": 5,
+      "rank": 21,
+      "term_frequency": 1246,
+      "token": "algorithms"
+    },
+    {
+      "cluster": 5,
+      "rank": 22,
+      "term_frequency": 1203,
+      "token": "new"
+    },
+    {
+      "cluster": 5,
+      "rank": 23,
+      "term_frequency": 1192,
+      "token": "approach"
+    },
+    {
+      "cluster": 5,
+      "rank": 24,
+      "term_frequency": 1184,
+      "token": "different"
+    },
+    {
+      "cluster": 5,
+      "rank": 25,
+      "term_frequency": 1169,
+      "token": "techniques"
+    },
+    {
+      "cluster": 6,
+      "rank": 1,
+      "term_frequency": 21863,
+      "token": "cells"
+    },
+    {
+      "cluster": 6,
+      "rank": 2,
+      "term_frequency": 19395,
+      "token": "cell"
+    },
+    {
+      "cluster": 6,
+      "rank": 3,
+      "term_frequency": 14898,
+      "token": "cancer"
+    },
+    {
+      "cluster": 6,
+      "rank": 4,
+      "term_frequency": 9330,
+      "token": "tumor"
+    },
+    {
+      "cluster": 6,
+      "rank": 5,
+      "term_frequency": 7673,
+      "token": "disease"
+    },
+    {
+      "cluster": 6,
+      "rank": 6,
+      "term_frequency": 7593,
+      "token": "human"
+    },
+    {
+      "cluster": 6,
+      "rank": 7,
+      "term_frequency": 7079,
+      "token": "immune"
+    },
+    {
+      "cluster": 6,
+      "rank": 8,
+      "term_frequency": 7003,
+      "token": "expression"
+    },
+    {
+      "cluster": 6,
+      "rank": 9,
+      "term_frequency": 6179,
+      "token": "role"
+    },
+    {
+      "cluster": 6,
+      "rank": 10,
+      "term_frequency": 6088,
+      "token": "associated"
+    },
+    {
+      "cluster": 6,
+      "rank": 11,
+      "term_frequency": 5650,
+      "token": "protein"
+    },
+    {
+      "cluster": 6,
+      "rank": 12,
+      "term_frequency": 5272,
+      "token": "review"
+    },
+    {
+      "cluster": 6,
+      "rank": 13,
+      "term_frequency": 5233,
+      "token": "mechanisms"
+    },
+    {
+      "cluster": 6,
+      "rank": 14,
+      "term_frequency": 4997,
+      "token": "tissue"
+    },
+    {
+      "cluster": 6,
+      "rank": 15,
+      "term_frequency": 4927,
+      "token": "diseases"
+    },
+    {
+      "cluster": 6,
+      "rank": 16,
+      "term_frequency": 4914,
+      "token": "clinical"
+    },
+    {
+      "cluster": 6,
+      "rank": 17,
+      "term_frequency": 4877,
+      "token": "signaling"
+    },
+    {
+      "cluster": 6,
+      "rank": 18,
+      "term_frequency": 4854,
+      "token": "patients"
+    },
+    {
+      "cluster": 6,
+      "rank": 19,
+      "term_frequency": 4829,
+      "token": "development"
+    },
+    {
+      "cluster": 6,
+      "rank": 20,
+      "term_frequency": 4722,
+      "token": "including"
+    },
+    {
+      "cluster": 6,
+      "rank": 21,
+      "term_frequency": 4714,
+      "token": "therapeutic"
+    },
+    {
+      "cluster": 6,
+      "rank": 22,
+      "term_frequency": 4622,
+      "token": "treatment"
+    },
+    {
+      "cluster": 6,
+      "rank": 23,
+      "term_frequency": 4602,
+      "token": "inflammatory"
+    },
+    {
+      "cluster": 6,
+      "rank": 24,
+      "term_frequency": 4422,
+      "token": "gene"
+    },
+    {
+      "cluster": 6,
+      "rank": 25,
+      "term_frequency": 4375,
+      "token": "response"
+    },
+    {
+      "cluster": 7,
+      "rank": 1,
+      "term_frequency": 3534,
+      "token": "solar"
+    },
+    {
+      "cluster": 7,
+      "rank": 2,
+      "term_frequency": 2688,
+      "token": "perovskite"
+    },
+    {
+      "cluster": 7,
+      "rank": 3,
+      "term_frequency": 2286,
+      "token": "cells"
+    },
+    {
+      "cluster": 7,
+      "rank": 4,
+      "term_frequency": 1404,
+      "token": "efficiency"
+    },
+    {
+      "cluster": 7,
+      "rank": 5,
+      "term_frequency": 1214,
+      "token": "high"
+    },
+    {
+      "cluster": 7,
+      "rank": 6,
+      "term_frequency": 769,
+      "token": "halide"
+    },
+    {
+      "cluster": 7,
+      "rank": 7,
+      "term_frequency": 715,
+      "token": "conversion"
+    },
+    {
+      "cluster": 7,
+      "rank": 8,
+      "term_frequency": 698,
+      "token": "organic"
+    },
+    {
+      "cluster": 7,
+      "rank": 9,
+      "term_frequency": 693,
+      "token": "perovskites"
+    },
+    {
+      "cluster": 7,
+      "rank": 10,
+      "term_frequency": 688,
+      "token": "performance"
+    },
+    {
+      "cluster": 7,
+      "rank": 11,
+      "term_frequency": 683,
+      "token": "materials"
+    },
+    {
+      "cluster": 7,
+      "rank": 12,
+      "term_frequency": 671,
+      "token": "lead"
+    },
+    {
+      "cluster": 7,
+      "rank": 13,
+      "term_frequency": 658,
+      "token": "energy"
+    },
+    {
+      "cluster": 7,
+      "rank": 14,
+      "term_frequency": 639,
+      "token": "light"
+    },
+    {
+      "cluster": 7,
+      "rank": 15,
+      "term_frequency": 599,
+      "token": "power"
+    },
+    {
+      "cluster": 7,
+      "rank": 16,
+      "term_frequency": 584,
+      "token": "cell"
+    },
+    {
+      "cluster": 7,
+      "rank": 17,
+      "term_frequency": 553,
+      "token": "efficient"
+    },
+    {
+      "cluster": 7,
+      "rank": 18,
+      "term_frequency": 540,
+      "token": "stability"
+    },
+    {
+      "cluster": 7,
+      "rank": 19,
+      "term_frequency": 535,
+      "token": "low"
+    },
+    {
+      "cluster": 7,
+      "rank": 20,
+      "term_frequency": 529,
+      "token": "devices"
+    },
+    {
+      "cluster": 7,
+      "rank": 21,
+      "term_frequency": 504,
+      "token": "device"
+    },
+    {
+      "cluster": 7,
+      "rank": 22,
+      "term_frequency": 499,
+      "token": "photovoltaic"
+    },
+    {
+      "cluster": 7,
+      "rank": 23,
+      "term_frequency": 489,
+      "token": "properties"
+    },
+    {
+      "cluster": 7,
+      "rank": 24,
+      "term_frequency": 467,
+      "token": "charge"
+    },
+    {
+      "cluster": 7,
+      "rank": 25,
+      "term_frequency": 451,
+      "token": "polymer"
+    }
+  ],
+  "document_count": 99172,
+  "generated_at_utc": "2026-10-06T17:17:17.929998+00:00",
+  "k_results": [
+    {
+      "cluster_sizes": {
+        "0": 2122,
+        "1": 49804,
+        "2": 11890,
+        "3": 14405,
+        "4": 2527,
+        "5": 3405,
+        "6": 13695,
+        "7": 1324
+      },
+      "k": 8,
+      "silhouette": 0.006199496200876251,
+      "training_cost": 96608.1951198554
+    },
+    {
+      "cluster_sizes": {
+        "0": 1312,
+        "1": 39882,
+        "2": 12712,
+        "3": 9622,
+        "4": 1,
+        "5": 3246,
+        "6": 13086,
+        "7": 28,
+        "8": 2013,
+        "9": 1,
+        "10": 312,
+        "11": 16957
+      },
+      "k": 12,
+      "silhouette": -0.0019256561202379665,
+      "training_cost": 96517.3526029106
+    },
+    {
+      "cluster_sizes": {
+        "0": 11998,
+        "1": 3368,
+        "2": 1288,
+        "3": 11805,
+        "4": 594,
+        "5": 1752,
+        "6": 41,
+        "7": 28,
+        "8": 48166,
+        "9": 1339,
+        "10": 1,
+        "11": 4691,
+        "12": 311,
+        "13": 54,
+        "14": 4844,
+        "15": 5477,
+        "16": 1855,
+        "17": 322,
+        "18": 1236,
+        "19": 2
+      },
+      "k": 20,
+      "silhouette": -0.0034198065307886483,
+      "training_cost": 95996.79836309342
+    }
+  ],
+  "k_values": [
+    8,
+    12,
+    20
+  ],
+  "outputs": {
+    "cluster_assignments": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\cluster_assignments",
+    "cluster_report_json": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\reports\\results\\clustering_report.json",
+    "cluster_report_md": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\docs\\CLUSTERING.md",
+    "cluster_representative_papers": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\cluster_representative_papers",
+    "cluster_terms": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\cluster_terms"
+  },
+  "preflight": {
+    "checks": [
+      {
+        "details": "4.2.0",
+        "name": "pyspark_import",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\.jdks\\openjdk-23.0.2\\bin\\java.exe",
+        "name": "java_executable",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\tools\\hadoop\\bin\\winutils.exe",
+        "name": "winutils_executable",
+        "status": "pass"
+      }
+    ],
+    "ok": true
+  },
+  "representative_papers": [
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2140674451",
+      "publication_year": 2010,
+      "rank": 1,
+      "title": "A Transmembrane Serine Protease Is Linked to the Severe Acute Respiratory Syndrome Coronavirus Receptor and Activates Virus Entry"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2057987200",
+      "publication_year": 2010,
+      "rank": 2,
+      "title": "Coronavirus Genomics and Bioinformatics Analysis"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2128403695",
+      "publication_year": 2010,
+      "rank": 3,
+      "title": "Development of a Dose-Response Model for SARS Coronavirus"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2137144526",
+      "publication_year": 2010,
+      "rank": 4,
+      "title": "Effects of Air Temperature and Relative Humidity on Coronavirus Survival on Surfaces"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2101506295",
+      "publication_year": 2010,
+      "rank": 5,
+      "title": "Efficient Activation of the Severe Acute Respiratory Syndrome Coronavirus Spike Protein by the Transmembrane Protease TMPRSS2"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2101063972",
+      "publication_year": 2010,
+      "rank": 6,
+      "title": "Genomic Characterization of Severe Acute Respiratory Syndrome-Related Coronavirus in European Bats and Classification of Coronaviruses Based on Partial RNA-Dependent RNA Polymerase Gene Sequences"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2045996885",
+      "publication_year": 2010,
+      "rank": 7,
+      "title": "In Vitro Reconstitution of SARS-Coronavirus mRNA Cap Methylation"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2018212701",
+      "publication_year": 2010,
+      "rank": 8,
+      "title": "Infidelity of SARS-CoV Nsp14-Exonuclease Mutant Virus Replication Is Revealed by Complete Genome Sequencing"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2157991535",
+      "publication_year": 2010,
+      "rank": 9,
+      "title": "Pregnancy-Associated Hemolytic Uremic Syndrome Revisited in the Era of Complement Gene Mutations"
+    },
+    {
+      "cluster": 0,
+      "paper_id": "https://openalex.org/W2124156373",
+      "publication_year": 2010,
+      "rank": 10,
+      "title": "Robust Sentiment Detection on Twitter from Biased and Noisy Data"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W1272807167",
+      "publication_year": 2010,
+      "rank": 1,
+      "title": "\"Why do you ask?\" : the function of questions in institutional discourse"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W2167926214",
+      "publication_year": 2010,
+      "rank": 2,
+      "title": "'Stop Stealing Our Stories': The Ethics of Research with Vulnerable Groups"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W2029232544",
+      "publication_year": 2010,
+      "rank": 3,
+      "title": "(3+1)D hydrodynamic simulation of relativistic heavy-ion collisions"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W2150851272",
+      "publication_year": 2010,
+      "rank": 4,
+      "title": "1 Economic Geography and International Inequality"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W3098045837",
+      "publication_year": 2010,
+      "rank": 5,
+      "title": "1 USER-FRIENDLY TAIL BOUNDS FOR SUMS OF RANDOM MATRICES"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W2333581916",
+      "publication_year": 2010,
+      "rank": 6,
+      "title": "14. United Nations Environment Programme (UNEP)"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W2129299671",
+      "publication_year": 2010,
+      "rank": 7,
+      "title": "21 years of Biologically Effective Dose"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W1921567268",
+      "publication_year": 2010,
+      "rank": 8,
+      "title": "21cmfast: a fast, seminumerical simulation of the high-redshift 21-cm signal"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W2104082334",
+      "publication_year": 2010,
+      "rank": 9,
+      "title": "21st century climate change threatens mountain flora unequally across Europe"
+    },
+    {
+      "cluster": 1,
+      "paper_id": "https://openalex.org/W2040323170",
+      "publication_year": 2010,
+      "rank": 10,
+      "title": "22-nucleotide RNAs trigger secondary siRNA biogenesis in plants"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2044073130",
+      "publication_year": 2010,
+      "rank": 1,
+      "title": "1.6 V Nanogenerator for Mechanical Energy Harvesting Using PZT Nanofibers"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2014694192",
+      "publication_year": 2010,
+      "rank": 2,
+      "title": "100-GHz Transistors from Wafer-Scale Epitaxial Graphene"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2056280638",
+      "publication_year": 2010,
+      "rank": 3,
+      "title": "2D materials: to graphene and beyond"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2148950790",
+      "publication_year": 2010,
+      "rank": 4,
+      "title": "3D-QSAR in Drug Design - A Review"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2080895310",
+      "publication_year": 2010,
+      "rank": 5,
+      "title": "A Battery-Less Thermoelectric Energy Harvesting Interface Circuit With 35 mV Startup Voltage"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2020893927",
+      "publication_year": 2010,
+      "rank": 6,
+      "title": "A Bifunctional Nonprecious Metal Catalyst for Oxygen Reduction and Water Oxidation"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2073272057",
+      "publication_year": 2010,
+      "rank": 7,
+      "title": "A Bond by Any Other Name"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2147818124",
+      "publication_year": 2010,
+      "rank": 8,
+      "title": "A Comprehensive Review of Glucose Biosensors Based on Nanostructured Metal-Oxides"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2170022687",
+      "publication_year": 2010,
+      "rank": 9,
+      "title": "A Critical Size of Silicon Nano\u2010Anodes for Lithium Rechargeable Batteries"
+    },
+    {
+      "cluster": 2,
+      "paper_id": "https://openalex.org/W2011715705",
+      "publication_year": 2010,
+      "rank": 10,
+      "title": "A Fast Soluble Carbon-Free Molecular Water Oxidation Catalyst Based on Abundant Metals"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W2017490739",
+      "publication_year": 2010,
+      "rank": 1,
+      "title": "\"Sleep disparity\" in the population: poor sleep quality is strongly associated with poverty and ethnicity"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W2133665572",
+      "publication_year": 2010,
+      "rank": 2,
+      "title": "'Kangaroo mother care' to prevent neonatal deaths due to preterm birth complications"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W2104296371",
+      "publication_year": 2010,
+      "rank": 3,
+      "title": "12-year Survival of Composite vs . Amalgam Restorations"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W2074427084",
+      "publication_year": 2010,
+      "rank": 4,
+      "title": "18 F\u2010flutemetamol amyloid imaging in Alzheimer disease and mild cognitive impairment: A phase 2 trial"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W2101162387",
+      "publication_year": 2010,
+      "rank": 5,
+      "title": "18F-Fluorodeoxyglucose Positron Emission Tomography Predicts Survival of Patients with Neuroendocrine Tumors"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W1982392960",
+      "publication_year": 2010,
+      "rank": 6,
+      "title": "2010 ACCF/AHA Guideline for Assessment of Cardiovascular Risk in Asymptomatic Adults"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W2613454590",
+      "publication_year": 2010,
+      "rank": 7,
+      "title": "2010 ACCF/AHA/AATS/ACR/ASA/SCA/SCAI/SIR/STS/SVM Guidelines for the Diagnosis and Management of Patients With Thoracic Aortic Disease"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W4243693606",
+      "publication_year": 2010,
+      "rank": 8,
+      "title": "2010 Alzheimer's disease facts and figures"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W2414569055",
+      "publication_year": 2010,
+      "rank": 9,
+      "title": "2010 Focused Update of ESC Guidelines on device therapy in heart failure"
+    },
+    {
+      "cluster": 3,
+      "paper_id": "https://openalex.org/W2113779990",
+      "publication_year": 2010,
+      "rank": 10,
+      "title": "2010 Focused Update of ESC Guidelines on device therapy in heart failure: An update of the 2008 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure and the 2007 ESC guidelines for cardiac and resynchronization therapy Developed with the special contribution of the Heart Failure Association and the European Heart Rhythm Association"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W1997831958",
+      "publication_year": 2010,
+      "rank": 1,
+      "title": "A Comprehensive Toolkit of Plant Cell Wall Glycan-Directed Monoclonal Antibodies"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W2160054565",
+      "publication_year": 2010,
+      "rank": 2,
+      "title": "A Coupled SYSTEM of Intracellular Ca 2+ Clocks and Surface Membrane Voltage Clocks Controls the Timekeeping Mechanism of the Heart\u2019s Pacemaker"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W2078816851",
+      "publication_year": 2010,
+      "rank": 3,
+      "title": "A Functional Genomics Approach Identifies Candidate Effectors from the Aphid Species Myzus persicae (Green Peach Aphid)"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W1683174294",
+      "publication_year": 2010,
+      "rank": 4,
+      "title": "A closed\u2010form equation for effective stress in unsaturated soil"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W2088359680",
+      "publication_year": 2010,
+      "rank": 5,
+      "title": "A domain swap approach reveals a role of the plant wall-associated kinase 1 (WAK1) as a receptor of oligogalacturonides"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W1990542933",
+      "publication_year": 2010,
+      "rank": 6,
+      "title": "A global model of carbon, nitrogen and phosphorus cycles for the terrestrial biosphere"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W1900428106",
+      "publication_year": 2010,
+      "rank": 7,
+      "title": "A global perspective on belowground carbon dynamics under nitrogen enrichment"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W2013548909",
+      "publication_year": 2010,
+      "rank": 8,
+      "title": "A high-resolution assessment on global nitrogen flows in cropland"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W2167404919",
+      "publication_year": 2010,
+      "rank": 9,
+      "title": "A meta\u2010analysis of context\u2010dependency in plant response to inoculation with mycorrhizal fungi"
+    },
+    {
+      "cluster": 4,
+      "paper_id": "https://openalex.org/W2062137636",
+      "publication_year": 2010,
+      "rank": 10,
+      "title": "A microstructurally based effective stress for unsaturated soils"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W1925816294",
+      "publication_year": 2010,
+      "rank": 1,
+      "title": "A Generalized Path Integral Control Approach to Reinforcement Learning"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W2102595307",
+      "publication_year": 2010,
+      "rank": 2,
+      "title": "A Generative Model for Image Segmentation Based on Label Fusion"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W2064366277",
+      "publication_year": 2010,
+      "rank": 3,
+      "title": "A New Adaptive Component-Substitution-Based Satellite Image Fusion by Using Partial Replacement"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W2051578148",
+      "publication_year": 2010,
+      "rank": 4,
+      "title": "A New Supervised Method for Blood Vessel Segmentation in Retinal Images by Using Gray-Level and Moment Invariants-Based Features"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W1996202672",
+      "publication_year": 2010,
+      "rank": 5,
+      "title": "A Review of Ensemble Methods in Bioinformatics"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W1965398296",
+      "publication_year": 2010,
+      "rank": 6,
+      "title": "A Review of Machine Learning Algorithms for Text-Documents Classification"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W2125277152",
+      "publication_year": 2010,
+      "rank": 7,
+      "title": "A Survey of Recent Advances in Face Detection"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W2032005951",
+      "publication_year": 2010,
+      "rank": 8,
+      "title": "A Survey of Statistical Network Models"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W1997102766",
+      "publication_year": 2010,
+      "rank": 9,
+      "title": "A brief survey on sequence classification"
+    },
+    {
+      "cluster": 5,
+      "paper_id": "https://openalex.org/W2145155142",
+      "publication_year": 2010,
+      "rank": 10,
+      "title": "A learning progression for scientific argumentation: Understanding student work and designing supportive instructional contexts"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W2079068389",
+      "publication_year": 2010,
+      "rank": 1,
+      "title": "5-Fluorouracil Selectively Kills Tumor-Associated Myeloid-Derived Suppressor Cells Resulting in Enhanced T Cell\u2013Dependent Antitumor Immunity"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W2062507088",
+      "publication_year": 2010,
+      "rank": 2,
+      "title": "A Central Regulatory System Largely Controls Transcriptional Activation and Repression Responses to Phosphate Starvation in Arabidopsis"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W2102446851",
+      "publication_year": 2010,
+      "rank": 3,
+      "title": "A Central Role for Free Heme in the Pathogenesis of Severe Sepsis"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W1564279536",
+      "publication_year": 2010,
+      "rank": 4,
+      "title": "A Distinct Subset of Proinflammatory Neutrophils Isolated from Patients with Systemic Lupus Erythematosus Induces Vascular Damage and Synthesizes Type I IFNs"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W1965428790",
+      "publication_year": 2010,
+      "rank": 5,
+      "title": "A Drug-Loaded Aptamer\u2212Gold Nanoparticle Bioconjugate for Combined CT Imaging and Therapy of Prostate Cancer"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W1998261300",
+      "publication_year": 2010,
+      "rank": 6,
+      "title": "A Genetic Variant BDNF Polymorphism Alters Extinction Learning in Both Mouse and Human"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W2157421521",
+      "publication_year": 2010,
+      "rank": 7,
+      "title": "A Global Protein Kinase and Phosphatase Interaction Network in Yeast"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W2130974415",
+      "publication_year": 2010,
+      "rank": 8,
+      "title": "A Gradient of neuronal loss and meningeal inflammation in multiple sclerosis"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W2058647415",
+      "publication_year": 2010,
+      "rank": 9,
+      "title": "A Human-Like Senescence-Associated Secretory Phenotype Is Conserved in Mouse Cells Dependent on Physiological Oxygen"
+    },
+    {
+      "cluster": 6,
+      "paper_id": "https://openalex.org/W1978901723",
+      "publication_year": 2010,
+      "rank": 10,
+      "title": "A Large Fraction of Extragenic RNA Pol II Transcription Sites Overlap Enhancers"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W2170210838",
+      "publication_year": 2010,
+      "rank": 1,
+      "title": "6.5% Efficiency of Polymer Solar Cells Based on poly(3\u2010hexylthiophene) and Indene\u2010C60 Bisadduct by Device Optimization"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W1993540297",
+      "publication_year": 2010,
+      "rank": 2,
+      "title": "A New Class of Semiconducting Polymers for Bulk Heterojunction Solar Cells with Exceptionally High Performance"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W2095487760",
+      "publication_year": 2010,
+      "rank": 3,
+      "title": "A Polybenzo[1,2\u2010b:4,5\u2010b\u2032]dithiophene Derivative with Deep HOMO Level and Its Application in High\u2010Performance Polymer Solar Cells"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W2143957670",
+      "publication_year": 2010,
+      "rank": 4,
+      "title": "Accounting for Interference, Scattering, and Electrode Absorption to Make Accurate Internal Quantum Efficiency Measurements in Organic and Other Thin Solar Cells"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W2170549702",
+      "publication_year": 2010,
+      "rank": 5,
+      "title": "An Easily Synthesized Blue Polymer for High\u2010Performance Polymer Solar Cells"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W2112705999",
+      "publication_year": 2010,
+      "rank": 6,
+      "title": "Anatase TiO2 nanosheets with exposed (001) facets: improved photoelectric conversion efficiency in dye-sensitized solar cells"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W2040792570",
+      "publication_year": 2010,
+      "rank": 7,
+      "title": "Breakthroughs in the Development of Semiconductor-Sensitized Solar Cells"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W2097382568",
+      "publication_year": 2010,
+      "rank": 8,
+      "title": "CIGS absorbers and processes"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W2027202170",
+      "publication_year": 2010,
+      "rank": 9,
+      "title": "Colloidal PbS Quantum Dot Solar Cells with High Fill Factor"
+    },
+    {
+      "cluster": 7,
+      "paper_id": "https://openalex.org/W1631986788",
+      "publication_year": 2010,
+      "rank": 10,
+      "title": "Defect physics of the kesterite thin-film solar cell absorber Cu2ZnSnS4"
+    }
+  ],
+  "selected_k": 8,
+  "status": "success"
+}

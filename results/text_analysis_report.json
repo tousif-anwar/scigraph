@@ -1,0 +1,1743 @@
+{
+  "document_count": 99172,
+  "generated_at_utc": "2026-10-06T17:14:13.417807+00:00",
+  "outputs": {
+    "text_documents": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\text_documents",
+    "text_report_json": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\reports\\results\\text_analysis_report.json",
+    "text_report_md": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\docs\\TEXT_ANALYSIS.md",
+    "text_terms_by_topic": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\text_terms_by_topic",
+    "text_terms_by_year": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\text_terms_by_year",
+    "text_terms_global": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\text_terms_global",
+    "text_tfidf_terms": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\text_tfidf_terms"
+  },
+  "preflight": {
+    "checks": [
+      {
+        "details": "4.2.0",
+        "name": "pyspark_import",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\.jdks\\openjdk-23.0.2\\bin\\java.exe",
+        "name": "java_executable",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\tools\\hadoop\\bin\\winutils.exe",
+        "name": "winutils_executable",
+        "status": "pass"
+      }
+    ],
+    "ok": true
+  },
+  "status": "success",
+  "tfidf_rows": 8670767,
+  "token_count": 12824097,
+  "top_global_terms": [
+    {
+      "corpus_tfidf": 170544.1897057408,
+      "document_frequency": 13495,
+      "idf": 2.994472454580809,
+      "term_frequency": 56953,
+      "token": "patients"
+    },
+    {
+      "corpus_tfidf": 128139.56264653946,
+      "document_frequency": 24529,
+      "idf": 2.396968941554078,
+      "term_frequency": 53459,
+      "token": "data"
+    },
+    {
+      "corpus_tfidf": 99164.75389087781,
+      "document_frequency": 24451,
+      "idf": 2.400153787657997,
+      "term_frequency": 41316,
+      "token": "high"
+    },
+    {
+      "corpus_tfidf": 94898.10845248445,
+      "document_frequency": 14043,
+      "idf": 2.9546705415182903,
+      "term_frequency": 32118,
+      "token": "disease"
+    },
+    {
+      "corpus_tfidf": 79102.28566436304,
+      "document_frequency": 21283,
+      "idf": 2.538910183090353,
+      "term_frequency": 31156,
+      "token": "review"
+    },
+    {
+      "corpus_tfidf": 107538.14724456487,
+      "document_frequency": 8323,
+      "idf": 3.477722891293088,
+      "term_frequency": 30922,
+      "token": "cancer"
+    },
+    {
+      "corpus_tfidf": 83418.23239556467,
+      "document_frequency": 17383,
+      "idf": 2.7413155568703473,
+      "term_frequency": 30430,
+      "token": "studies"
+    },
+    {
+      "corpus_tfidf": 77342.14122290908,
+      "document_frequency": 20239,
+      "idf": 2.5892049554052115,
+      "term_frequency": 29871,
+      "token": "new"
+    },
+    {
+      "corpus_tfidf": 92291.02925296893,
+      "document_frequency": 11752,
+      "idf": 3.132757272673759,
+      "term_frequency": 29460,
+      "token": "health"
+    },
+    {
+      "corpus_tfidf": 79861.16253854476,
+      "document_frequency": 17837,
+      "idf": 2.71553478658046,
+      "term_frequency": 29409,
+      "token": "analysis"
+    },
+    {
+      "corpus_tfidf": 92484.94842104736,
+      "document_frequency": 11278,
+      "idf": 3.1739232101666963,
+      "term_frequency": 29139,
+      "token": "cells"
+    },
+    {
+      "corpus_tfidf": 90827.17820817012,
+      "document_frequency": 10344,
+      "idf": 3.2603624886269698,
+      "term_frequency": 27858,
+      "token": "risk"
+    },
+    {
+      "corpus_tfidf": 71978.2413340397,
+      "document_frequency": 19879,
+      "idf": 2.6071515985960483,
+      "term_frequency": 27608,
+      "token": "methods"
+    },
+    {
+      "corpus_tfidf": 86464.13469964736,
+      "document_frequency": 11700,
+      "idf": 3.137191491587655,
+      "term_frequency": 27561,
+      "token": "cell"
+    },
+    {
+      "corpus_tfidf": 74261.34230014448,
+      "document_frequency": 16401,
+      "idf": 2.7994625212102564,
+      "term_frequency": 26527,
+      "token": "associated"
+    },
+    {
+      "corpus_tfidf": 78691.84113340314,
+      "document_frequency": 13242,
+      "idf": 3.0133966888796486,
+      "term_frequency": 26114,
+      "token": "clinical"
+    },
+    {
+      "corpus_tfidf": 79917.53361793158,
+      "document_frequency": 12549,
+      "idf": 3.067145134246683,
+      "term_frequency": 26056,
+      "token": "treatment"
+    },
+    {
+      "corpus_tfidf": 75612.26397270459,
+      "document_frequency": 12922,
+      "idf": 3.037857130281422,
+      "term_frequency": 24890,
+      "token": "model"
+    },
+    {
+      "corpus_tfidf": 62730.30975137159,
+      "document_frequency": 18805,
+      "idf": 2.662689831969591,
+      "term_frequency": 23559,
+      "token": "including"
+    },
+    {
+      "corpus_tfidf": 65088.2884834785,
+      "document_frequency": 16759,
+      "idf": 2.777870704770539,
+      "term_frequency": 23431,
+      "token": "different"
+    },
+    {
+      "corpus_tfidf": 64589.52789221267,
+      "document_frequency": 17027,
+      "idf": 2.7620067518585705,
+      "term_frequency": 23385,
+      "token": "two"
+    },
+    {
+      "corpus_tfidf": 69772.55410464235,
+      "document_frequency": 13099,
+      "idf": 3.02425356961737,
+      "term_frequency": 23071,
+      "token": "years"
+    },
+    {
+      "corpus_tfidf": 64286.191825334936,
+      "document_frequency": 15631,
+      "idf": 2.847545704524049,
+      "term_frequency": 22576,
+      "token": "development"
+    },
+    {
+      "corpus_tfidf": 64203.78343432899,
+      "document_frequency": 14239,
+      "idf": 2.9408108938406463,
+      "term_frequency": 21832,
+      "token": "time"
+    },
+    {
+      "corpus_tfidf": 66663.12318492249,
+      "document_frequency": 11760,
+      "idf": 3.1320768269555765,
+      "term_frequency": 21284,
+      "token": "human"
+    },
+    {
+      "corpus_tfidf": 63908.01242238285,
+      "document_frequency": 12875,
+      "idf": 3.041500686387914,
+      "term_frequency": 21012,
+      "token": "effects"
+    },
+    {
+      "corpus_tfidf": 65478.45177416443,
+      "document_frequency": 11734,
+      "idf": 3.1342899705214893,
+      "term_frequency": 20891,
+      "token": "evidence"
+    },
+    {
+      "corpus_tfidf": 58033.88546321633,
+      "document_frequency": 15482,
+      "idf": 2.857123151989776,
+      "term_frequency": 20312,
+      "token": "one"
+    },
+    {
+      "corpus_tfidf": 60655.65431699587,
+      "document_frequency": 12758,
+      "idf": 3.05062889488487,
+      "term_frequency": 19883,
+      "token": "low"
+    },
+    {
+      "corpus_tfidf": 56624.29641585419,
+      "document_frequency": 15378,
+      "idf": 2.8638628573666898,
+      "term_frequency": 19772,
+      "token": "potential"
+    },
+    {
+      "corpus_tfidf": 69396.31007295371,
+      "document_frequency": 7484,
+      "idf": 3.5839647819528846,
+      "term_frequency": 19363,
+      "token": "group"
+    },
+    {
+      "corpus_tfidf": 59433.12144090667,
+      "document_frequency": 11442,
+      "idf": 3.1594876104888985,
+      "term_frequency": 18811,
+      "token": "performance"
+    },
+    {
+      "corpus_tfidf": 58587.75534989927,
+      "document_frequency": 11447,
+      "idf": 3.159050757570326,
+      "term_frequency": 18546,
+      "token": "system"
+    },
+    {
+      "corpus_tfidf": 63211.48750854446,
+      "document_frequency": 8857,
+      "idf": 3.41554479432347,
+      "term_frequency": 18507,
+      "token": "energy"
+    },
+    {
+      "corpus_tfidf": 57243.39010500162,
+      "document_frequency": 11759,
+      "idf": 3.1321618573539953,
+      "term_frequency": 18276,
+      "token": "applications"
+    },
+    {
+      "corpus_tfidf": 55200.778286655855,
+      "document_frequency": 12388,
+      "idf": 3.0800568176908745,
+      "term_frequency": 17922,
+      "token": "related"
+    },
+    {
+      "corpus_tfidf": 59261.79873796001,
+      "document_frequency": 9836,
+      "idf": 3.3107150132938554,
+      "term_frequency": 17900,
+      "token": "models"
+    },
+    {
+      "corpus_tfidf": 57894.37224896914,
+      "document_frequency": 10569,
+      "idf": 3.23884599994233,
+      "term_frequency": 17875,
+      "token": "systems"
+    },
+    {
+      "corpus_tfidf": 51578.020135078106,
+      "document_frequency": 14130,
+      "idf": 2.948494834223867,
+      "term_frequency": 17493,
+      "token": "recent"
+    },
+    {
+      "corpus_tfidf": 52378.56939811499,
+      "document_frequency": 13256,
+      "idf": 3.0123400850077635,
+      "term_frequency": 17388,
+      "token": "large"
+    },
+    {
+      "corpus_tfidf": 57251.09789182764,
+      "document_frequency": 9593,
+      "idf": 3.335727896744604,
+      "term_frequency": 17163,
+      "token": "control"
+    },
+    {
+      "corpus_tfidf": 50498.272625305704,
+      "document_frequency": 14060,
+      "idf": 2.9534607922157976,
+      "term_frequency": 17098,
+      "token": "important"
+    },
+    {
+      "corpus_tfidf": 52367.2032158023,
+      "document_frequency": 12305,
+      "idf": 3.0867788515061774,
+      "term_frequency": 16965,
+      "token": "specific"
+    },
+    {
+      "corpus_tfidf": 49420.81476027752,
+      "document_frequency": 14501,
+      "idf": 2.922579228875075,
+      "term_frequency": 16910,
+      "token": "provide"
+    },
+    {
+      "corpus_tfidf": 50098.81257015898,
+      "document_frequency": 13383,
+      "idf": 3.002805836139953,
+      "term_frequency": 16684,
+      "token": "many"
+    },
+    {
+      "corpus_tfidf": 50021.05127008824,
+      "document_frequency": 13001,
+      "idf": 3.031762608042199,
+      "term_frequency": 16499,
+      "token": "current"
+    },
+    {
+      "corpus_tfidf": 52350.80107117896,
+      "document_frequency": 10967,
+      "idf": 3.2018838575644626,
+      "term_frequency": 16350,
+      "token": "increased"
+    },
+    {
+      "corpus_tfidf": 53769.787834563394,
+      "document_frequency": 9906,
+      "idf": 3.3036242218335827,
+      "term_frequency": 16276,
+      "token": "factors"
+    },
+    {
+      "corpus_tfidf": 51474.38856379584,
+      "document_frequency": 11276,
+      "idf": 3.1741005465743255,
+      "term_frequency": 16217,
+      "token": "will"
+    },
+    {
+      "corpus_tfidf": 49865.63979607761,
+      "document_frequency": 11774,
+      "idf": 3.1308871599219947,
+      "term_frequency": 15927,
+      "token": "number"
+    },
+    {
+      "corpus_tfidf": 49861.054783295425,
+      "document_frequency": 11549,
+      "idf": 3.1501803628566734,
+      "term_frequency": 15828,
+      "token": "compared"
+    },
+    {
+      "corpus_tfidf": 49340.32703758215,
+      "document_frequency": 11825,
+      "idf": 3.126565302425838,
+      "term_frequency": 15781,
+      "token": "role"
+    },
+    {
+      "corpus_tfidf": 45412.90310072965,
+      "document_frequency": 14968,
+      "idf": 2.8908844038913775,
+      "term_frequency": 15709,
+      "token": "here"
+    },
+    {
+      "corpus_tfidf": 53871.9331590704,
+      "document_frequency": 8521,
+      "idf": 3.4542147447467557,
+      "term_frequency": 15596,
+      "token": "activity"
+    },
+    {
+      "corpus_tfidf": 54817.82339462325,
+      "document_frequency": 7845,
+      "idf": 3.5368619520371154,
+      "term_frequency": 15499,
+      "token": "global"
+    },
+    {
+      "corpus_tfidf": 51115.13642315747,
+      "document_frequency": 9958,
+      "idf": 3.2983891348749736,
+      "term_frequency": 15497,
+      "token": "information"
+    },
+    {
+      "corpus_tfidf": 47628.86881392334,
+      "document_frequency": 12421,
+      "idf": 3.077396705687365,
+      "term_frequency": 15477,
+      "token": "future"
+    },
+    {
+      "corpus_tfidf": 48329.543218183986,
+      "document_frequency": 11623,
+      "idf": 3.1437938735564943,
+      "term_frequency": 15373,
+      "token": "they"
+    },
+    {
+      "corpus_tfidf": 50096.06446887678,
+      "document_frequency": 9704,
+      "idf": 3.3242245832035024,
+      "term_frequency": 15070,
+      "token": "properties"
+    },
+    {
+      "corpus_tfidf": 53309.978699027684,
+      "document_frequency": 7325,
+      "idf": 3.6054361354678535,
+      "term_frequency": 14786,
+      "token": "age"
+    },
+    {
+      "corpus_tfidf": 45170.47436619703,
+      "document_frequency": 12703,
+      "idf": 3.054948895319696,
+      "term_frequency": 14786,
+      "token": "present"
+    },
+    {
+      "corpus_tfidf": 45866.34239504669,
+      "document_frequency": 11901,
+      "idf": 3.120159346601816,
+      "term_frequency": 14700,
+      "token": "only"
+    },
+    {
+      "corpus_tfidf": 52283.85291524812,
+      "document_frequency": 7609,
+      "idf": 3.5674026279508815,
+      "term_frequency": 14656,
+      "token": "materials"
+    },
+    {
+      "corpus_tfidf": 57845.17132525776,
+      "document_frequency": 5192,
+      "idf": 3.949554234962294,
+      "term_frequency": 14646,
+      "token": "learning"
+    },
+    {
+      "corpus_tfidf": 50250.53375334518,
+      "document_frequency": 8717,
+      "idf": 3.431475946008275,
+      "term_frequency": 14644,
+      "token": "response"
+    },
+    {
+      "corpus_tfidf": 47455.10699350921,
+      "document_frequency": 10175,
+      "idf": 3.2768337932267095,
+      "term_frequency": 14482,
+      "token": "higher"
+    },
+    {
+      "corpus_tfidf": 46646.01989549167,
+      "document_frequency": 10557,
+      "idf": 3.2399819334230515,
+      "term_frequency": 14397,
+      "token": "design"
+    },
+    {
+      "corpus_tfidf": 48129.726535742186,
+      "document_frequency": 9303,
+      "idf": 3.366421384608113,
+      "term_frequency": 14297,
+      "token": "effect"
+    },
+    {
+      "corpus_tfidf": 45917.571650977254,
+      "document_frequency": 10518,
+      "idf": 3.243682654067339,
+      "term_frequency": 14156,
+      "token": "approach"
+    },
+    {
+      "corpus_tfidf": 44898.12956957289,
+      "document_frequency": 11220,
+      "idf": 3.179078777141747,
+      "term_frequency": 14123,
+      "token": "some"
+    },
+    {
+      "corpus_tfidf": 44953.959988825765,
+      "document_frequency": 11143,
+      "idf": 3.1859645633469715,
+      "term_frequency": 14110,
+      "token": "significant"
+    },
+    {
+      "corpus_tfidf": 54844.795825967,
+      "document_frequency": 5526,
+      "idf": 3.8872206269733502,
+      "term_frequency": 14109,
+      "token": "care"
+    },
+    {
+      "corpus_tfidf": 49929.708775976134,
+      "document_frequency": 7572,
+      "idf": 3.5722765096927906,
+      "term_frequency": 13977,
+      "token": "quality"
+    },
+    {
+      "corpus_tfidf": 52228.929784238746,
+      "document_frequency": 6389,
+      "idf": 3.7421315314350325,
+      "term_frequency": 13957,
+      "token": "species"
+    },
+    {
+      "corpus_tfidf": 47063.306833600545,
+      "document_frequency": 9222,
+      "idf": 3.375165435570894,
+      "term_frequency": 13944,
+      "token": "level"
+    },
+    {
+      "corpus_tfidf": 51987.76831568743,
+      "document_frequency": 5691,
+      "idf": 3.8578041195968704,
+      "term_frequency": 13476,
+      "token": "social"
+    },
+    {
+      "corpus_tfidf": 46934.507356036615,
+      "document_frequency": 8053,
+      "idf": 3.5106969373952137,
+      "term_frequency": 13369,
+      "token": "rate"
+    },
+    {
+      "corpus_tfidf": 43359.214704981045,
+      "document_frequency": 10286,
+      "idf": 3.265984837675583,
+      "term_frequency": 13276,
+      "token": "three"
+    },
+    {
+      "corpus_tfidf": 49656.507711854036,
+      "document_frequency": 6241,
+      "idf": 3.7655651559758883,
+      "term_frequency": 13187,
+      "token": "therapy"
+    },
+    {
+      "corpus_tfidf": 45623.31205177226,
+      "document_frequency": 8452,
+      "idf": 3.4623443918776853,
+      "term_frequency": 13177,
+      "token": "non"
+    },
+    {
+      "corpus_tfidf": 45293.06454471323,
+      "document_frequency": 8397,
+      "idf": 3.4688722175624744,
+      "term_frequency": 13057,
+      "token": "method"
+    },
+    {
+      "corpus_tfidf": 44437.38897179451,
+      "document_frequency": 8671,
+      "idf": 3.436766355127186,
+      "term_frequency": 12930,
+      "token": "function"
+    },
+    {
+      "corpus_tfidf": 42112.02780039746,
+      "document_frequency": 9980,
+      "idf": 3.2961825141200265,
+      "term_frequency": 12776,
+      "token": "range"
+    },
+    {
+      "corpus_tfidf": 43030.36399686984,
+      "document_frequency": 8921,
+      "idf": 3.408345663118403,
+      "term_frequency": 12625,
+      "token": "mechanisms"
+    },
+    {
+      "corpus_tfidf": 47737.2519334155,
+      "document_frequency": 6137,
+      "idf": 3.7823668436269315,
+      "term_frequency": 12621,
+      "token": "protein"
+    },
+    {
+      "corpus_tfidf": 42819.1393148411,
+      "document_frequency": 8950,
+      "idf": 3.405100541935674,
+      "term_frequency": 12575,
+      "token": "state"
+    },
+    {
+      "corpus_tfidf": 41075.68286251804,
+      "document_frequency": 10071,
+      "idf": 3.28710650308243,
+      "term_frequency": 12496,
+      "token": "various"
+    },
+    {
+      "corpus_tfidf": 40669.92096491688,
+      "document_frequency": 10398,
+      "idf": 3.2551561521463803,
+      "term_frequency": 12494,
+      "token": "understanding"
+    },
+    {
+      "corpus_tfidf": 43421.22380403759,
+      "document_frequency": 8338,
+      "idf": 3.4759224947196277,
+      "term_frequency": 12492,
+      "token": "single"
+    },
+    {
+      "corpus_tfidf": 43721.76885934455,
+      "document_frequency": 8017,
+      "idf": 3.5151767856041607,
+      "term_frequency": 12438,
+      "token": "levels"
+    },
+    {
+      "corpus_tfidf": 44955.30010043068,
+      "document_frequency": 7241,
+      "idf": 3.6169683884810264,
+      "term_frequency": 12429,
+      "token": "outcomes"
+    },
+    {
+      "corpus_tfidf": 49004.7181740062,
+      "document_frequency": 5181,
+      "idf": 3.9516747176845577,
+      "term_frequency": 12401,
+      "token": "water"
+    },
+    {
+      "corpus_tfidf": 42919.602655609524,
+      "document_frequency": 8414,
+      "idf": 3.4668499721817065,
+      "term_frequency": 12380,
+      "token": "structure"
+    },
+    {
+      "corpus_tfidf": 45825.20746819316,
+      "document_frequency": 6602,
+      "idf": 3.7093417086120417,
+      "term_frequency": 12354,
+      "token": "management"
+    },
+    {
+      "corpus_tfidf": 41823.341358128084,
+      "document_frequency": 8904,
+      "idf": 3.410252883082851,
+      "term_frequency": 12264,
+      "token": "process"
+    },
+    {
+      "corpus_tfidf": 39790.02218137746,
+      "document_frequency": 10338,
+      "idf": 3.26094264721992,
+      "term_frequency": 12202,
+      "token": "several"
+    },
+    {
+      "corpus_tfidf": 40360.48858083234,
+      "document_frequency": 9410,
+      "idf": 3.3549865819478253,
+      "term_frequency": 12030,
+      "token": "available"
+    },
+    {
+      "corpus_tfidf": 40079.16725447225,
+      "document_frequency": 9622,
+      "idf": 3.3327097334502125,
+      "term_frequency": 12026,
+      "token": "found"
+    },
+    {
+      "corpus_tfidf": 44280.2991660459,
+      "document_frequency": 6737,
+      "idf": 3.689102654840115,
+      "term_frequency": 12003,
+      "token": "change"
+    },
+    {
+      "corpus_tfidf": 38686.893888618935,
+      "document_frequency": 10682,
+      "idf": 3.2282121068607257,
+      "term_frequency": 11984,
+      "token": "further"
+    }
+  ],
+  "top_topic_terms": [
+    {
+      "term_frequency": 8,
+      "token": "pdz",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 4,
+      "token": "domains",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 3,
+      "token": "protein",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 2,
+      "token": "binding",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 2,
+      "token": "biological",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 2,
+      "token": "interaction",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 2,
+      "token": "interactions",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 2,
+      "token": "mechanisms",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 2,
+      "token": "mediated",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 2,
+      "token": "processes",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 2,
+      "token": "regulatory",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "abundant",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "acid",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "amino",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "arrays",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "better",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "cellular",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "channel",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "characterization",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "discussed",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "discusses",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "emerging",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "improve",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "ion",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "knowledge",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "libraries",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "ligands",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "many",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "modification",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "modules",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "motifs",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "multiple",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "networks",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "often",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "partners",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "peptide",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "phosphorylation",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "properties",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "proteins",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "proteomic",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "recently",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "recognize",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "regulate",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "responsible",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "review",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "short",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "signal",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "signaling",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "specificity",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "structural",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "structure",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "systems",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "target",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "technologies",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "termini",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "they",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "transduction",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "transport",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "understanding",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1,
+      "token": "will",
+      "topic_name": "14-3-3 protein interactions"
+    },
+    {
+      "term_frequency": 1351,
+      "token": "graphene",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 1238,
+      "token": "materials",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 1138,
+      "token": "high",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 1083,
+      "token": "properties",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 1003,
+      "token": "two",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 877,
+      "token": "perovskite",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 874,
+      "token": "band",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 865,
+      "token": "dimensional",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 809,
+      "token": "applications",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 808,
+      "token": "mos2",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 774,
+      "token": "metal",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 754,
+      "token": "electronic",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 729,
+      "token": "layer",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 626,
+      "token": "light",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 613,
+      "token": "solar",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 612,
+      "token": "monolayer",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 571,
+      "token": "energy",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 564,
+      "token": "structure",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 549,
+      "token": "devices",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 538,
+      "token": "performance",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 526,
+      "token": "optical",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 525,
+      "token": "single",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 520,
+      "token": "transition",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 516,
+      "token": "here",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 513,
+      "token": "mos",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 485,
+      "token": "material",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 481,
+      "token": "charge",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 480,
+      "token": "gap",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 476,
+      "token": "electron",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 471,
+      "token": "perovskites",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 471,
+      "token": "surface",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 469,
+      "token": "low",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 466,
+      "token": "photocatalytic",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 454,
+      "token": "large",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 448,
+      "token": "layers",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 431,
+      "token": "cells",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 426,
+      "token": "layered",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 420,
+      "token": "field",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 417,
+      "token": "new",
+      "topic_name": "2D Materials and Applications"
+    },
+    {
+      "term_frequency": 401,
+      "token": "halide",
+      "topic_name": "2D Materials and Applications"
+    }
+  ],
+  "top_year_terms": [
+    {
+      "publication_year": 2010,
+      "term_frequency": 5758,
+      "token": "patients"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 4654,
+      "token": "data"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 3571,
+      "token": "high"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 3368,
+      "token": "cells"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 3181,
+      "token": "studies"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 3071,
+      "token": "analysis"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2912,
+      "token": "risk"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2909,
+      "token": "associated"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2875,
+      "token": "new"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2865,
+      "token": "cell"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2805,
+      "token": "disease"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2758,
+      "token": "model"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2647,
+      "token": "methods"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2645,
+      "token": "two"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2502,
+      "token": "effects"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2442,
+      "token": "different"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2397,
+      "token": "time"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2336,
+      "token": "treatment"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2251,
+      "token": "one"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2225,
+      "token": "cancer"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2215,
+      "token": "review"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2165,
+      "token": "clinical"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2095,
+      "token": "years"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2058,
+      "token": "health"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2051,
+      "token": "human"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 2030,
+      "token": "development"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1999,
+      "token": "control"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1979,
+      "token": "including"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1966,
+      "token": "they"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1960,
+      "token": "increased"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1918,
+      "token": "group"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1881,
+      "token": "important"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1864,
+      "token": "related"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1858,
+      "token": "system"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1856,
+      "token": "large"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1825,
+      "token": "activity"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1825,
+      "token": "evidence"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1816,
+      "token": "specific"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1808,
+      "token": "low"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1795,
+      "token": "species"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1774,
+      "token": "models"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1746,
+      "token": "factors"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1719,
+      "token": "protein"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1711,
+      "token": "compared"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1696,
+      "token": "potential"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1694,
+      "token": "role"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1679,
+      "token": "many"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1678,
+      "token": "response"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1672,
+      "token": "function"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1660,
+      "token": "number"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1648,
+      "token": "only"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1630,
+      "token": "performance"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1623,
+      "token": "some"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1599,
+      "token": "age"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1596,
+      "token": "levels"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1591,
+      "token": "effect"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1585,
+      "token": "energy"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1583,
+      "token": "information"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1582,
+      "token": "significant"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1576,
+      "token": "systems"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1562,
+      "token": "recent"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1559,
+      "token": "found"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1549,
+      "token": "social"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1521,
+      "token": "provide"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1514,
+      "token": "present"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1513,
+      "token": "will"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1509,
+      "token": "level"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1488,
+      "token": "higher"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1472,
+      "token": "growth"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1459,
+      "token": "rate"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1459,
+      "token": "three"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1456,
+      "token": "approach"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1434,
+      "token": "properties"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1415,
+      "token": "expression"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1404,
+      "token": "change"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1402,
+      "token": "method"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1389,
+      "token": "current"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1375,
+      "token": "changes"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1369,
+      "token": "conditions"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1354,
+      "token": "type"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1327,
+      "token": "gene"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1320,
+      "token": "here"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1318,
+      "token": "significantly"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1297,
+      "token": "range"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1297,
+      "token": "structure"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1283,
+      "token": "major"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1275,
+      "token": "functional"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1268,
+      "token": "surface"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1259,
+      "token": "applications"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1235,
+      "token": "several"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1232,
+      "token": "non"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1221,
+      "token": "increase"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1218,
+      "token": "global"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1218,
+      "token": "primary"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1217,
+      "token": "findings"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1206,
+      "token": "graphene"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1206,
+      "token": "state"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1203,
+      "token": "conclusions"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1192,
+      "token": "quality"
+    },
+    {
+      "publication_year": 2010,
+      "term_frequency": 1191,
+      "token": "mechanisms"
+    }
+  ],
+  "vocabulary_size": 167694
+}

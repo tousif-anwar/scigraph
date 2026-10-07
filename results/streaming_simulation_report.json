@@ -1,0 +1,189 @@
+{
+  "alert_count": 0,
+  "alerts": [],
+  "batch_count": 10,
+  "batch_metrics": [
+    {
+      "avg_author_count": 3.824,
+      "avg_cited_by_count": 13.864,
+      "avg_reference_count": 23.44,
+      "batch_id": 0,
+      "first_stream_position": 1,
+      "last_stream_position": 250,
+      "max_publication_year": 2020,
+      "min_publication_year": 2020,
+      "missing_author_count": 1,
+      "missing_author_rate": 0.004,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 3.748,
+      "avg_cited_by_count": 12.936,
+      "avg_reference_count": 20.26,
+      "batch_id": 1,
+      "first_stream_position": 251,
+      "last_stream_position": 500,
+      "max_publication_year": 2021,
+      "min_publication_year": 2020,
+      "missing_author_count": 4,
+      "missing_author_rate": 0.016,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 4.264,
+      "avg_cited_by_count": 8.576,
+      "avg_reference_count": 22.612,
+      "batch_id": 2,
+      "first_stream_position": 501,
+      "last_stream_position": 750,
+      "max_publication_year": 2022,
+      "min_publication_year": 2021,
+      "missing_author_count": 6,
+      "missing_author_rate": 0.024,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 3.948,
+      "avg_cited_by_count": 9.908,
+      "avg_reference_count": 23.176,
+      "batch_id": 3,
+      "first_stream_position": 751,
+      "last_stream_position": 1000,
+      "max_publication_year": 2022,
+      "min_publication_year": 2022,
+      "missing_author_count": 4,
+      "missing_author_rate": 0.016,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 4.308,
+      "avg_cited_by_count": 6.348,
+      "avg_reference_count": 28.684,
+      "batch_id": 4,
+      "first_stream_position": 1001,
+      "last_stream_position": 1250,
+      "max_publication_year": 2023,
+      "min_publication_year": 2022,
+      "missing_author_count": 4,
+      "missing_author_rate": 0.016,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 3.564,
+      "avg_cited_by_count": 2.66,
+      "avg_reference_count": 22.1,
+      "batch_id": 5,
+      "first_stream_position": 1251,
+      "last_stream_position": 1500,
+      "max_publication_year": 2024,
+      "min_publication_year": 2023,
+      "missing_author_count": 6,
+      "missing_author_rate": 0.024,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 3.716,
+      "avg_cited_by_count": 2.376,
+      "avg_reference_count": 20.44,
+      "batch_id": 6,
+      "first_stream_position": 1501,
+      "last_stream_position": 1750,
+      "max_publication_year": 2025,
+      "min_publication_year": 2024,
+      "missing_author_count": 3,
+      "missing_author_rate": 0.012,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 4.476,
+      "avg_cited_by_count": 1.9,
+      "avg_reference_count": 26.168,
+      "batch_id": 7,
+      "first_stream_position": 1751,
+      "last_stream_position": 2000,
+      "max_publication_year": 2025,
+      "min_publication_year": 2025,
+      "missing_author_count": 2,
+      "missing_author_rate": 0.008,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 3.168,
+      "avg_cited_by_count": 0.208,
+      "avg_reference_count": 10.78,
+      "batch_id": 8,
+      "first_stream_position": 2001,
+      "last_stream_position": 2250,
+      "max_publication_year": 2026,
+      "min_publication_year": 2025,
+      "missing_author_count": 2,
+      "missing_author_rate": 0.008,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    },
+    {
+      "avg_author_count": 3.876,
+      "avg_cited_by_count": 0.06,
+      "avg_reference_count": 17.3,
+      "batch_id": 9,
+      "first_stream_position": 2251,
+      "last_stream_position": 2500,
+      "max_publication_year": 2026,
+      "min_publication_year": 2026,
+      "missing_author_count": 2,
+      "missing_author_rate": 0.008,
+      "missing_title_count": 0,
+      "missing_title_rate": 0.0,
+      "record_count": 250
+    }
+  ],
+  "batch_size": 250,
+  "generated_at_utc": "2026-10-06T16:12:19.150097+00:00",
+  "missing_author_threshold": 0.05,
+  "missing_title_threshold": 0.0,
+  "outputs": {
+    "streaming_alerts": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\streaming_alerts",
+    "streaming_batch_metrics": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\streaming_batch_metrics",
+    "streaming_report_json": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\reports\\results\\streaming_simulation_report.json",
+    "streaming_report_md": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\docs\\STREAMING_SIMULATION.md"
+  },
+  "preflight": {
+    "checks": [
+      {
+        "details": "4.2.0",
+        "name": "pyspark_import",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\.jdks\\openjdk-23.0.2\\bin\\java.exe",
+        "name": "java_executable",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\tools\\hadoop\\bin\\winutils.exe",
+        "name": "winutils_executable",
+        "status": "pass"
+      }
+    ],
+    "ok": true
+  },
+  "records_processed": 2500,
+  "status": "success"
+}

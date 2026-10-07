@@ -1,0 +1,566 @@
+{
+  "author_count": 9008,
+  "author_publication_count": 9020,
+  "collaboration_density": 0.0007764584521886569,
+  "collaboration_edge_count": 31499,
+  "generated_at_utc": "2026-10-06T16:11:22.541767+00:00",
+  "multi_author_publication_count": 1729,
+  "outputs": {
+    "author_collaboration_edges": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\author_collaboration_edges",
+    "author_collaboration_metrics": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\author_collaboration_metrics",
+    "author_collaboration_report_json": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\reports\\results\\author_collaboration_report.json",
+    "author_collaboration_report_md": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\docs\\AUTHOR_COLLABORATION_GRAPH.md"
+  },
+  "preflight": {
+    "checks": [
+      {
+        "details": "4.2.0",
+        "name": "pyspark_import",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\.jdks\\openjdk-23.0.2\\bin\\java.exe",
+        "name": "java_executable",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\tools\\hadoop\\bin\\winutils.exe",
+        "name": "winutils_executable",
+        "status": "pass"
+      }
+    ],
+    "ok": true
+  },
+  "publication_count": 2367,
+  "solo_author_publication_count": 638,
+  "status": "success",
+  "strongest_collaboration_edges": [
+    {
+      "author_id_a": "https://openalex.org/A5000004161",
+      "author_id_b": "https://openalex.org/A5012893498",
+      "author_name_a": "Ma\u0142gorzata Ulewicz",
+      "author_name_b": "Natalia Brycht",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4383960245"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5007273054",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Loris Fichera",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5023241285",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Benjamin C. Nephew",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5030625154",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Liang Lu",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5057001205",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Gregory S. Fischer",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5070675386",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Xihan Ma",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5074972126",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Shang Gao",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5077612510",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Haichong K. Zhang",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5083593455",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Kehan Yang",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5100322982",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Yang Wang",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5101989101",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Shiyue Wang",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000027588",
+      "author_id_b": "https://openalex.org/A5107932035",
+      "author_name_a": "Haoying Zhou",
+      "author_name_b": "Yiwei Jiang",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4385720588"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000036203",
+      "author_id_b": "https://openalex.org/A5092300198",
+      "author_name_a": "\u0424\u0435\u0434\u043e\u0440 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447 \u0410\u043a\u0443\u043b\u0438\u043d\u0438\u043d",
+      "author_name_b": "Sherzod S. Alifbekov",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4285144970"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000036388",
+      "author_id_b": "https://openalex.org/A5071628680",
+      "author_name_a": "Raymond K. H. Chan",
+      "author_name_b": "Derek Wai Sun Chun",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4405851304"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000036388",
+      "author_id_b": "https://openalex.org/A5115678785",
+      "author_name_a": "Raymond K. H. Chan",
+      "author_name_b": "Kai Yin Leung",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4405851304"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000036388",
+      "author_id_b": "https://openalex.org/A5115678786",
+      "author_name_a": "Raymond K. H. Chan",
+      "author_name_b": "Kris LY Chu",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4405851304"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000041430",
+      "author_id_b": "https://openalex.org/A5016922273",
+      "author_name_a": "Rammile Ettelaie",
+      "author_name_b": "Peyman Asghartabar Kashi",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4402557246"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000041430",
+      "author_id_b": "https://openalex.org/A5020468094",
+      "author_name_a": "Rammile Ettelaie",
+      "author_name_b": "Jianshe Chen",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4402557246"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000041430",
+      "author_id_b": "https://openalex.org/A5114248128",
+      "author_name_a": "Rammile Ettelaie",
+      "author_name_b": "Henry J\u00e4ger",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4402557246"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000044399",
+      "author_id_b": "https://openalex.org/A5015050412",
+      "author_name_a": "Khaled Mohammad Alomari",
+      "author_name_b": "Hisham O. Mbaidin",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4388106250"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000055430",
+      "author_id_b": "https://openalex.org/A5026118787",
+      "author_name_a": "Anna Kuczy\u0144ska-Cesarz",
+      "author_name_b": "J. Obolewicz",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W3141265164"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000055430",
+      "author_id_b": "https://openalex.org/A5058949128",
+      "author_name_a": "Anna Kuczy\u0144ska-Cesarz",
+      "author_name_b": "Monika Szczerbak",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W3141265164"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000055430",
+      "author_id_b": "https://openalex.org/A5069112164",
+      "author_name_a": "Anna Kuczy\u0144ska-Cesarz",
+      "author_name_b": "Adam Bary\u0142ka",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W3141265164"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000067346",
+      "author_id_b": "https://openalex.org/A5001233440",
+      "author_name_a": "Xiao Ming Han",
+      "author_name_b": "Linglin Fu",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4414142130"
+      ]
+    },
+    {
+      "author_id_a": "https://openalex.org/A5000067346",
+      "author_id_b": "https://openalex.org/A5004593847",
+      "author_name_a": "Xiao Ming Han",
+      "author_name_b": "Kexin Chen",
+      "shared_publication_count": 1,
+      "shared_publication_ids": [
+        "https://openalex.org/W4414142130"
+      ]
+    }
+  ],
+  "top_authors_by_collaborators": [
+    {
+      "author_id": "https://openalex.org/A5000667915",
+      "author_name": "K. Goetzen",
+      "avg_author_position": 82.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5001202830",
+      "author_name": "L. B. Guo",
+      "avg_author_position": 92.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5001548753",
+      "author_name": "L. M. Gu",
+      "avg_author_position": 87.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5001928806",
+      "author_name": "X. Dong",
+      "avg_author_position": 60.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5008222665",
+      "author_name": "M. Y. Dong",
+      "avg_author_position": 59.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5010434236",
+      "author_name": "W. Gradl",
+      "avg_author_position": 85.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5010942998",
+      "author_name": "X. R. Chen",
+      "avg_author_position": 38.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5012056243",
+      "author_name": "Z. J. Chen",
+      "avg_author_position": 40.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5012526019",
+      "author_name": "N. Berger",
+      "avg_author_position": 16.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5012673180",
+      "author_name": "Alessandro Calcaterra",
+      "avg_author_position": 26.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5015057268",
+      "author_name": "M. Albrecht",
+      "avg_author_position": 4.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5015529510",
+      "author_name": "M. R. An",
+      "avg_author_position": 7.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5020114409",
+      "author_name": "A. Bortone",
+      "avg_author_position": 21.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5020342230",
+      "author_name": "C. Y. Guan",
+      "avg_author_position": 89.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5025906570",
+      "author_name": "J. H. Feng",
+      "avg_author_position": 71.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5026130873",
+      "author_name": "A. Gilman",
+      "avg_author_position": 81.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5027784371",
+      "author_name": "G. F. Cao",
+      "avg_author_position": 27.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5029991121",
+      "author_name": "F. De Mori",
+      "avg_author_position": 54.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5031484475",
+      "author_name": "R. Aliberti",
+      "avg_author_position": 5.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5031768247",
+      "author_name": "F. Feldbauer",
+      "avg_author_position": 68.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5032915896",
+      "author_name": "I. Balossino",
+      "avg_author_position": 13.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5033482926",
+      "author_name": "J. Bloms",
+      "avg_author_position": 20.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5035644557",
+      "author_name": "C. Q. Feng",
+      "avg_author_position": 70.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5036502909",
+      "author_name": "R. P. Guo",
+      "avg_author_position": 93.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    },
+    {
+      "author_id": "https://openalex.org/A5036641367",
+      "author_name": "Igor R. Boyko",
+      "avg_author_position": 22.0,
+      "collaborations_per_publication": 98.0,
+      "collaborator_count": 98,
+      "max_shared_publications_with_one_collaborator": 1,
+      "publication_count": 1,
+      "solo_publication_count": 0,
+      "weighted_collaboration_count": 98
+    }
+  ]
+}

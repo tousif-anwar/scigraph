@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "documents": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\vector_index\\documents.jsonl",
+    "matrix": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\vector_index\\tfidf_matrix.npz",
+    "metadata": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\vector_index\\metadata.json",
+    "neighbors": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\vector_index\\nearest_neighbors.pkl",
+    "vectorizer": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\vector_index\\tfidf_vectorizer.pkl"
+  },
+  "backend": "sklearn_tfidf_fallback",
+  "document_count": 1777,
+  "generated_at_utc": "2026-10-06T16:18:48.185991+00:00",
+  "max_features": 20000,
+  "n_neighbors": 10,
+  "status": "success",
+  "vocabulary_size": 20000
+}

@@ -1,0 +1,942 @@
+{
+  "candidate_k": 50,
+  "demo_query": "retrieval augmented generation for clinical decision support",
+  "demo_results": [
+    {
+      "abstract_excerpt": "Coadaptation and implementation of intrapartum clinical guidelines to save lives during childbirth: Protocol for an adapted PartoMa intervention in Eastern Ethiopia BACKGROUND: Although several clinical practice guidelines (CPGs) exist to improve maternity care, their relevance in low- and middle-in",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W7130571139",
+      "rank": 1,
+      "score": 0.07598066108901386,
+      "title": "Coadaptation and implementation of intrapartum clinical guidelines to save lives during childbirth: Protocol for an adapted PartoMa intervention in Eastern Ethiopia",
+      "year": 2026
+    },
+    {
+      "abstract_excerpt": "Barriers to accreditation in point-of-care echocardiography for critical care: A Scottish perspective Point-of-care echocardiography accreditation is not mandated within the Faculty of Intensive Care Medicine (FICM) training curriculum, yet it is commonly utilised to aid clinical decision making in ",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4414484006",
+      "rank": 2,
+      "score": 0.06747685185185186,
+      "title": "Barriers to accreditation in point-of-care echocardiography for critical care: A Scottish perspective",
+      "year": 2025
+    },
+    {
+      "abstract_excerpt": "Investigating the relationship between complementary and alternative therapy attitudes and pain management self-efficacy in surgical nurses: a cross-sectional study BACKGROUND: Effective pain management is central to surgical nursing, yet nurses often face challenges in practice. Self-efficacy influ",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4414553279",
+      "rank": 3,
+      "score": 0.06675151515151516,
+      "title": "Investigating the relationship between complementary and alternative therapy attitudes and pain management self-efficacy in surgical nurses: a cross-sectional study",
+      "year": 2025
+    },
+    {
+      "abstract_excerpt": "CAE SynthImgGen: Revolutionizing cancer diagnosis with convolutional autoencoder-based synthetic image generation Medical imaging is pivotal in modern healthcare, offering a visual window into the human body\u2019s intricate structures and functions. However, the scarcity of diverse and representative me",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4405674608",
+      "rank": 4,
+      "score": 0.061709744326113834,
+      "title": "CAE SynthImgGen: Revolutionizing cancer diagnosis with convolutional autoencoder-based synthetic image generation",
+      "year": 2024
+    },
+    {
+      "abstract_excerpt": "IMERG-Like Precipitation Retrieval From Geo-Kompsat-2A Observations Using Conditional Generative Adversarial Networks This study proposes an infrared-to-rain (IR2Rain) model to enhance the accuracy of the geostationary (GEO) weather satellite Geo-Kompsat-2A (GK-2A) Rain Rate (RR) product. The IR2Rai",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4410950235",
+      "rank": 5,
+      "score": 0.05826290818784981,
+      "title": "IMERG-Like Precipitation Retrieval From Geo-Kompsat-2A Observations Using Conditional Generative Adversarial Networks",
+      "year": 2025
+    },
+    {
+      "abstract_excerpt": "Private 5G Network: Security, Challenges, and Comparison with Wi-Fi As Indian industries embrace digital transformation, there is an escalating demand for wireless connectivity that delivers not just speed but also reliability, security, and customizability. While public 5G networks have introduced ",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4412752801",
+      "rank": 6,
+      "score": 0.05795795795795796,
+      "title": "Private 5G Network: Security, Challenges, and Comparison with Wi-Fi",
+      "year": 2025
+    },
+    {
+      "abstract_excerpt": "Who Benefits More From IBMS or Qigong? Clinical Data-Mining RCT Data Purpose: A recent three-arm randomized controlled trial (RCT) with depressed Hong Kong adults demonstrated the comparable effectiveness of integrative Body-Mind-Spirt (IBMS) and Qigong interventions in relieving sleep disturbance a",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4378977676",
+      "rank": 7,
+      "score": 0.05570610998438119,
+      "title": "Who Benefits More From IBMS or Qigong? Clinical Data-Mining RCT Data",
+      "year": 2023
+    },
+    {
+      "abstract_excerpt": "Mutual Pan-African support paradigm to produce scientific evidence of traditional medical practices for use against COVID-19 and emerging pandemics Africa is endowed with a profoundly rich and diverse system of plants and other bio-resources out of which, by traditional medicine practice, the people",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W3214601623",
+      "rank": 8,
+      "score": 0.055648104077423446,
+      "title": "Mutual Pan-African support paradigm to produce scientific evidence of traditional medical practices for use against COVID-19 and emerging pandemics",
+      "year": 2021
+    },
+    {
+      "abstract_excerpt": "Performance management in logistics outsourcing: a study on sugar-energy industry Purpose This paper analyzes managerial practices currently used for outsourced logistics activities in mechanized cutting, loading and transportation (CLT) of sugarcane in a Brazilian company using performance-based lo",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W3080908960",
+      "rank": 9,
+      "score": 0.05418353576248313,
+      "title": "Performance management in logistics outsourcing: a study on sugar-energy industry",
+      "year": 2020
+    },
+    {
+      "abstract_excerpt": "A Hybrid Deep Learning Intrusion Detection Model for Fog Computing Environment Fog computing extends the concept of cloud computing by providing the services of computing, storage, and networking connectivity at the edge between data centers in cloud computing environments and end devices. Having th",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W3184937774",
+      "rank": 10,
+      "score": 0.053478446436192914,
+      "title": "A Hybrid Deep Learning Intrusion Detection Model for Fog Computing Environment",
+      "year": 2021
+    }
+  ],
+  "dense_model": {
+    "max_iter": 5,
+    "min_count": 1,
+    "model": "Spark ML Word2Vec",
+    "vector_size": 32
+  },
+  "document_count": 1777,
+  "generated_at_utc": "2026-10-06T16:16:44.703204+00:00",
+  "per_query": [
+    {
+      "latencies_seconds": {
+        "bm25": 0.07174349995329976,
+        "dense": 17.98231869994197,
+        "hybrid": 0.0008206000784412026,
+        "hybrid_reranked": 0.0014302999479696155
+      },
+      "query_id": "q_ai_healthcare",
+      "query_text": "artificial intelligence healthcare education",
+      "relevant_document_count": 58,
+      "systems": {
+        "bm25": {
+          "average_precision_at_k": 0.7511904761904763,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.721801830382049,
+          "precision_at_k": 0.7,
+          "recall_at_k": 0.1206896551724138
+        },
+        "dense": {
+          "average_precision_at_k": 0.4571428571428572,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.3706355185414171,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.06896551724137931
+        },
+        "graph_alpha_0": {
+          "average_precision_at_k": 0.7878306878306877,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6722390270733756,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.10344827586206896
+        },
+        "graph_alpha_0.25": {
+          "average_precision_at_k": 0.7878306878306877,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6722390270733756,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.10344827586206896
+        },
+        "graph_alpha_0.5": {
+          "average_precision_at_k": 0.7878306878306877,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6722390270733756,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.10344827586206896
+        },
+        "hybrid_reranked": {
+          "average_precision_at_k": 0.7878306878306877,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6722390270733756,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.10344827586206896
+        },
+        "hybrid_reranked_graph": {
+          "average_precision_at_k": 0.7878306878306877,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6722390270733756,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.10344827586206896
+        },
+        "hybrid_rrf": {
+          "average_precision_at_k": 0.5961904761904762,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.4705561169627617,
+          "precision_at_k": 0.5,
+          "recall_at_k": 0.08620689655172414
+        }
+      }
+    },
+    {
+      "latencies_seconds": {
+        "bm25": 0.06501250003930181,
+        "dense": 17.804016900015995,
+        "hybrid": 0.0009136999724432826,
+        "hybrid_reranked": 0.0013880999758839607
+      },
+      "query_id": "q_climate_policy",
+      "query_text": "climate change policy economics",
+      "relevant_document_count": 63,
+      "systems": {
+        "bm25": {
+          "average_precision_at_k": 0.7551587301587301,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6470538417566039,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.09523809523809523
+        },
+        "dense": {
+          "average_precision_at_k": 0.575,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.4472539411173282,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.06349206349206349
+        },
+        "graph_alpha_0": {
+          "average_precision_at_k": 0.8259259259259258,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6840182226156365,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.09523809523809523
+        },
+        "graph_alpha_0.25": {
+          "average_precision_at_k": 0.8259259259259258,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6840182226156365,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.09523809523809523
+        },
+        "graph_alpha_0.5": {
+          "average_precision_at_k": 0.8259259259259258,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6840182226156365,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.09523809523809523
+        },
+        "hybrid_reranked": {
+          "average_precision_at_k": 0.8259259259259258,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6840182226156365,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.09523809523809523
+        },
+        "hybrid_reranked_graph": {
+          "average_precision_at_k": 0.8259259259259258,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6840182226156365,
+          "precision_at_k": 0.6,
+          "recall_at_k": 0.09523809523809523
+        },
+        "hybrid_rrf": {
+          "average_precision_at_k": 0.7142857142857142,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.5743371894486218,
+          "precision_at_k": 0.5,
+          "recall_at_k": 0.07936507936507936
+        }
+      }
+    },
+    {
+      "latencies_seconds": {
+        "bm25": 0.046723300009034574,
+        "dense": 17.55305230000522,
+        "hybrid": 0.0006063999608159065,
+        "hybrid_reranked": 0.0017640000442042947
+      },
+      "query_id": "q_tuberculosis",
+      "query_text": "tuberculosis diagnosis treatment",
+      "relevant_document_count": 7,
+      "systems": {
+        "bm25": {
+          "average_precision_at_k": 0.75,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6967728672917265,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.5714285714285714
+        },
+        "dense": {
+          "average_precision_at_k": 0.5,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.17342765698823948,
+          "precision_at_k": 0.1,
+          "recall_at_k": 0.14285714285714285
+        },
+        "graph_alpha_0": {
+          "average_precision_at_k": 0.625,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.44615333764087994,
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.2857142857142857
+        },
+        "graph_alpha_0.25": {
+          "average_precision_at_k": 0.625,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.44615333764087994,
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.2857142857142857
+        },
+        "graph_alpha_0.5": {
+          "average_precision_at_k": 0.625,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.44615333764087994,
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.2857142857142857
+        },
+        "hybrid_reranked": {
+          "average_precision_at_k": 0.625,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.44615333764087994,
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.2857142857142857
+        },
+        "hybrid_reranked_graph": {
+          "average_precision_at_k": 0.625,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.44615333764087994,
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.2857142857142857
+        },
+        "hybrid_rrf": {
+          "average_precision_at_k": 0.8333333333333333,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.4123144993714363,
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.2857142857142857
+        }
+      }
+    },
+    {
+      "latencies_seconds": {
+        "bm25": 0.04564350005239248,
+        "dense": 17.623513799975626,
+        "hybrid": 0.00106819998472929,
+        "hybrid_reranked": 0.0016113999299705029
+      },
+      "query_id": "q_digital_marketing",
+      "query_text": "digital marketing social media",
+      "relevant_document_count": 11,
+      "systems": {
+        "bm25": {
+          "average_precision_at_k": 0.4777777777777777,
+          "mrr": 0.3333333333333333,
+          "ndcg_at_k": 0.28997736516021183,
+          "precision_at_k": 0.3,
+          "recall_at_k": 0.2727272727272727
+        },
+        "dense": {
+          "average_precision_at_k": 0.24285714285714285,
+          "mrr": 0.2,
+          "ndcg_at_k": 0.15850703974098102,
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.18181818181818182
+        },
+        "graph_alpha_0": {
+          "average_precision_at_k": 0.5666666666666667,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.42417878340062165,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.36363636363636365
+        },
+        "graph_alpha_0.25": {
+          "average_precision_at_k": 0.5666666666666667,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.42417878340062165,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.36363636363636365
+        },
+        "graph_alpha_0.5": {
+          "average_precision_at_k": 0.5666666666666667,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.42417878340062165,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.36363636363636365
+        },
+        "hybrid_reranked": {
+          "average_precision_at_k": 0.5666666666666667,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.42417878340062165,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.36363636363636365
+        },
+        "hybrid_reranked_graph": {
+          "average_precision_at_k": 0.5666666666666667,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.42417878340062165,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.36363636363636365
+        },
+        "hybrid_rrf": {
+          "average_precision_at_k": 0.44666666666666666,
+          "mrr": 0.3333333333333333,
+          "ndcg_at_k": 0.4066392799050654,
+          "precision_at_k": 0.5,
+          "recall_at_k": 0.45454545454545453
+        }
+      }
+    },
+    {
+      "latencies_seconds": {
+        "bm25": 0.08405970002058893,
+        "dense": 17.598709400044754,
+        "hybrid": 0.0007462999783456326,
+        "hybrid_reranked": 0.0014691000105813146
+      },
+      "query_id": "q_dementia",
+      "query_text": "dementia cognitive impairment",
+      "relevant_document_count": 8,
+      "systems": {
+        "bm25": {
+          "average_precision_at_k": 0.8928571428571428,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.7456919575934261,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.5
+        },
+        "dense": {
+          "average_precision_at_k": 0.7916666666666666,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.49232631845500163,
+          "precision_at_k": 0.3,
+          "recall_at_k": 0.375
+        },
+        "graph_alpha_0": {
+          "average_precision_at_k": 0.85,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.7322962005285631,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.5
+        },
+        "graph_alpha_0.25": {
+          "average_precision_at_k": 0.85,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.7322962005285631,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.5
+        },
+        "graph_alpha_0.5": {
+          "average_precision_at_k": 0.85,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.7322962005285631,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.5
+        },
+        "hybrid_reranked": {
+          "average_precision_at_k": 0.85,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.7322962005285631,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.5
+        },
+        "hybrid_reranked_graph": {
+          "average_precision_at_k": 0.85,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.7322962005285631,
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.5
+        },
+        "hybrid_rrf": {
+          "average_precision_at_k": 0.6833333333333333,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6412619237755998,
+          "precision_at_k": 0.5,
+          "recall_at_k": 0.625
+        }
+      }
+    }
+  ],
+  "query_count": 5,
+  "status": "success",
+  "systems": [
+    {
+      "mean_latency_seconds": 0.06263650001492352,
+      "mrr": 0.8666666666666666,
+      "ndcg_at_k": 0.6202595724368034,
+      "precision_at_k": 0.48,
+      "recall_at_k": 0.31201671891327065,
+      "system": "bm25"
+    },
+    {
+      "mean_latency_seconds": 17.712322219996715,
+      "mrr": 0.64,
+      "ndcg_at_k": 0.3284300949685935,
+      "precision_at_k": 0.28,
+      "recall_at_k": 0.1664265810817535,
+      "system": "dense"
+    },
+    {
+      "mean_latency_seconds": 0.0,
+      "mrr": 0.9,
+      "ndcg_at_k": 0.5917771142518153,
+      "precision_at_k": 0.44000000000000006,
+      "recall_at_k": 0.2696074040901627,
+      "system": "graph_alpha_0"
+    },
+    {
+      "mean_latency_seconds": 0.0,
+      "mrr": 0.9,
+      "ndcg_at_k": 0.5917771142518153,
+      "precision_at_k": 0.44000000000000006,
+      "recall_at_k": 0.2696074040901627,
+      "system": "graph_alpha_0.25"
+    },
+    {
+      "mean_latency_seconds": 0.0,
+      "mrr": 0.9,
+      "ndcg_at_k": 0.5917771142518153,
+      "precision_at_k": 0.44000000000000006,
+      "recall_at_k": 0.2696074040901627,
+      "system": "graph_alpha_0.5"
+    },
+    {
+      "mean_latency_seconds": 0.0015325799817219377,
+      "mrr": 0.9,
+      "ndcg_at_k": 0.5917771142518153,
+      "precision_at_k": 0.44000000000000006,
+      "recall_at_k": 0.2696074040901627,
+      "system": "hybrid_reranked"
+    },
+    {
+      "mean_latency_seconds": 0.0,
+      "mrr": 0.9,
+      "ndcg_at_k": 0.5917771142518153,
+      "precision_at_k": 0.44000000000000006,
+      "recall_at_k": 0.2696074040901627,
+      "system": "hybrid_reranked_graph"
+    },
+    {
+      "mean_latency_seconds": 0.0,
+      "mrr": 0.7666666666666667,
+      "ndcg_at_k": 0.5010218018926971,
+      "precision_at_k": 0.44000000000000006,
+      "recall_at_k": 0.3061663432353087,
+      "system": "hybrid_rrf"
+    }
+  ],
+  "top_k": 10,
+  "top_results_for_first_query": {
+    "bm25": [
+      {
+        "paper_id": "https://openalex.org/W4392798229",
+        "rank": 1,
+        "relevant": true,
+        "score": 18.64725712635428,
+        "title": "Enhancing Data Security Resilience in AI-Driven Digital Transformation: Exploring Industry Challenges and Solutions Through ALCOA+ Principles",
+        "year": 2024
+      },
+      {
+        "paper_id": "https://openalex.org/W7140455457",
+        "rank": 2,
+        "relevant": true,
+        "score": 17.27723437884904,
+        "title": "\u201cAidemics\u201d examined analytically through the connectivist theory: institutional AI-Mediation in higher education via an artificial intelligence center (CILT-AI)",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W7161739025",
+        "rank": 3,
+        "relevant": false,
+        "score": 15.346665917564241,
+        "title": "Infographic (English): Impact of the Artificial Intelligence in el Mercado Laboral of Latin A",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4409145072",
+        "rank": 4,
+        "relevant": false,
+        "score": 14.8192143397955,
+        "title": "Digital Pragmatics: The Impact of Artificial Intelligence Technologies on the Development of Arabic Linguistic Interaction in Cyberspace",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4416786791",
+        "rank": 5,
+        "relevant": true,
+        "score": 14.362400101828921,
+        "title": "Artificial intelligence powered mobile health apps for skin cancer detection: current challenges and a systems thinking approach for improved public health outcomes in low- and middle-income countries",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7161349239",
+        "rank": 6,
+        "relevant": true,
+        "score": 13.64256792227192,
+        "title": "Advancing Innovative Applications of Computer Chinese Chess in Modern Artificial Intelligence",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4411757740",
+        "rank": 7,
+        "relevant": false,
+        "score": 12.732846478098029,
+        "title": "Revolutionizing HR Management in U.S. Education through Advanced Technology Integration: A Theoretical Perspective",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4409946324",
+        "rank": 8,
+        "relevant": true,
+        "score": 12.273453232201687,
+        "title": "Pedagogical framework for hybrid intelligent feedback",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4409313958",
+        "rank": 9,
+        "relevant": true,
+        "score": 12.25855093996951,
+        "title": "Perplexing Intelligence",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4408733407",
+        "rank": 10,
+        "relevant": true,
+        "score": 11.641294064342599,
+        "title": "Automated processing of eXplainable Artificial Intelligence outputs in deep learning models for fault diagnostics of large infrastructures",
+        "year": 2025
+      }
+    ],
+    "dense": [
+      {
+        "paper_id": "https://openalex.org/W4409145072",
+        "rank": 1,
+        "relevant": false,
+        "score": 0.8944236930057744,
+        "title": "Digital Pragmatics: The Impact of Artificial Intelligence Technologies on the Development of Arabic Linguistic Interaction in Cyberspace",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7161349239",
+        "rank": 2,
+        "relevant": true,
+        "score": 0.8777072492437619,
+        "title": "Advancing Innovative Applications of Computer Chinese Chess in Modern Artificial Intelligence",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W7161739025",
+        "rank": 3,
+        "relevant": false,
+        "score": 0.8743828820185083,
+        "title": "Infographic (English): Impact of the Artificial Intelligence in el Mercado Laboral of Latin A",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W7140455457",
+        "rank": 4,
+        "relevant": true,
+        "score": 0.8663242910005645,
+        "title": "\u201cAidemics\u201d examined analytically through the connectivist theory: institutional AI-Mediation in higher education via an artificial intelligence center (CILT-AI)",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4409904252",
+        "rank": 5,
+        "relevant": false,
+        "score": 0.8532370688802591,
+        "title": "Human factors in cybersecurity: an interdisciplinary review and framework proposal",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4408564157",
+        "rank": 6,
+        "relevant": false,
+        "score": 0.8386663904716732,
+        "title": "Applying an E-Learning framework to explore learner nurses\u2019 and nurse educators\u2019 perceptions about technology platforms in nursing",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4409313958",
+        "rank": 7,
+        "relevant": true,
+        "score": 0.8368345877639318,
+        "title": "Perplexing Intelligence",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7117118799",
+        "rank": 8,
+        "relevant": false,
+        "score": 0.8350648493255347,
+        "title": "Digital Resilience and the \u201cAwareness Gap\u201d: An Empirical Study of Youth Perceptions of Hate Speech Governance on Meta Platforms in Hungary",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7219177340",
+        "rank": 9,
+        "relevant": false,
+        "score": 0.8334880518962786,
+        "title": "THE ROLE OF INTERACTIVE AND IMMERSIVE LEARNING IN TEACHING FOREIGN LANGUAGE",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4416786791",
+        "rank": 10,
+        "relevant": true,
+        "score": 0.8333331259355194,
+        "title": "Artificial intelligence powered mobile health apps for skin cancer detection: current challenges and a systems thinking approach for improved public health outcomes in low- and middle-income countries",
+        "year": 2025
+      }
+    ],
+    "hybrid_reranked": [
+      {
+        "paper_id": "https://openalex.org/W4416786791",
+        "rank": 1,
+        "relevant": true,
+        "score": 0.15467032967032968,
+        "title": "Artificial intelligence powered mobile health apps for skin cancer detection: current challenges and a systems thinking approach for improved public health outcomes in low- and middle-income countries",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7140455457",
+        "rank": 2,
+        "relevant": true,
+        "score": 0.14425403225806455,
+        "title": "\u201cAidemics\u201d examined analytically through the connectivist theory: institutional AI-Mediation in higher education via an artificial intelligence center (CILT-AI)",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4392798229",
+        "rank": 3,
+        "relevant": true,
+        "score": 0.12955133735979293,
+        "title": "Enhancing Data Security Resilience in AI-Driven Digital Transformation: Exploring Industry Challenges and Solutions Through ALCOA+ Principles",
+        "year": 2024
+      },
+      {
+        "paper_id": "https://openalex.org/W4411757740",
+        "rank": 4,
+        "relevant": false,
+        "score": 0.11631426202321725,
+        "title": "Revolutionizing HR Management in U.S. Education through Advanced Technology Integration: A Theoretical Perspective",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4409145072",
+        "rank": 5,
+        "relevant": false,
+        "score": 0.10701844262295082,
+        "title": "Digital Pragmatics: The Impact of Artificial Intelligence Technologies on the Development of Arabic Linguistic Interaction in Cyberspace",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7161739025",
+        "rank": 6,
+        "relevant": false,
+        "score": 0.10674603174603176,
+        "title": "Infographic (English): Impact of the Artificial Intelligence in el Mercado Laboral of Latin A",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W7161349239",
+        "rank": 7,
+        "relevant": true,
+        "score": 0.10628054740957968,
+        "title": "Advancing Innovative Applications of Computer Chinese Chess in Modern Artificial Intelligence",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4408448450",
+        "rank": 8,
+        "relevant": false,
+        "score": 0.10210521657028208,
+        "title": "1243 Realistic Visualization for Neurosurgical Simulation and Education",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7169815792",
+        "rank": 9,
+        "relevant": true,
+        "score": 0.10019561815336464,
+        "title": "Scientific mapping of the strategic management and artificial intelligence: a bibliometric analysis",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4409946324",
+        "rank": 10,
+        "relevant": true,
+        "score": 0.09545300878972279,
+        "title": "Pedagogical framework for hybrid intelligent feedback",
+        "year": 2025
+      }
+    ],
+    "hybrid_reranked_graph": [
+      {
+        "paper_id": "https://openalex.org/W4416786791",
+        "rank": 1,
+        "relevant": true,
+        "score": 1.0,
+        "title": "Artificial intelligence powered mobile health apps for skin cancer detection: current challenges and a systems thinking approach for improved public health outcomes in low- and middle-income countries",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7140455457",
+        "rank": 2,
+        "relevant": true,
+        "score": 0.9326548444393515,
+        "title": "\u201cAidemics\u201d examined analytically through the connectivist theory: institutional AI-Mediation in higher education via an artificial intelligence center (CILT-AI)",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4392798229",
+        "rank": 3,
+        "relevant": true,
+        "score": 0.8375965683652686,
+        "title": "Enhancing Data Security Resilience in AI-Driven Digital Transformation: Exploring Industry Challenges and Solutions Through ALCOA+ Principles",
+        "year": 2024
+      },
+      {
+        "paper_id": "https://openalex.org/W4411757740",
+        "rank": 4,
+        "relevant": false,
+        "score": 0.7520140564200902,
+        "title": "Revolutionizing HR Management in U.S. Education through Advanced Technology Integration: A Theoretical Perspective",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4409145072",
+        "rank": 5,
+        "relevant": false,
+        "score": 0.6919131991963428,
+        "title": "Digital Pragmatics: The Impact of Artificial Intelligence Technologies on the Development of Arabic Linguistic Interaction in Cyberspace",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7161739025",
+        "rank": 6,
+        "relevant": false,
+        "score": 0.6901519636865996,
+        "title": "Infographic (English): Impact of the Artificial Intelligence in el Mercado Laboral of Latin A",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W7161349239",
+        "rank": 7,
+        "relevant": true,
+        "score": 0.6871424379589165,
+        "title": "Advancing Innovative Applications of Computer Chinese Chess in Modern Artificial Intelligence",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4408448450",
+        "rank": 8,
+        "relevant": false,
+        "score": 0.6601474037581293,
+        "title": "1243 Realistic Visualization for Neurosurgical Simulation and Education",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7169815792",
+        "rank": 9,
+        "relevant": true,
+        "score": 0.64780115466829,
+        "title": "Scientific mapping of the strategic management and artificial intelligence: a bibliometric analysis",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4409946324",
+        "rank": 10,
+        "relevant": true,
+        "score": 0.6171384582497175,
+        "title": "Pedagogical framework for hybrid intelligent feedback",
+        "year": 2025
+      }
+    ],
+    "hybrid_rrf": [
+      {
+        "paper_id": "https://openalex.org/W4409145072",
+        "rank": 1,
+        "relevant": false,
+        "score": 0.032018442622950824,
+        "title": "Digital Pragmatics: The Impact of Artificial Intelligence Technologies on the Development of Arabic Linguistic Interaction in Cyberspace",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W7140455457",
+        "rank": 2,
+        "relevant": true,
+        "score": 0.031754032258064516,
+        "title": "\u201cAidemics\u201d examined analytically through the connectivist theory: institutional AI-Mediation in higher education via an artificial intelligence center (CILT-AI)",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W7161739025",
+        "rank": 3,
+        "relevant": false,
+        "score": 0.031746031746031744,
+        "title": "Infographic (English): Impact of the Artificial Intelligence in el Mercado Laboral of Latin A",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W7161349239",
+        "rank": 4,
+        "relevant": true,
+        "score": 0.03128054740957967,
+        "title": "Advancing Innovative Applications of Computer Chinese Chess in Modern Artificial Intelligence",
+        "year": 2026
+      },
+      {
+        "paper_id": "https://openalex.org/W4416786791",
+        "rank": 5,
+        "relevant": true,
+        "score": 0.02967032967032967,
+        "title": "Artificial intelligence powered mobile health apps for skin cancer detection: current challenges and a systems thinking approach for improved public health outcomes in low- and middle-income countries",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4392798229",
+        "rank": 6,
+        "relevant": true,
+        "score": 0.029551337359792925,
+        "title": "Enhancing Data Security Resilience in AI-Driven Digital Transformation: Exploring Industry Challenges and Solutions Through ALCOA+ Principles",
+        "year": 2024
+      },
+      {
+        "paper_id": "https://openalex.org/W4409313958",
+        "rank": 7,
+        "relevant": true,
+        "score": 0.029418126757516764,
+        "title": "Perplexing Intelligence",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4411757740",
+        "rank": 8,
+        "relevant": false,
+        "score": 0.028814262023217248,
+        "title": "Revolutionizing HR Management in U.S. Education through Advanced Technology Integration: A Theoretical Perspective",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4409904252",
+        "rank": 9,
+        "relevant": false,
+        "score": 0.02804284323271665,
+        "title": "Human factors in cybersecurity: an interdisciplinary review and framework proposal",
+        "year": 2025
+      },
+      {
+        "paper_id": "https://openalex.org/W4382364918",
+        "rank": 10,
+        "relevant": false,
+        "score": 0.026500526500526502,
+        "title": "Crowd Pleaser: The Remaking of Property Rights in Digital Spaces",
+        "year": 2023
+      }
+    ]
+  }
+}

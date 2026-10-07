@@ -1,0 +1,17 @@
+milestone,area,primary_result,source
+1,Repository and OpenAlex acquisition,"2500 OpenAlex article records from 2020-2026",reports/results/schema_summary.json
+2,Data quality,"31 checks; 0 error checks; 8 warning checks",reports/results/data_quality_report.json
+3,Spark Bronze/Silver/Gold,"2500 publications; 9274 authors; 53877 citation edges",reports/results/bronze_silver_gold_report.json
+4,Scalability benchmark,"2500-record benchmark completed in 5.5565 seconds at 449.9235 records/second",experiments/scalability/results/scalability_results.json
+5,Text analytics,"1793 English-language documents; 26728 retained terms",reports/results/text_analysis_report.json
+6,Text clustering,"K=5 selected; exploratory only",reports/results/clustering_report.json
+7,Citation graph,"2500 sampled vertices; 53877 edges; 0 in-sample citation edges",reports/results/citation_graph_report.json
+8,Author collaboration graph,"9274 authors; 33104 coauthor edges",reports/results/author_collaboration_report.json
+9,Temporal analysis,"7 yearly buckets; 5566 topic-year rows",reports/results/temporal_analysis_report.json
+10,Streaming simulation,"10 micro-batches; 2500 records processed; 0 alerts",reports/results/streaming_simulation_report.json
+11,Sparse retrieval,"Mean precision@10 = 0.36",reports/results/retrieval_report.json
+12,Citation prediction,"AUC = 0.9174; accuracy = 0.8494",reports/results/ml_citation_prediction_report.json
+13,Composite ranking,"2500 ranked publications; mean composite score = 0.1843",reports/results/ranking_report.json
+14,Feature mart,"2500 rows; 34 publication-level columns",reports/results/feature_mart_report.json
+15-18,Advanced retrieval and final audit,"Best NDCG@10 = 0.6188 with hybrid reranked graph-aware retrieval",reports/results/advanced_retrieval_results.json
+Final,Visualization gallery,"13 PNG figures generated from measured report artifacts",docs/VISUALIZATIONS.md

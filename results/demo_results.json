@@ -1,0 +1,105 @@
+{
+  "query": "retrieval augmented generation for clinical decision support",
+  "results": [
+    {
+      "abstract_excerpt": "Coadaptation and implementation of intrapartum clinical guidelines to save lives during childbirth: Protocol for an adapted PartoMa intervention in Eastern Ethiopia BACKGROUND: Although several clinical practice guidelines (CPGs) exist to improve maternity care, their relevance in low- and middle-in",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W7130571139",
+      "rank": 1,
+      "score": 0.07598066108901386,
+      "title": "Coadaptation and implementation of intrapartum clinical guidelines to save lives during childbirth: Protocol for an adapted PartoMa intervention in Eastern Ethiopia",
+      "year": 2026
+    },
+    {
+      "abstract_excerpt": "Barriers to accreditation in point-of-care echocardiography for critical care: A Scottish perspective Point-of-care echocardiography accreditation is not mandated within the Faculty of Intensive Care Medicine (FICM) training curriculum, yet it is commonly utilised to aid clinical decision making in ",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4414484006",
+      "rank": 2,
+      "score": 0.06747685185185186,
+      "title": "Barriers to accreditation in point-of-care echocardiography for critical care: A Scottish perspective",
+      "year": 2025
+    },
+    {
+      "abstract_excerpt": "Investigating the relationship between complementary and alternative therapy attitudes and pain management self-efficacy in surgical nurses: a cross-sectional study BACKGROUND: Effective pain management is central to surgical nursing, yet nurses often face challenges in practice. Self-efficacy influ",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4414553279",
+      "rank": 3,
+      "score": 0.06675151515151516,
+      "title": "Investigating the relationship between complementary and alternative therapy attitudes and pain management self-efficacy in surgical nurses: a cross-sectional study",
+      "year": 2025
+    },
+    {
+      "abstract_excerpt": "CAE SynthImgGen: Revolutionizing cancer diagnosis with convolutional autoencoder-based synthetic image generation Medical imaging is pivotal in modern healthcare, offering a visual window into the human body\u2019s intricate structures and functions. However, the scarcity of diverse and representative me",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4405674608",
+      "rank": 4,
+      "score": 0.061709744326113834,
+      "title": "CAE SynthImgGen: Revolutionizing cancer diagnosis with convolutional autoencoder-based synthetic image generation",
+      "year": 2024
+    },
+    {
+      "abstract_excerpt": "IMERG-Like Precipitation Retrieval From Geo-Kompsat-2A Observations Using Conditional Generative Adversarial Networks This study proposes an infrared-to-rain (IR2Rain) model to enhance the accuracy of the geostationary (GEO) weather satellite Geo-Kompsat-2A (GK-2A) Rain Rate (RR) product. The IR2Rai",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4410950235",
+      "rank": 5,
+      "score": 0.05826290818784981,
+      "title": "IMERG-Like Precipitation Retrieval From Geo-Kompsat-2A Observations Using Conditional Generative Adversarial Networks",
+      "year": 2025
+    },
+    {
+      "abstract_excerpt": "Private 5G Network: Security, Challenges, and Comparison with Wi-Fi As Indian industries embrace digital transformation, there is an escalating demand for wireless connectivity that delivers not just speed but also reliability, security, and customizability. While public 5G networks have introduced ",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4412752801",
+      "rank": 6,
+      "score": 0.05795795795795796,
+      "title": "Private 5G Network: Security, Challenges, and Comparison with Wi-Fi",
+      "year": 2025
+    },
+    {
+      "abstract_excerpt": "Who Benefits More From IBMS or Qigong? Clinical Data-Mining RCT Data Purpose: A recent three-arm randomized controlled trial (RCT) with depressed Hong Kong adults demonstrated the comparable effectiveness of integrative Body-Mind-Spirt (IBMS) and Qigong interventions in relieving sleep disturbance a",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W4378977676",
+      "rank": 7,
+      "score": 0.05570610998438119,
+      "title": "Who Benefits More From IBMS or Qigong? Clinical Data-Mining RCT Data",
+      "year": 2023
+    },
+    {
+      "abstract_excerpt": "Mutual Pan-African support paradigm to produce scientific evidence of traditional medical practices for use against COVID-19 and emerging pandemics Africa is endowed with a profoundly rich and diverse system of plants and other bio-resources out of which, by traditional medicine practice, the people",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W3214601623",
+      "rank": 8,
+      "score": 0.055648104077423446,
+      "title": "Mutual Pan-African support paradigm to produce scientific evidence of traditional medical practices for use against COVID-19 and emerging pandemics",
+      "year": 2021
+    },
+    {
+      "abstract_excerpt": "Performance management in logistics outsourcing: a study on sugar-energy industry Purpose This paper analyzes managerial practices currently used for outsourced logistics activities in mechanized cutting, loading and transportation (CLT) of sugarcane in a Brazilian company using performance-based lo",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W3080908960",
+      "rank": 9,
+      "score": 0.05418353576248313,
+      "title": "Performance management in logistics outsourcing: a study on sugar-energy industry",
+      "year": 2020
+    },
+    {
+      "abstract_excerpt": "A Hybrid Deep Learning Intrusion Detection Model for Fog Computing Environment Fog computing extends the concept of cloud computing by providing the services of computing, storage, and networking connectivity at the edge between data centers in cloud computing environments and end devices. Having th",
+      "cited_by_count": 0,
+      "pagerank": 0.0,
+      "paper_id": "https://openalex.org/W3184937774",
+      "rank": 10,
+      "score": 0.053478446436192914,
+      "title": "A Hybrid Deep Learning Intrusion Detection Model for Fog Computing Environment",
+      "year": 2021
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "accuracy": 0.8298465829846583,
+  "area_under_roc": 0.9168465951186466,
+  "citation_threshold": 4.0,
+  "confusion_matrix": {
+    "fn": 101,
+    "fp": 21,
+    "tn": 522,
+    "tp": 73
+  },
+  "feature_coefficients": [
+    {
+      "coefficient": -0.25425170820607207,
+      "feature": "publication_year_index"
+    },
+    {
+      "coefficient": 0.023240854047564954,
+      "feature": "reference_count"
+    },
+    {
+      "coefficient": 0.0839612392531949,
+      "feature": "author_count"
+    },
+    {
+      "coefficient": 0.018127273484792875,
+      "feature": "concept_count"
+    },
+    {
+      "coefficient": 0.23935918857276647,
+      "feature": "topic_count"
+    },
+    {
+      "coefficient": 0.0,
+      "feature": "abstract_available_numeric"
+    }
+  ],
+  "feature_columns": [
+    "publication_year_index",
+    "reference_count",
+    "author_count",
+    "concept_count",
+    "topic_count",
+    "abstract_available_numeric"
+  ],
+  "generated_at_utc": "2026-10-06T16:17:15.812678+00:00",
+  "high_citation_quantile": 0.75,
+  "majority_baseline_accuracy": 0.7464,
+  "negative_count": 1866,
+  "outputs": {
+    "ml_citation_features": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\ml_citation_features",
+    "ml_citation_predictions": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\data\\gold\\ml_citation_predictions",
+    "ml_citation_report_json": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\reports\\results\\ml_citation_prediction_report.json",
+    "ml_citation_report_md": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\docs\\ML_CITATION_PREDICTION.md"
+  },
+  "positive_count": 634,
+  "preflight": {
+    "checks": [
+      {
+        "details": "4.2.0",
+        "name": "pyspark_import",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\.jdks\\openjdk-23.0.2\\bin\\java.exe",
+        "name": "java_executable",
+        "status": "pass"
+      },
+      {
+        "details": "C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\tools\\hadoop\\bin\\winutils.exe",
+        "name": "winutils_executable",
+        "status": "pass"
+      }
+    ],
+    "ok": true
+  },
+  "record_count": 2500,
+  "status": "success",
+  "test_count": 717,
+  "top_predictions": [
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7204186688",
+      "prediction": 0.0,
+      "title": "Jahrestagung der ArgeAss 2018"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7170567577",
+      "prediction": 0.0,
+      "title": "Silent Architecture"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7136053427",
+      "prediction": 0.0,
+      "title": "Erkekler Ne Zaman Olgunla\u015f\u0131r?"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7147206292",
+      "prediction": 0.0,
+      "title": "Executive Summary (Espa\u00f1ol): Correlatos Neurocognitivos Atenci\u00f3n y Memoria de Trabajo Entornos Digi"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7139016417",
+      "prediction": 0.0,
+      "title": "\u041c\u0415\u0422\u041e\u0414\u0418\u041a\u0410 \u0417\u0410\u0421\u0422\u041e\u0421\u0423\u0412\u0410\u041d\u041d\u042f \u041a\u041e\u041c\u041f\u0415\u0422\u0415\u041d\u0422\u041d\u0406\u0421\u041d\u041e \u041e\u0420\u0406\u0404\u041d\u0422\u041e\u0412\u0410\u041d\u0418\u0425 \u0422\u0415\u0425\u041d\u041e\u041b\u041e\u0413\u0406\u0419 \u041d\u0410 \u0423\u0420\u041e\u041a\u0410\u0425 \u0424\u0406\u0417\u0418\u0427\u041d\u041e\u0407 \u041a\u0423\u041b\u042c\u0422\u0423\u0420\u0418 \u0412 \u0423\u041c\u041e\u0412\u0410\u0425 \u0412\u041e\u0404\u041d\u041d\u041e\u0413\u041e \u0421\u0422\u0410\u041d\u0423"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7128681550",
+      "prediction": 0.0,
+      "title": "Medical ML: Confidence Thresholds and Escalation Protocols in Clinical AI Deployment"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7152466302",
+      "prediction": 0.0,
+      "title": "\u0414\u0415\u0424\u041e\u0420\u041c\u0410\u0426\u0406\u042f \u041f\u0420\u0410\u0412\u041e\u0412\u041e\u0407 \u0421\u0412\u0406\u0414\u041e\u041c\u041e\u0421\u0422\u0406 \u042f\u041a \u0427\u0418\u041d\u041d\u0418\u041a \u041a\u041e\u0420\u0423\u041f\u0426\u0406\u0419\u041d\u041e\u0407 \u041f\u041e\u0412\u0415\u0414\u0406\u041d\u041a\u0418 \u0412\u0406\u0419\u0421\u042c\u041a\u041e\u0412\u041e\u0421\u041b\u0423\u0416\u0411\u041e\u0412\u0426\u0406\u0412"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7160617020",
+      "prediction": 0.0,
+      "title": "\u0411\u043e\u043b\u0430\u043b\u0430\u0440 \u0432\u0430 \u045e\u0441\u043c\u0438\u0440\u043b\u0430\u0440 \u043e\u0440\u0430\u0441\u0438\u0434\u0430 \u044e\u0437\u2013\u0436\u0430\u0493 \u0442\u0438\u0437\u0438\u043c\u0438 \u0442\u0443\u0493\u043c\u0430 \u0430\u043d\u043e\u043c\u0430\u043b\u0438\u044f\u043b\u0430\u0440\u0438\u043d\u0438 \u043a\u0435\u043b\u0442\u0438\u0440\u0438\u0431 \u0447\u0438\u049b\u0430\u0440\u0443\u0432\u0447\u0438 \u0445\u0430\u0432\u0444 \u043e\u043c\u0438\u043b\u043b\u0430\u0440\u0438"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7161739025",
+      "prediction": 0.0,
+      "title": "Infographic (English): Impact of the Artificial Intelligence in el Mercado Laboral of Latin A"
+    },
+    {
+      "cited_by_count": 0.0,
+      "label": 0.0,
+      "paper_id": "https://openalex.org/W7130905993",
+      "prediction": 0.0,
+      "title": "Adopci\u00f3n internacional: la protecci\u00f3n de la infancia en un laberinto jur\u00eddico transfronterizo"
+    }
+  ],
+  "train_count": 1783
+}
