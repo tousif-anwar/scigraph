@@ -122,6 +122,8 @@ Milestone 14 adds an integrated publication feature mart. It preserves all 2,500
 
 Milestones 15 through 18 complete the retrieval comparison and final audit. BM25, Spark Word2Vec dense retrieval, RRF hybrid retrieval, a transparent reranker, and graph-aware ranking were evaluated on the same five-query set. BM25 reached precision@10 0.48 and NDCG@10 0.5351. Dense Word2Vec retrieval was weaker, with precision@10 0.18 and NDCG@10 0.2011. The best NDCG@10 was the hybrid reranked graph-aware system at 0.6188. Error analysis and a demo query artifact were generated. Optional RAG was intentionally not implemented because the non-RAG analytics and retrieval objectives were the priority.
 
+The final extension pass adds a local vector-style index over paper text, field/year-normalized citation metrics, a static HTML dashboard, and a file-arrival monitor that uses the OpenAlex schema expected by Spark Structured Streaming. The vector index prefers Chroma or FAISS when installed and otherwise writes a portable scikit-learn TF-IDF nearest-neighbor index.
+
 ## Repository Layout
 
 ```text
@@ -170,6 +172,17 @@ The publication feature mart writes `reports/results/feature_mart_report.json`, 
 
 Advanced retrieval, ablation, error analysis, and demo outputs are written to `reports/results/advanced_retrieval_results.json`, `docs/ADVANCED_RETRIEVAL.md`, `docs/ERROR_ANALYSIS.md`, `reports/results/demo_results.json`, and `docs/DEMO.md`.
 
+The extension modules can be rerun individually:
+
+```powershell
+python -m scigraph.retrieval.vector_index --config configs/dev.yaml
+python -m scigraph.evaluation.field_normalized_citations --config configs/dev.yaml
+python -m scigraph.streaming.file_arrival --config configs/dev.yaml
+python -m scigraph.dashboard.static --config configs/dev.yaml
+```
+
+They write `docs/VECTOR_INDEX.md`, `docs/FIELD_NORMALIZED_CITATIONS.md`, `docs/STREAMING_FILE_ARRIVAL.md`, `docs/dashboard/index.html`, JSON reports under `reports/results/`, and data artifacts under `data/gold/`.
+
 Visualizations for the full project are generated from measured report artifacts with:
 
 ```powershell
@@ -179,3 +192,5 @@ python -m scigraph.visualization.figures --config configs/dev.yaml
 The gallery is written to `docs/VISUALIZATIONS.md`, with PNG figures under `reports/figures/`.
 
 Spreadsheet-friendly summary tables are available in `reports/tables/`. The `notebooks/` directory contains a lightweight visual summary notebook that reads those tables and displays the generated figures.
+
+The lightweight dashboard is a static file at `docs/dashboard/index.html`. Open it in a browser after running the commands above, or run the full scripted pipeline with `.\scripts\run_pipeline.ps1 -Config configs\dev.yaml`.

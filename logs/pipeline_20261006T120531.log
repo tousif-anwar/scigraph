@@ -1,0 +1,140 @@
+**********************
+PowerShell transcript start
+Start time: 20261006120531
+Username: DESKTOP-88EMS9T\tousi
+RunAs User: DESKTOP-88EMS9T\tousi
+Configuration Name: 
+Machine: DESKTOP-88EMS9T (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Users\tousi\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+.\scripts\run_pipeline.ps1 -Config configs\dev.yaml
+Process ID: 51904
+PSVersion: 7.6.5
+PSEdition: Core
+GitCommitId: 7.6.5
+OS: Microsoft Windows 10.0.26300
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+SciGraph pipeline run
+Config: configs\dev.yaml
+Log: logs\pipeline_20261006T120531.log
+Spark UI: check http://localhost:4040 while Spark stages are running.
+
+[2026-10-06T12:05:31] START Acquire OpenAlex
+>>> python -m scigraph.ingestion.acquire_openalex --config configs\dev.yaml
+
+[2026-10-06T12:05:51] END Acquire OpenAlex in 00:00:20.6159895
+
+[2026-10-06T12:05:51] START Inspect Schema
+>>> python -m scigraph.ingestion.inspect_schema --config configs\dev.yaml
+
+[2026-10-06T12:05:52] END Inspect Schema in 00:00:00.6147460
+
+[2026-10-06T12:05:52] START Data Quality
+>>> python -m scigraph.preprocessing.quality --config configs\dev.yaml
+
+[2026-10-06T12:05:53] END Data Quality in 00:00:00.8682347
+
+[2026-10-06T12:05:53] START Bronze Silver Gold Pipeline
+>>> python -m scigraph.preprocessing.pipeline --config configs\dev.yaml
+
+[2026-10-06T12:06:22] END Bronze Silver Gold Pipeline in 00:00:29.0841198
+
+[2026-10-06T12:06:22] START Scalability Benchmark
+>>> python -m scigraph.experiments.scalability_benchmark --config configs\dev.yaml
+
+[2026-10-06T12:06:57] END Scalability Benchmark in 00:00:35.2072221
+
+[2026-10-06T12:06:57] START Text TF-IDF
+>>> python -m scigraph.text.tfidf --config configs\dev.yaml
+
+[2026-10-06T12:08:05] END Text TF-IDF in 00:01:08.2726285
+
+[2026-10-06T12:08:05] START Text Clustering
+>>> python -m scigraph.text.clustering --config configs\dev.yaml
+
+[2026-10-06T12:08:50] END Text Clustering in 00:00:44.7198362
+
+[2026-10-06T12:08:50] START Citation Graph
+>>> python -m scigraph.graph.citation_graph --config configs\dev.yaml
+
+[2026-10-06T12:10:40] END Citation Graph in 00:01:49.6622756
+
+[2026-10-06T12:10:40] START Author Collaboration
+>>> python -m scigraph.graph.author_collaboration --config configs\dev.yaml
+
+[2026-10-06T12:11:23] END Author Collaboration in 00:00:43.0864392
+
+[2026-10-06T12:11:23] START Temporal Trends
+>>> python -m scigraph.temporal.trends --config configs\dev.yaml
+
+[2026-10-06T12:11:57] END Temporal Trends in 00:00:33.8792956
+
+[2026-10-06T12:11:57] START Streaming Microbatch
+>>> python -m scigraph.streaming.microbatch --config configs\dev.yaml
+
+[2026-10-06T12:12:19] END Streaming Microbatch in 00:00:22.3689243
+
+[2026-10-06T12:12:19] START Sparse Retrieval
+>>> python -m scigraph.retrieval.sparse --config configs\dev.yaml
+
+[2026-10-06T12:13:28] END Sparse Retrieval in 00:01:09.1407348
+
+[2026-10-06T12:13:28] START Advanced Retrieval
+>>> python -m scigraph.retrieval.advanced --config configs\dev.yaml
+
+[2026-10-06T12:16:45] END Advanced Retrieval in 00:03:17.1469362
+
+[2026-10-06T12:16:45] START Citation Prediction
+>>> python -m scigraph.evaluation.citation_prediction --config configs\dev.yaml
+
+[2026-10-06T12:17:17] END Citation Prediction in 00:00:31.6072644
+
+[2026-10-06T12:17:17] START Composite Ranking
+>>> python -m scigraph.ranking.composite --config configs\dev.yaml
+
+[2026-10-06T12:17:40] END Composite Ranking in 00:00:23.3917570
+
+[2026-10-06T12:17:40] START Publication Feature Mart
+>>> python -m scigraph.features.publication_mart --config configs\dev.yaml
+
+[2026-10-06T12:18:10] END Publication Feature Mart in 00:00:29.3460484
+
+[2026-10-06T12:18:10] START Field-Normalized Citations
+>>> python -m scigraph.evaluation.field_normalized_citations --config configs\dev.yaml
+
+[2026-10-06T12:18:41] END Field-Normalized Citations in 00:00:30.8213307
+
+[2026-10-06T12:18:41] START Vector Index
+>>> python -m scigraph.retrieval.vector_index --config configs\dev.yaml
+
+[2026-10-06T12:18:48] END Vector Index in 00:00:07.3473879
+
+[2026-10-06T12:18:48] START File-Arrival Monitor
+>>> python -m scigraph.streaming.file_arrival --config configs\dev.yaml
+
+[2026-10-06T12:18:48] END File-Arrival Monitor in 00:00:00.4251571
+
+[2026-10-06T12:18:48] START Visualizations
+>>> python -m scigraph.visualization.figures --config configs\dev.yaml
+
+[2026-10-06T12:18:53] END Visualizations in 00:00:04.9708005
+
+[2026-10-06T12:18:53] START Static Dashboard
+>>> python -m scigraph.dashboard.static --config configs\dev.yaml
+
+[2026-10-06T12:18:54] END Static Dashboard in 00:00:00.2421188
+
+[2026-10-06T12:18:54] START Tests
+>>> python -m pytest
+
+[2026-10-06T12:18:57] END Tests in 00:00:03.7855002
+
+Pipeline complete in 00:13:26.6277990.
+**********************
+PowerShell transcript end
+End time: 20261006121857
+**********************

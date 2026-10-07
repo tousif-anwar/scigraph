@@ -1,0 +1,57 @@
+**********************
+PowerShell transcript start
+Start time: 20261006123617
+Username: DESKTOP-88EMS9T\tousi
+RunAs User: DESKTOP-88EMS9T\tousi
+Configuration Name: 
+Machine: DESKTOP-88EMS9T (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Users\tousi\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+.\scripts\run_pipeline.ps1 -Config configs\production.yaml
+Process ID: 19808
+PSVersion: 7.6.5
+PSEdition: Core
+GitCommitId: 7.6.5
+OS: Microsoft Windows 10.0.26300
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+SciGraph pipeline run
+Config: configs\production.yaml
+Log: logs\pipeline_20261006T123617.log
+Spark UI: check http://localhost:4040 while Spark stages are running.
+
+[2026-10-06T12:36:17] START Acquire OpenAlex
+>>> python -m scigraph.ingestion.acquire_openalex --config configs\production.yaml
+
+[2026-10-06T12:54:09] END Acquire OpenAlex in 00:17:51.9276522
+
+[2026-10-06T12:54:09] START Inspect Schema
+>>> python -m scigraph.ingestion.inspect_schema --config configs\production.yaml
+
+[2026-10-06T12:54:55] END Inspect Schema in 00:00:46.0352735
+
+[2026-10-06T12:54:55] START Data Quality
+>>> python -m scigraph.preprocessing.quality --config configs\production.yaml
+
+[2026-10-06T12:56:03] END Data Quality in 00:01:08.1833647
+
+[2026-10-06T12:56:03] START Bronze Silver Gold Pipeline
+>>> python -m scigraph.preprocessing.pipeline --config configs\production.yaml
+
+[2026-10-06T13:00:12] END Bronze Silver Gold Pipeline in 00:04:09.0788505
+
+[2026-10-06T13:00:12] START Scalability Benchmark
+>>> python -m scigraph.experiments.scalability_benchmark --config configs\production.yaml
+
+[2026-10-06T13:07:48] END Scalability Benchmark in 00:07:35.3672218
+
+[2026-10-06T13:07:48] START Text TF-IDF
+>>> python -m scigraph.text.tfidf --config configs\production.yaml
+
+**********************
+PowerShell transcript end
+End time: 20261006130815
+**********************

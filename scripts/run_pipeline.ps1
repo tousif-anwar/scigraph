@@ -26,7 +26,11 @@ $steps = @(
     @{ Name = "Citation Prediction"; Command = "python -m scigraph.evaluation.citation_prediction --config $Config" },
     @{ Name = "Composite Ranking"; Command = "python -m scigraph.ranking.composite --config $Config" },
     @{ Name = "Publication Feature Mart"; Command = "python -m scigraph.features.publication_mart --config $Config" },
+    @{ Name = "Field-Normalized Citations"; Command = "python -m scigraph.evaluation.field_normalized_citations --config $Config" },
+    @{ Name = "Vector Index"; Command = "python -m scigraph.retrieval.vector_index --config $Config" },
+    @{ Name = "File-Arrival Monitor"; Command = "python -m scigraph.streaming.file_arrival --config $Config" },
     @{ Name = "Visualizations"; Command = "python -m scigraph.visualization.figures --config $Config" },
+    @{ Name = "Static Dashboard"; Command = "python -m scigraph.dashboard.static --config $Config" },
     @{ Name = "Tests"; Command = "python -m pytest" }
 )
 

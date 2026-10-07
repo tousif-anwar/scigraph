@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SciGraph Dashboard</title>
+  <style>
+    :root { --surface: #ffffff; --muted: #f7f7f8; --ink: #111111; --line: #d8dbe2; --accent: #002fa7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--surface); color: var(--ink); font-family: "Helvetica Neue", Arial, sans-serif; letter-spacing: 0; }
+    main { max-width: 1240px; margin: 0 auto; padding: 32px 24px 48px; }
+    header { display: grid; grid-template-columns: 1.4fr 0.6fr; gap: 24px; border-bottom: 1px solid var(--ink); padding-bottom: 28px; }
+    h1 { margin: 0; font-size: clamp(42px, 9vw, 112px); line-height: .88; font-weight: 700; color: var(--accent); }
+    .meta { border-left: 1px solid var(--line); padding-left: 18px; align-self: end; font-size: 14px; line-height: 1.45; }
+    .rulegrid { display: grid; grid-template-columns: repeat(4, 1fr); border-left: 1px solid var(--line); border-top: 1px solid var(--line); margin-top: 24px; }
+    .metric { min-height: 118px; padding: 14px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; justify-content: space-between; }
+    .metric span { font-size: 13px; color: #555b66; }
+    .metric strong { font-size: clamp(24px, 4vw, 44px); line-height: 1; font-weight: 700; overflow-wrap: anywhere; }
+    section { margin-top: 36px; }
+    h2 { margin: 0 0 12px; font-size: 22px; font-weight: 700; }
+    .figures { display: grid; grid-template-columns: repeat(2, 1fr); border-left: 1px solid var(--line); border-top: 1px solid var(--line); }
+    figure { margin: 0; padding: 14px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
+    img { width: 100%; height: auto; display: block; }
+    figcaption { margin-top: 10px; font-size: 13px; color: #555b66; }
+    table { width: 100%; border-collapse: collapse; border-top: 1px solid var(--line); font-size: 14px; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: #555b66; font-weight: 500; }
+    .note { background: var(--muted); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 14px; font-size: 14px; line-height: 1.5; }
+    @media (max-width: 820px) { header, .figures { grid-template-columns: 1fr; } .rulegrid { grid-template-columns: repeat(2, 1fr); } .meta { border-left: 0; padding-left: 0; } }
+    @media (max-width: 520px) { main { padding: 22px 14px 36px; } .rulegrid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<main>
+  <header>
+    <div><h1>SciGraph</h1></div>
+    <div class="meta">
+      <strong>Project dashboard</strong><br>
+      Generated 2026-10-06<br>
+      Source: OpenAlex Works sample<br>
+      Config: C:\Users\tousi\Documents\ta_a5\Common\scigraph\configs\dev.yaml
+    </div>
+  </header>
+  <div class="rulegrid">
+    <div class='metric'><span>Sample records</span><strong>2,500</strong></div>
+    <div class='metric'><span>Gold publications</span><strong>2,500</strong></div>
+    <div class='metric'><span>Vector documents</span><strong>1,777</strong></div>
+    <div class='metric'><span>Field/year citation groups</span><strong>166</strong></div>
+    <div class='metric'><span>Feature mart rows</span><strong>2,500</strong></div>
+    <div class='metric'><span>Best retrieval NDCG</span><strong>0.6203</strong></div>
+    <div class='metric'><span>File-arrival records</span><strong>0</strong></div>
+    <div class='metric'><span>Missing author rate</span><strong>0.0000</strong></div>
+  </div>
+  <section>
+    <h2>Figures</h2>
+    <div class="figures"><figure><img src='../../reports/figures/dataset_publications_by_year.png' alt='Publications by year'><figcaption>Publications by year</figcaption></figure><figure><img src='../../reports/figures/pipeline_stage_counts.png' alt='Pipeline stage counts'><figcaption>Pipeline stage counts</figcaption></figure><figure><img src='../../reports/figures/text_top_terms.png' alt='Top text terms'><figcaption>Top text terms</figcaption></figure><figure><img src='../../reports/figures/author_collaboration_summary.png' alt='Author collaboration'><figcaption>Author collaboration</figcaption></figure><figure><img src='../../reports/figures/retrieval_ablation.png' alt='Retrieval ablation'><figcaption>Retrieval ablation</figcaption></figure><figure><img src='../../reports/figures/ml_citation_prediction.png' alt='Citation prediction'><figcaption>Citation prediction</figcaption></figure><figure><img src='../../reports/figures/feature_mart_availability.png' alt='Feature availability'><figcaption>Feature availability</figcaption></figure></div>
+  </section>
+  <section>
+    <h2>Retrieval Systems</h2>
+    <table><thead><tr><th>System</th><th>Precision@K</th><th>NDCG@K</th></tr></thead><tbody><tr><td>bm25</td><td>0.4800</td><td>0.6203</td></tr><tr><td>dense</td><td>0.2800</td><td>0.3284</td></tr><tr><td>graph_alpha_0</td><td>0.4400</td><td>0.5918</td></tr><tr><td>graph_alpha_0.25</td><td>0.4400</td><td>0.5918</td></tr><tr><td>graph_alpha_0.5</td><td>0.4400</td><td>0.5918</td></tr><tr><td>hybrid_reranked</td><td>0.4400</td><td>0.5918</td></tr><tr><td>hybrid_reranked_graph</td><td>0.4400</td><td>0.5918</td></tr><tr><td>hybrid_rrf</td><td>0.4400</td><td>0.5010</td></tr></tbody></table>
+  </section>
+  <section>
+    <h2>Operational Notes</h2>
+    <div class="note">The dashboard is generated from report JSON and figure files already produced by the pipeline. Empty values mean that a dependent milestone has not been rerun yet, not that the metric was fabricated.</div>
+  </section>
+</main>
+</body>
+</html>

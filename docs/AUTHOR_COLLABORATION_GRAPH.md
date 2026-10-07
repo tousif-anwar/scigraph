@@ -4,72 +4,72 @@ Generated on 2026-10-06.
 
 ## Summary
 
-- Authors: 9274
-- Author-publication rows: 9299
-- Multi-author publications: 1773
-- Solo-author publications: 594
-- Collaboration edges: 33104
-- Graph density: 0.00076988
+- Authors: 9008
+- Author-publication rows: 9020
+- Multi-author publications: 1729
+- Solo-author publications: 638
+- Collaboration edges: 31499
+- Graph density: 0.00077646
 
 ## Top Authors By Collaborator Count
 
 | rank | author | publications | collaborators | weighted collaborations | solo publications |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 1 | M. Del Tutto | 1 | 99 | 99 | 0 |
-| 2 | J. Y. Book | 1 | 99 | 99 | 0 |
-| 3 | A. P. Furmanski | 1 | 99 | 99 | 0 |
-| 4 | M. Kirby | 1 | 99 | 99 | 0 |
-| 5 | Andrew Mastbaum | 1 | 99 | 99 | 0 |
-| 6 | G. B. Cerati | 1 | 99 | 99 | 0 |
-| 7 | L. Hagaman | 1 | 99 | 99 | 0 |
-| 8 | M. Bishai | 1 | 99 | 99 | 0 |
-| 9 | L. Bathe-Peters | 1 | 99 | 99 | 0 |
-| 10 | S. Balasubramanian | 1 | 99 | 99 | 0 |
-| 11 | Kirsty Elizabeth Duffy | 1 | 99 | 99 | 0 |
-| 12 | N. Kamp | 1 | 99 | 99 | 0 |
-| 13 | Giles Barr | 1 | 99 | 99 | 0 |
-| 14 | F. Cavanna | 1 | 99 | 99 | 0 |
-| 15 | Bruce R. Baller | 1 | 99 | 99 | 0 |
-| 16 | R. A. Johnson | 1 | 99 | 99 | 0 |
-| 17 | Janet M. Conrad | 1 | 99 | 99 | 0 |
-| 18 | J. Anthony | 1 | 99 | 99 | 0 |
-| 19 | D. Caratelli | 1 | 99 | 99 | 0 |
-| 20 | A. Hourlier | 1 | 99 | 99 | 0 |
-| 21 | K. Lin | 1 | 99 | 99 | 0 |
-| 22 | L. Cooper-Troendle | 1 | 99 | 99 | 0 |
-| 23 | D. Marsden | 1 | 99 | 99 | 0 |
-| 24 | V. Meddage | 1 | 99 | 99 | 0 |
-| 25 | Joshua Mills | 1 | 99 | 99 | 0 |
+| 1 | K. Goetzen | 1 | 98 | 98 | 0 |
+| 2 | L. B. Guo | 1 | 98 | 98 | 0 |
+| 3 | L. M. Gu | 1 | 98 | 98 | 0 |
+| 4 | X. Dong | 1 | 98 | 98 | 0 |
+| 5 | M. Y. Dong | 1 | 98 | 98 | 0 |
+| 6 | W. Gradl | 1 | 98 | 98 | 0 |
+| 7 | X. R. Chen | 1 | 98 | 98 | 0 |
+| 8 | Z. J. Chen | 1 | 98 | 98 | 0 |
+| 9 | N. Berger | 1 | 98 | 98 | 0 |
+| 10 | Alessandro Calcaterra | 1 | 98 | 98 | 0 |
+| 11 | M. Albrecht | 1 | 98 | 98 | 0 |
+| 12 | M. R. An | 1 | 98 | 98 | 0 |
+| 13 | A. Bortone | 1 | 98 | 98 | 0 |
+| 14 | C. Y. Guan | 1 | 98 | 98 | 0 |
+| 15 | J. H. Feng | 1 | 98 | 98 | 0 |
+| 16 | A. Gilman | 1 | 98 | 98 | 0 |
+| 17 | G. F. Cao | 1 | 98 | 98 | 0 |
+| 18 | F. De Mori | 1 | 98 | 98 | 0 |
+| 19 | R. Aliberti | 1 | 98 | 98 | 0 |
+| 20 | F. Feldbauer | 1 | 98 | 98 | 0 |
+| 21 | I. Balossino | 1 | 98 | 98 | 0 |
+| 22 | J. Bloms | 1 | 98 | 98 | 0 |
+| 23 | C. Q. Feng | 1 | 98 | 98 | 0 |
+| 24 | R. P. Guo | 1 | 98 | 98 | 0 |
+| 25 | Igor R. Boyko | 1 | 98 | 98 | 0 |
 
 ## Strongest Collaboration Edges
 
 | rank | author A | author B | shared publications |
 | ---: | --- | --- | ---: |
-| 1 | Yuji Shimoda | Kenichi Urakami | 2 |
-| 2 | Yuji Shimoda | Hirotsugu Kenmotsu | 2 |
-| 3 | Yuji Shimoda | Akio Shiomi | 2 |
-| 4 | Yuji Shimoda | Takeshi Nagashima | 2 |
-| 5 | Yuji Shimoda | Yasuto Akiyama | 2 |
-| 6 | Yuji Shimoda | Ken Yamaguchi | 2 |
-| 7 | Yuji Shimoda | Keiichi Ohshima | 2 |
-| 8 | Kenichi Urakami | Hirotsugu Kenmotsu | 2 |
-| 9 | Kenichi Urakami | Akio Shiomi | 2 |
-| 10 | Kenichi Urakami | Takeshi Nagashima | 2 |
-| 11 | Kenichi Urakami | Yasuto Akiyama | 2 |
-| 12 | Kenichi Urakami | Ken Yamaguchi | 2 |
-| 13 | Kenichi Urakami | Keiichi Ohshima | 2 |
-| 14 | Hirotsugu Kenmotsu | Akio Shiomi | 2 |
-| 15 | Hirotsugu Kenmotsu | Takeshi Nagashima | 2 |
-| 16 | Hirotsugu Kenmotsu | Yasuto Akiyama | 2 |
-| 17 | Hirotsugu Kenmotsu | Ken Yamaguchi | 2 |
-| 18 | Hirotsugu Kenmotsu | Keiichi Ohshima | 2 |
-| 19 | Akio Shiomi | Takeshi Nagashima | 2 |
-| 20 | Akio Shiomi | Yasuto Akiyama | 2 |
-| 21 | Akio Shiomi | Ken Yamaguchi | 2 |
-| 22 | Akio Shiomi | Keiichi Ohshima | 2 |
-| 23 | Takeshi Nagashima | Yasuto Akiyama | 2 |
-| 24 | Takeshi Nagashima | Ken Yamaguchi | 2 |
-| 25 | Takeshi Nagashima | Keiichi Ohshima | 2 |
+| 1 | Małgorzata Ulewicz | Natalia Brycht | 1 |
+| 2 | Haoying Zhou | Loris Fichera | 1 |
+| 3 | Haoying Zhou | Benjamin C. Nephew | 1 |
+| 4 | Haoying Zhou | Liang Lu | 1 |
+| 5 | Haoying Zhou | Gregory S. Fischer | 1 |
+| 6 | Haoying Zhou | Xihan Ma | 1 |
+| 7 | Haoying Zhou | Shang Gao | 1 |
+| 8 | Haoying Zhou | Haichong K. Zhang | 1 |
+| 9 | Haoying Zhou | Kehan Yang | 1 |
+| 10 | Haoying Zhou | Yang Wang | 1 |
+| 11 | Haoying Zhou | Shiyue Wang | 1 |
+| 12 | Haoying Zhou | Yiwei Jiang | 1 |
+| 13 | Федор Владимирович Акулинин | Sherzod S. Alifbekov | 1 |
+| 14 | Raymond K. H. Chan | Derek Wai Sun Chun | 1 |
+| 15 | Raymond K. H. Chan | Kai Yin Leung | 1 |
+| 16 | Raymond K. H. Chan | Kris LY Chu | 1 |
+| 17 | Rammile Ettelaie | Peyman Asghartabar Kashi | 1 |
+| 18 | Rammile Ettelaie | Jianshe Chen | 1 |
+| 19 | Rammile Ettelaie | Henry Jäger | 1 |
+| 20 | Khaled Mohammad Alomari | Hisham O. Mbaidin | 1 |
+| 21 | Anna Kuczyńska-Cesarz | J. Obolewicz | 1 |
+| 22 | Anna Kuczyńska-Cesarz | Monika Szczerbak | 1 |
+| 23 | Anna Kuczyńska-Cesarz | Adam Baryłka | 1 |
+| 24 | Xiao Ming Han | Linglin Fu | 1 |
+| 25 | Xiao Ming Han | Kexin Chen | 1 |
 
 ## Interpretation
 

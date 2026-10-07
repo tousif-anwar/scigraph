@@ -4,27 +4,27 @@ Generated on 2026-10-06.
 
 ## Stage Counts
 
-- Raw records read: 74600
-- Bronze records written: 74600
-- Silver publications written: 74600
-- Gold publications written: 74600
-- Gold authors written: 371312
-- Gold author-publication rows written: 633746
-- Gold citation edges written: 6983986
-- Gold topic rows written: 220275
+- Raw records read: 100000
+- Bronze records written: 100000
+- Silver publications written: 100000
+- Gold publications written: 100000
+- Gold authors written: 464323
+- Gold author-publication rows written: 824037
+- Gold citation edges written: 9111549
+- Gold topic rows written: 300000
 
 ## Transform Accounting
 
 - Records removed in Silver: 0
-- Records with quality flags: 174
-- Self-citations removed from Gold citation edges: 1591
+- Records with quality flags: 179
+- Self-citations removed from Gold citation edges: 1991
 
 Quality flag counts:
 
 ```json
 {
-  "missing_authorships": 170,
-  "missing_title": 4
+  "missing_authorships": 174,
+  "missing_title": 5
 }
 ```
 

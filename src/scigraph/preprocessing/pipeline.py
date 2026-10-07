@@ -239,13 +239,16 @@ def create_spark_session(config: dict[str, Any]):
     """Create a local SparkSession from config."""
     configure_runtime_environment(config)
     SparkSession, _, _ = _spark_imports()
-    return (
+    builder = (
         SparkSession.builder.appName(config["spark"]["app_name"])
         .master(config["spark"]["master"])
         .config("spark.sql.session.timeZone", "UTC")
         .config("spark.sql.shuffle.partitions", str(config["spark"].get("shuffle_partitions", 200)))
-        .getOrCreate()
     )
+    spark_config = config.get("spark", {})
+    for key, value in spark_config.get("extra_conf", {}).items():
+        builder = builder.config(key, str(value))
+    return builder.getOrCreate()
 
 
 def _path(config: dict[str, Any], key: str) -> str:

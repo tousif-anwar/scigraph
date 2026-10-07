@@ -9,27 +9,27 @@ Generated on 2026-10-06.
 - Citation threshold: 4.0
 - Train rows: 1783
 - Test rows: 717
-- Positive labels: 663
-- Negative labels: 1837
-- Area under ROC: 0.9174
-- Accuracy: 0.8494
-- Majority baseline accuracy: 0.7348
+- Positive labels: 634
+- Negative labels: 1866
+- Area under ROC: 0.9168
+- Accuracy: 0.8298
+- Majority baseline accuracy: 0.7464
 
 ## Confusion Matrix
 
 | true positive | false positive | true negative | false negative |
 | ---: | ---: | ---: | ---: |
-| 84 | 10 | 525 | 98 |
+| 73 | 21 | 522 | 101 |
 
 ## Feature Coefficients
 
 | feature | coefficient |
 | --- | ---: |
-| publication_year_index | -0.294224 |
-| reference_count | 0.020846 |
-| author_count | 0.083332 |
-| concept_count | 0.015755 |
-| topic_count | 0.250930 |
+| publication_year_index | -0.254252 |
+| reference_count | 0.023241 |
+| author_count | 0.083961 |
+| concept_count | 0.018127 |
+| topic_count | 0.239359 |
 | abstract_available_numeric | 0.000000 |
 
 ## Interpretation

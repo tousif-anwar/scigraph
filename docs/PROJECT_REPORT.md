@@ -6,7 +6,7 @@ Generated on 2026-10-06.
 
 SciGraph is a milestone-built scientific literature analytics project over OpenAlex Works metadata. The project is not a RAG application. It implements a reproducible Spark-based data pipeline and a set of distributed analytics experiments covering data quality, text analysis, clustering, citation graphs, author collaboration graphs, temporal trends, streaming-style monitoring, sparse retrieval, supervised ML, composite ranking, and an integrated publication feature mart.
 
-The current development run uses 2,500 OpenAlex article records from publication years 2020-2026. Raw data is preserved, Silver and Gold analysis tables are produced as Parquet, each analytic stage writes machine-readable JSON plus human-readable Markdown reports, and the final visualization gallery includes 13 generated figures. The project currently has 50 passing tests.
+The current development run uses 2,500 OpenAlex article records from publication years 2020-2026. Raw data is preserved, Silver and Gold analysis tables are produced as Parquet, each analytic stage writes machine-readable JSON plus human-readable Markdown reports, and the final visualization gallery includes 13 generated figures. The project currently has 57 passing tests.
 
 Key measured outputs:
 
@@ -15,20 +15,22 @@ Key measured outputs:
 | Raw sample | 2,500 OpenAlex article records |
 | Publication year range | 2020-2026 |
 | Unique publications | 2,500 |
-| Unique authors | 9,274 |
-| Referenced works observed | 53,900 before self-citation removal |
-| Gold citation edges | 53,877 |
-| Text documents analyzed | 1,793 English-language documents |
-| Text vocabulary | 26,728 retained terms |
-| Clustering | K=5 selected, exploratory only |
-| Citation graph | 2,500 sampled vertices, 53,877 edges, 0 in-sample citation edges |
-| Author collaboration graph | 9,274 authors, 33,104 coauthor edges |
-| Temporal analysis | 7 yearly buckets, 5,566 topic-year rows |
+| Unique authors | 9,008 |
+| Referenced works observed | 53,740 before self-citation removal |
+| Gold citation edges | 53,704 |
+| Text documents analyzed | 1,777 English-language documents |
+| Text vocabulary | 26,884 retained terms |
+| Clustering | K=3 selected, exploratory only |
+| Citation graph | 2,500 sampled vertices, 53,704 edges, 1 in-sample citation edge |
+| Author collaboration graph | 9,008 authors, 31,499 coauthor edges |
+| Temporal analysis | 7 yearly buckets, 5,977 topic-year rows |
 | Streaming simulation | 10 micro-batches, 2,500 records processed, 0 alerts |
 | Retrieval ablation | BM25 precision@10 = 0.48; best NDCG@10 = 0.6188 with hybrid reranked graph-aware retrieval |
-| Citation prediction | AUC = 0.9174, accuracy = 0.8494 |
-| Composite ranking | 2,500 ranked publications, mean score = 0.1843 |
+| Citation prediction | AUC = 0.9168, accuracy = 0.8298 |
+| Composite ranking | 2,500 ranked publications, mean score = 0.1880 |
 | Feature mart | 2,500 rows, 34 columns |
+| Vector index | 1,777 documents, 20,000-vector vocabulary |
+| Field-normalized citations | 2,500 rows, 166 field/year groups |
 | Visualizations | 13 PNG figures generated from measured JSON/Parquet-derived reports |
 
 ## Project Objective
@@ -53,15 +55,15 @@ Current sample statistics:
 
 | Metric | Value |
 | --- | ---: |
-| Records | 1,000 |
-| Unique publications | 1,000 |
-| Unique authors | 3,721 |
+| Records | 2,500 |
+| Unique publications | 2,500 |
+| Unique authors | 9,008 |
 | Missing titles | 0 |
 | Missing abstracts | 0 |
-| Missing authorship arrays | 18 |
+| Missing authorship arrays | 34 |
 | Duplicate publication IDs | 0 |
 | Publication year range | 2020-2026 |
-| Document type | 1,000 articles |
+| Document type | 2,500 articles |
 
 Top broad concepts in the sample include Medicine, Computer science, Biology, Psychology, Political science, Physics, Engineering, Chemistry, Philosophy, Sociology, and Business. This confirms that the development sample is heterogeneous rather than field-specific.
 
@@ -120,7 +122,7 @@ Implemented:
 
 Result:
 
-- Current development sample contains 1,000 OpenAlex article records.
+- Current development sample contains 2,500 OpenAlex article records.
 - Publication years span 2020-2026.
 - All sampled records have publication IDs and titles.
 - Raw data is preserved under `data/raw/`.
@@ -144,13 +146,13 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Records checked | 1,000 |
+| Records checked | 2,500 |
 | Total checks | 31 |
 | Passed checks | 23 |
 | Warning checks | 8 |
 | Error checks | 0 |
-| Records with any author | 982 |
-| Records with any reference | 602 |
+| Records with any author | 2,466 |
+| Records with any reference | 1,450 |
 
 Interpretation:
 
@@ -174,14 +176,14 @@ Result:
 
 | Stage | Rows |
 | --- | ---: |
-| Raw records | 1,000 |
-| Bronze records | 1,000 |
-| Silver publications | 1,000 |
-| Gold publications | 1,000 |
-| Gold authors | 3,721 |
-| Gold author-publication rows | 3,742 |
-| Gold citation edges | 22,321 |
-| Gold topic rows | 2,736 |
+| Raw records | 2,500 |
+| Bronze records | 2,500 |
+| Silver publications | 2,500 |
+| Gold publications | 2,500 |
+| Gold authors | 9,008 |
+| Gold author-publication rows | 9,058 |
+| Gold citation edges | 53,704 |
+| Gold topic rows | 7,443 |
 
 Interpretation:
 
@@ -210,7 +212,7 @@ Result:
 
 - Benchmarked local Spark pipeline at development scales.
 - The 100-record benchmark completed in 3.3065 seconds at 30.2435 records/second.
-- Later configuration expanded benchmark scales to 100, 500, and 1,000 records.
+- Later configuration expanded benchmark scales to 500, 1,000, and 2,500 records.
 
 Interpretation:
 
@@ -235,9 +237,9 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Documents analyzed | 738 |
-| Tokens retained | 99,587 |
-| Vocabulary size | 16,091 |
+| Documents analyzed | 1,777 |
+| Tokens retained | 236,429 |
+| Vocabulary size | 26,884 |
 | Document-term TF-IDF rows | Generated under `data/gold/text_tfidf_terms/` |
 
 Top global terms include `data`, `patients`, `analysis`, `model`, `high`, and `development`.
@@ -268,10 +270,10 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Documents clustered | 738 |
+| Documents clustered | 1,777 |
 | Selected K | 3 |
 | K=3 silhouette | approximately -0.0062 |
-| Cluster sizes | 601, 2, 135 |
+| Cluster sizes | 267, 1,505, 5 |
 
 Interpretation:
 
@@ -298,16 +300,16 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Sample publication vertices | 1,000 |
-| Expanded graph vertices | 23,177 |
-| Full outgoing citation edges | 22,321 |
-| In-sample citation edges | 0 |
-| External citation edges | 22,321 |
+| Sample publication vertices | 2,500 |
+| Expanded graph vertices | 55,704 |
+| Full outgoing citation edges | 53,704 |
+| In-sample citation edges | 1 |
+| External citation edges | 53,703 |
 | PageRank iterations | 10 |
 
 Interpretation:
 
-This milestone produced an important negative result: none of the sampled publications cite another sampled publication. PageRank can be computed on the expanded graph, but sampled-paper PageRank is tied and not useful for ranking sampled papers in the current sample.
+This milestone produced an important sampling result: only one sampled publication cites another sampled publication. PageRank can be computed on the expanded graph, but sampled-paper PageRank remains weak for ranking sampled papers in the current sample.
 
 Main outputs:
 
@@ -329,13 +331,12 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Authors | 3,721 |
-| Author-publication rows | 3,726 |
-| Publications represented | 948 |
-| Multi-author publications | 709 |
-| Solo-author publications | 239 |
-| Collaboration edges | 11,508 |
-| Graph density | 0.00166275 |
+| Authors | 9,008 |
+| Author-publication rows | 9,020 |
+| Publications represented | 2,367 |
+| Multi-author publications | 1,729 |
+| Solo-author publications | 638 |
+| Collaboration edges | 31,499 |
 | Strongest observed edge weight | 1 |
 
 Interpretation:
@@ -362,12 +363,10 @@ Result:
 | Metric | Value |
 | --- | ---: |
 | Publication year range | 2020-2026 |
-| Publications with valid years | 1,000 |
+| Publications with valid years | 2,500 |
 | Year buckets | 7 |
-| Topic-year rows | 2,477 |
-| Latest-year topic candidates | 395 |
-| Largest sampled year | 2025 with 183 publications |
-| 2026 citations per publication | 0.1611 |
+| Topic-year rows | 5,977 |
+| Largest sampled year | 2025 with 423 publications |
 
 Interpretation:
 
@@ -393,9 +392,9 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Batch size | 100 |
+| Batch size | 250 |
 | Batch count | 10 |
-| Records processed | 1,000 |
+| Records processed | 2,500 |
 | Alert count | 0 |
 | Missing-title threshold | 0.0 |
 | Missing-author threshold | 0.05 |
@@ -423,18 +422,18 @@ Result:
 
 | Query | Precision@10 |
 | --- | ---: |
-| Artificial intelligence healthcare education | 0.30 |
-| Climate change policy economics | 0.20 |
-| Dementia cognitive impairment | 0.30 |
-| Digital marketing social media | 0.30 |
-| Tuberculosis diagnosis treatment | 0.50 |
-| Mean precision@10 | 0.32 |
+| Artificial intelligence healthcare education | See `docs/RETRIEVAL.md` |
+| Climate change policy economics | See `docs/RETRIEVAL.md` |
+| Dementia cognitive impairment | See `docs/RETRIEVAL.md` |
+| Digital marketing social media | See `docs/RETRIEVAL.md` |
+| Tuberculosis diagnosis treatment | See `docs/RETRIEVAL.md` |
+| Mean precision@10 | 0.38 |
 
 Other metrics:
 
 - Queries evaluated: 5
 - Top K: 10
-- Ranking rows: 372
+- Ranking rows: 886
 
 Interpretation:
 
@@ -469,19 +468,19 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Records | 1,000 |
+| Records | 2,500 |
 | High-citation threshold | `cited_by_count >= 4` |
-| Positive labels | 264 |
-| Negative labels | 736 |
-| Train rows | 713 |
-| Test rows | 287 |
-| Area under ROC | 0.8559 |
-| Accuracy | 0.7735 |
-| Majority baseline accuracy | 0.7360 |
-| True positives | 30 |
-| False positives | 6 |
-| True negatives | 192 |
-| False negatives | 59 |
+| Positive labels | 634 |
+| Negative labels | 1,866 |
+| Train rows | 1,783 |
+| Test rows | 717 |
+| Area under ROC | 0.9168 |
+| Accuracy | 0.8298 |
+| Majority baseline accuracy | 0.7464 |
+| True positives | 73 |
+| False positives | 21 |
+| True negatives | 522 |
+| False negatives | 101 |
 
 Interpretation:
 
@@ -517,17 +516,17 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Ranked publications | 1,000 |
+| Ranked publications | 2,500 |
 | Top N reported | 25 |
-| Mean composite score | 0.1861 |
-| Maximum composite score | 0.6401 |
+| Mean composite score | 0.1880 |
+| Maximum composite score | 0.6327 |
 
 Top-ranked paper:
 
-- "The global costs of extreme weather that are attributable to climate change"
-- Publication year: 2023
-- `cited_by_count`: 554
-- Composite score: 0.6401
+- "The Pantheon+ Analysis: The Full Data Set and Light-curve Release"
+- Publication year: 2022
+- `cited_by_count`: 945
+- Composite score: 0.6327
 
 Interpretation:
 
@@ -551,17 +550,17 @@ Result:
 
 | Metric | Value |
 | --- | ---: |
-| Publication rows | 1,000 |
+| Publication rows | 2,500 |
 | Feature columns | 34 |
-| Text feature rows | 738 |
-| Cluster rows | 738 |
-| ML prediction rows | 287 |
-| Ranking rows | 1,000 |
-| Text feature availability | 0.7380 |
-| Cluster availability | 0.7380 |
-| ML prediction availability | 0.2870 |
+| Text feature rows | 1,777 |
+| Cluster rows | 1,777 |
+| ML prediction rows | 717 |
+| Ranking rows | 2,500 |
+| Text feature availability | 0.7108 |
+| Cluster availability | 0.7108 |
+| ML prediction availability | 0.2868 |
 | Ranking availability | 1.0000 |
-| Average document word count | 163.8220 |
+| Average document word count | 155.1912 |
 
 Interpretation:
 
@@ -591,11 +590,11 @@ Result:
 
 | System | Precision@10 | Recall@10 | MRR | NDCG@10 | Mean latency seconds |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| BM25 | 0.3800 | 0.4732 | 0.7667 | 0.6450 | 0.0156 |
-| Dense Word2Vec | 0.1400 | 0.1738 | 0.5833 | 0.2321 | 16.8594 |
-| Hybrid RRF | 0.2400 | 0.3359 | 0.8500 | 0.4177 | 0.0000 |
-| Hybrid + reranker | 0.3200 | 0.3932 | 0.9000 | 0.6562 | 0.0010 |
-| Hybrid + reranker + graph | 0.3400 | 0.4265 | 0.9000 | 0.6609 | 0.0000 |
+| BM25 | 0.4800 | 0.3120 | 0.8667 | 0.6203 | 0.0626 |
+| Dense Word2Vec | 0.2800 | 0.1664 | 0.6400 | 0.3284 | 17.7123 |
+| Hybrid RRF | 0.4400 | 0.3062 | 0.7667 | 0.5010 | 0.0000 |
+| Hybrid + reranker | 0.4400 | 0.2696 | 0.9000 | 0.5918 | 0.0015 |
+| Hybrid + reranker + graph | 0.4400 | 0.2696 | 0.9000 | 0.5918 | 0.0000 |
 
 Interpretation:
 
@@ -610,6 +609,45 @@ Main outputs:
 - `docs/ADVANCED_RETRIEVAL.md`
 - `docs/ERROR_ANALYSIS.md`
 - `docs/DEMO.md`
+
+### Extension Pass: Vector Index, Normalized Citations, File Arrival, Dashboard
+
+Implemented:
+
+- A vector-style nearest-neighbor index over paper titles and reconstructed abstracts.
+- Field/year-normalized citation features using OpenAlex topic fields and publication year.
+- A file-arrival monitor directory for incoming OpenAlex JSONL files.
+- A lightweight static HTML dashboard generated from measured reports and figures.
+
+Result:
+
+| Artifact | Result |
+| --- | ---: |
+| Vector-index backend | scikit-learn TF-IDF fallback |
+| Vector-index documents | 1,777 |
+| Vector-index vocabulary | 20,000 |
+| Field-normalized citation rows | 2,500 |
+| Topic fields | 25 |
+| Field/year groups | 166 |
+| File-arrival input files | 0 |
+| Dashboard | `docs/dashboard/index.html` |
+
+Interpretation:
+
+The extension pass adds practical next-layer artifacts without changing the project's non-RAG scope. FAISS or Chroma can be installed later and wired behind the same vector-index output contract; the current fallback is portable and reproducible in this local environment. The file-arrival monitor is ready for dropped JSONL batches and documents the Structured Streaming path.
+
+Main outputs:
+
+- `data/gold/vector_index/`
+- `data/gold/citation_field_normalized/`
+- `data/streaming/file_arrivals/`
+- `reports/results/vector_index_report.json`
+- `reports/results/citation_field_normalized_report.json`
+- `reports/results/streaming_file_arrival_report.json`
+- `docs/VECTOR_INDEX.md`
+- `docs/FIELD_NORMALIZED_CITATIONS.md`
+- `docs/STREAMING_FILE_ARRIVAL.md`
+- `docs/dashboard/index.html`
 
 ### Final Visualization Layer
 
@@ -656,16 +694,16 @@ Main outputs:
    Java and Hadoop helper issues were repaired, and Spark now writes Bronze, Silver, Gold, and downstream Parquet outputs.
 
 3. Text analytics are productive but English-filtered.
-   Text analysis and clustering cover 738 of 1,000 publications. This is intentional but means text-derived outputs are sparse in full publication-level tables.
+   Text analysis and clustering cover 1,777 of 2,500 publications. This is intentional but means text-derived outputs are sparse in full publication-level tables.
 
 4. K-means clustering is weak.
    The selected K=3 model has weak/negative silhouette and uneven clusters. It should not be used as proof of meaningful research-field discovery.
 
 5. The citation graph exposed a sampling limitation.
-   There are 22,321 outgoing citation edges, but 0 in-sample citation edges. PageRank is computable on an expanded graph but is not meaningful for ranking sampled papers.
+   There are 53,704 outgoing citation edges, but only 1 in-sample citation edge. PageRank is computable on an expanded graph but remains weak for ranking sampled papers.
 
 6. Author collaboration captures coauthorship snapshots.
-   The graph has 11,508 coauthor edges, but strongest edge weight is 1. The current sample does not show repeated pairwise collaboration well.
+   The graph has 31,499 coauthor edges. Edge weights are sample-local and should not be treated as complete career-level collaboration history.
 
 7. Recency strongly affects citations.
    Recent years, especially 2026, show low citations per publication. Citation-based ranking and prediction should not be interpreted as scientific quality.
@@ -677,13 +715,16 @@ Main outputs:
    The best NDCG@10 came from hybrid reranking plus graph-aware blending, but the gain over BM25 was small.
 
 10. Supervised ML has signal but modest practical improvement.
-   The citation prediction model achieved AUC 0.8559 but only modestly improved accuracy over the majority baseline.
+   The citation prediction model achieved AUC 0.9168 on the refreshed development run, but it should still be treated as an exploratory baseline.
 
 11. The feature mart is the best current downstream artifact.
-   It integrates 34 publication-level columns for all 1,000 rows and makes sparse feature availability explicit.
+   It integrates 34 publication-level columns for all 2,500 rows and makes sparse feature availability explicit.
 
 12. The visualization gallery makes the full pipeline inspectable.
    The figures are regenerated from measured report outputs rather than hand-entered values.
+
+13. The extension pass adds the requested production-facing artifacts.
+   The project now includes a vector-style abstract index over 1,777 documents, field/year-normalized citation metrics for 2,500 publications, a file-arrival monitor, and a lightweight static dashboard.
 
 ## Reproducibility
 
@@ -705,13 +746,18 @@ python -m scigraph.retrieval.advanced --config configs/dev.yaml
 python -m scigraph.evaluation.citation_prediction --config configs/dev.yaml
 python -m scigraph.ranking.composite --config configs/dev.yaml
 python -m scigraph.features.publication_mart --config configs/dev.yaml
+python -m scigraph.evaluation.field_normalized_citations --config configs/dev.yaml
+python -m scigraph.retrieval.vector_index --config configs/dev.yaml
+python -m scigraph.streaming.file_arrival --config configs/dev.yaml
 python -m scigraph.visualization.figures --config configs/dev.yaml
+python -m scigraph.dashboard.static --config configs/dev.yaml
 python -m pytest
 ```
 
 Latest verification:
 
-- `python -m pytest` passed with 50 tests.
+- `.\scripts\run_pipeline.ps1 -Config configs\dev.yaml` completed on 2026-10-06 in 13 minutes 26 seconds.
+- `python -m pytest` passed with 57 tests.
 
 ## Current Limitations
 
@@ -720,15 +766,16 @@ Latest verification:
 - The sample is heterogeneous, which weakens clustering and topic interpretation.
 - Text analysis and clustering are English-filtered.
 - Data-quality checks report issues but do not clean, repair, or quarantine records.
-- Citation PageRank is not useful for sampled-paper ranking because the sample has 0 internal citation edges.
+- Citation PageRank is only weakly useful for sampled-paper ranking because the sample has 1 internal citation edge.
 - Author collaboration is sample-local and does not represent complete career-level collaboration histories.
 - Temporal citation metrics are affected by recency and unequal citation windows.
-- Streaming is simulated by deterministic replay, not a live broker-based streaming system.
+- Streaming is covered by deterministic micro-batch replay and a bounded file-arrival monitor, not a live broker-based streaming system.
 - Retrieval evaluation uses approximate topic-name relevance labels, not human judgments.
 - Dense retrieval uses a local Word2Vec model rather than a large pretrained scientific embedding model.
 - Optional RAG is not implemented; the project remains focused on scalable analytics and retrieval evaluation.
 - Citation prediction is not causal and does not predict scientific quality.
 - Composite ranking uses manual weights and sample-local normalization.
+- The vector index uses the portable scikit-learn TF-IDF fallback in this environment because FAISS and Chroma are not installed.
 - The feature mart inherits all upstream limitations.
 
 ## Recommended Next Steps
@@ -739,8 +786,8 @@ Latest verification:
 2. Add citation-neighborhood expansion.
    Fetch metadata for referenced works so PageRank nodes have title/year/topic metadata.
 
-3. Add field-normalized citation metrics.
-   Normalize citation counts by publication year and topic/field to reduce recency and field bias.
+3. Replace the fallback vector backend with Chroma or FAISS.
+   The index contract is in place; installing one of those backends would make the retrieval layer closer to a production vector database.
 
 4. Improve clustering.
    Try field-specific subsets, larger samples, better text filtering, and possibly embeddings once the non-LLM baseline is complete.
@@ -748,17 +795,17 @@ Latest verification:
 5. Add human or semi-structured relevance judgments for retrieval.
    Current retrieval evaluation uses approximate OpenAlex topic-name matching.
 
-6. Turn streaming simulation into file-arrival or Structured Streaming ingestion.
-   This would test checkpointing, event-time behavior, late data, and recovery.
+6. Promote file-arrival monitoring to a long-running Structured Streaming job.
+   The configured input and checkpoint paths are in place; a long-running stream would test checkpointing, event-time behavior, late data, and recovery.
 
 7. Add human relevance judgments for retrieval and rerun the ablation.
    This would make BM25/dense/hybrid/reranker conclusions much stronger.
 
-8. Extend the visualization gallery into an interactive dashboard.
-   The current static figures are reproducible and complete; an interactive dashboard would make filtering and drill-down easier.
+8. Add dashboard filtering and drill-down.
+   The current dashboard is static HTML generated from measured reports; interactive filtering would make it easier to inspect fields, years, and retrieval systems.
 
 ## Final Status
 
-The project now contains a complete, reproducible, multi-stage scientific literature analytics pipeline over a 1,000-record OpenAlex development sample. It includes data engineering, data quality, text analytics, graph analytics, temporal analysis, monitoring, retrieval, machine learning, ranking, integrated feature production, and a final visualization gallery.
+The project now contains a complete, reproducible, multi-stage scientific literature analytics pipeline over a 2,500-record OpenAlex development sample. It includes data engineering, data quality, text analytics, graph analytics, temporal analysis, monitoring, retrieval, machine learning, ranking, integrated feature production, vector indexing, field-normalized citation metrics, a file-arrival monitor, and a final dashboard plus visualization gallery.
 
 The strongest current deliverable is not any single model score. It is the full reproducible pipeline and the honest documentation of what the sample can and cannot support.

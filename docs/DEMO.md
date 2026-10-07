@@ -6,15 +6,15 @@ Query: `retrieval augmented generation for clinical decision support`
 
 | rank | title | year | score | cited_by_count | pagerank |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 1 | Living with cystic fibrosis during the COVID-19 pandemic: An interpretive description of healthcare access from patients with cystic fibrosis and their providers in Alberta, Canada | 2025 | 0.085324 | 3 | 0.00004222 |
-| 2 | Insomnia Severity and Its Demographic and Health-Related Correlates Among Paramedic Students in Saudi Arabia: A Cross-Sectional Study | 2026 | 0.079117 | 0 | 0.00004222 |
-| 3 | The Role of Multidisciplinary Expertise in AI Training Data: Quantifying Variability in Prostate and Urethral MRI Segmentation | 2026 | 0.079114 | 0 | 0.00004222 |
-| 4 | Session 32: Artificial Intelligence: The impossible boundary between proofreading and generation | 2026 | 0.077345 | 0 | 0.00004222 |
-| 5 | Guideline‐augmented prompting improves comparative preference and response consistency of large language model outputs for orthopaedic anaesthesia questions: A controlled prompting study | 2026 | 0.076723 | 0 | 0.00000000 |
-| 6 | Characteristics of Private Participation Operation for Central Park in New York City | 2022 | 0.072529 | 0 | 0.00004222 |
-| 7 | TC check: a web app for thyroid cancer recurrence prediction using explainable machine learning | 2025 | 0.071523 | 0 | 0.00000000 |
-| 8 | Ensemble Based Machine Learning Approach for Heart Disease Prediction | 2025 | 0.069967 | 0 | 0.00000000 |
-| 9 | CarvGPT: a multi-agent collaborative framework for cultural translation and digital innovation in traditional craft design | 2026 | 0.065933 | 0 | 0.00004222 |
-| 10 | An automated approach to identify sarcasm in low-resource language | 2024 | 0.064581 | 16 | 0.00004222 |
+| 1 | Coadaptation and implementation of intrapartum clinical guidelines to save lives during childbirth: Protocol for an adapted PartoMa intervention in Eastern Ethiopia | 2026 | 0.075981 | 0 | 0.00000000 |
+| 2 | Barriers to accreditation in point-of-care echocardiography for critical care: A Scottish perspective | 2025 | 0.067477 | 0 | 0.00000000 |
+| 3 | Investigating the relationship between complementary and alternative therapy attitudes and pain management self-efficacy in surgical nurses: a cross-sectional study | 2025 | 0.066752 | 0 | 0.00000000 |
+| 4 | CAE SynthImgGen: Revolutionizing cancer diagnosis with convolutional autoencoder-based synthetic image generation | 2024 | 0.061710 | 0 | 0.00000000 |
+| 5 | IMERG-Like Precipitation Retrieval From Geo-Kompsat-2A Observations Using Conditional Generative Adversarial Networks | 2025 | 0.058263 | 0 | 0.00000000 |
+| 6 | Private 5G Network: Security, Challenges, and Comparison with Wi-Fi | 2025 | 0.057958 | 0 | 0.00000000 |
+| 7 | Who Benefits More From IBMS or Qigong? Clinical Data-Mining RCT Data | 2023 | 0.055706 | 0 | 0.00000000 |
+| 8 | Mutual Pan-African support paradigm to produce scientific evidence of traditional medical practices for use against COVID-19 and emerging pandemics | 2021 | 0.055648 | 0 | 0.00000000 |
+| 9 | Performance management in logistics outsourcing: a study on sugar-energy industry | 2020 | 0.054184 | 0 | 0.00000000 |
+| 10 | A Hybrid Deep Learning Intrusion Detection Model for Fog Computing Environment | 2021 | 0.053478 | 0 | 0.00000000 |
 
 The demo uses the hybrid + transparent reranker pipeline.

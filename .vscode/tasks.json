@@ -1,0 +1,74 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run production citation graph",
+			"type": "shell",
+			"command": "c:/Users/tousi/Documents/ta_a5/Common/scigraph/.venv/Scripts/python.exe",
+			"args": [
+				"-m",
+				"scigraph.graph.citation_graph",
+				"--config",
+				"configs/production.yaml"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run production citation graph WSL",
+			"type": "shell",
+			"command": "/mnt/c/Users/tousi/Documents/ta_a5/Common/scigraph/.venv/Scripts/python.exe",
+			"args": [
+				"-m",
+				"scigraph.graph.citation_graph",
+				"--config",
+				"configs/production.yaml"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run production citation graph rooted",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"-lc",
+				"cd /mnt/c/Users/tousi/Documents/ta_a5/Common/scigraph && PYTHONPATH=src /mnt/c/Users/tousi/Documents/ta_a5/Common/scigraph/.venv/Scripts/python.exe -m scigraph.graph.citation_graph --config configs/production.yaml"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run production citation graph direct",
+			"type": "shell",
+			"command": "/mnt/c/Users/tousi/Documents/ta_a5/Common/scigraph/.venv/Scripts/python.exe",
+			"args": [
+				"-c",
+				"import sys,runpy; sys.path.insert(0, r'C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\src'); sys.argv=['citation_graph','--config',r'C:\\Users\\tousi\\Documents\\ta_a5\\Common\\scigraph\\configs\\production.yaml']; runpy.run_module('scigraph.graph.citation_graph', run_name='__main__')"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run production citation graph final",
+			"type": "shell",
+			"command": "/mnt/c/Users/tousi/Documents/ta_a5/Common/scigraph/.venv/Scripts/python.exe",
+			"args": [
+				"-c",
+				"import sys,runpy; sys.path.insert(0, \"C:/Users/tousi/Documents/ta_a5/Common/scigraph/src\"); sys.argv=[\"citation_graph\",\"--config\",\"C:/Users/tousi/Documents/ta_a5/Common/scigraph/configs/production.yaml\"]; runpy.run_module(\"scigraph.graph.citation_graph\", run_name=\"__main__\")"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run production citation graph script",
+			"type": "shell",
+			"command": "/mnt/c/Users/tousi/Documents/ta_a5/Common/scigraph/.venv/Scripts/python.exe",
+			"args": [
+				"C:/Users/tousi/Documents/ta_a5/Common/scigraph/run_citation_graph_temp.py"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

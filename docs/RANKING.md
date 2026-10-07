@@ -6,7 +6,7 @@ Generated on 2026-10-06.
 
 - Ranked publications: 2500
 - Top N reported: 25
-- Mean composite score: 0.184335
+- Mean composite score: 0.188033
 
 ## Weights
 
@@ -23,31 +23,31 @@ Generated on 2026-10-06.
 
 | rank | title | year | score | cited_by_count | references | authors | topics |
 | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | The global costs of extreme weather that are attributable to climate change | 2023 | 0.639143 | 554 | 46 | 2 | 3 |
-| 2 | Inflammation-Induced Tumorigenesis and Metastasis | 2021 | 0.466496 | 293 | 350 | 7 | 3 |
-| 3 | Long-Term Outcomes of Laparoscopic Distal Gastrectomy for Locally Advanced Gastric Cancer: The KLASS-02-RCT Randomized Clinical Trial | 2020 | 0.455263 | 416 | 24 | 21 | 3 |
-| 4 | TMPRSS2 and COVID-19: Serendipity or Opportunity for Intervention? | 2020 | 0.440479 | 408 | 23 | 5 | 3 |
-| 5 | Benefits of gamification in medical education | 2022 | 0.379275 | 247 | 81 | 11 | 3 |
-| 6 | CitySim: A Drone-Based Vehicle Trajectory Dataset for Safety-Oriented Research and Digital Twins | 2023 | 0.367647 | 218 | 44 | 6 | 3 |
-| 7 | Adversarial Attacks in Modulation Recognition With Convolutional Neural Networks | 2020 | 0.360166 | 294 | 66 | 5 | 3 |
-| 8 | A signature for pan-cancer prognosis based on neutrophil extracellular traps | 2022 | 0.354439 | 229 | 47 | 10 | 3 |
-| 9 | A Review of Light-Emitting Diodes and Ultraviolet Light-Emitting Diodes and Their Applications | 2024 | 0.332274 | 91 | 199 | 3 | 3 |
-| 10 | Microbial Secondary Metabolites and Their Use in Achieving Sustainable Agriculture: Present Achievements and Future Challenges | 2025 | 0.314717 | 27 | 232 | 3 | 3 |
-| 11 | New opportunities for bioscaffold‐enabled spinal cord injury repair | 2025 | 0.314490 | 5 | 278 | 12 | 3 |
-| 12 | On soil health and the pivotal role of sensing | 2026 | 0.307704 | 5 | 179 | 5 | 3 |
-| 13 | Engineering of Coordination Environment and Multiscale Structure in Single-Site Copper Catalyst for Superior Electrocatalytic Oxygen Reduction | 2020 | 0.305609 | 230 | 43 | 13 | 3 |
-| 14 | Ultra-selective uranium separation by in-situ formation of π-f conjugated 2D uranium-organic framework | 2024 | 0.299968 | 101 | 47 | 9 | 3 |
-| 15 | The Water Surrounding the Iceberg: Cultural Racism and Health Inequities | 2023 | 0.297738 | 52 | 273 | 5 | 3 |
-| 16 | Tiryāq in traditional Persian medicine: a survey of antidotal plants and their modern pharmacological potential | 2025 | 0.288071 | 0 | 212 | 5 | 3 |
-| 17 | Parallels between bipolar disorder and ATP1A3-related diseases: a window into the investigation of lithium for alternating hemiplegia of childhood | 2026 | 0.286857 | 0 | 122 | 4 | 3 |
-| 18 | Recent advances in lubricants for hot metal forming: A review | 2026 | 0.285143 | 0 | 109 | 8 | 3 |
-| 19 | High concentration formulation developability approaches and considerations | 2023 | 0.283737 | 95 | 100 | 6 | 3 |
-| 20 | Research progress and prospects of intelligent flow control based on reinforcement learning | 2026 | 0.283223 | 3 | 99 | 5 | 3 |
-| 21 | A global review of air quality and public health research: geo-temporal patterns, methods and issues | 2026 | 0.281955 | 1 | 102 | 4 | 3 |
-| 22 | Multi-Stage Corn Yield Prediction Using High-Resolution UAV Multispectral Data and Machine Learning Models | 2023 | 0.279809 | 95 | 88 | 5 | 3 |
-| 23 | The genome landscape of Hong Kong feral cattle as a unique genetic resource | 2026 | 0.278955 | 1 | 74 | 14 | 3 |
-| 24 | Exploring AI adoption in manufacturing: An empirical study on effects of AI readiness | 2025 | 0.277919 | 5 | 164 | 4 | 3 |
-| 25 | Membrane vesicles produced by next-generation probiotics from the gut as innovative tools for human health | 2025 | 0.277460 | 20 | 118 | 5 | 3 |
+| 1 | The Pantheon+ Analysis: The Full Data Set and Light-curve Release | 2022 | 0.632684 | 945 | 94 | 30 | 3 |
+| 2 | THE TYRANNY OF MERIT: WHAT’S BECOME OF THE COMMON GOOD | 2021 | 0.575500 | 964 | 0 | 1 | 3 |
+| 3 | Optimizing EDM process parameters with the use of GRA-based RSM for machining titanium alloy | 2025 | 0.410066 | 18 | 82 | 7 | 3 |
+| 4 | An atlas of human metabolism | 2020 | 0.360486 | 490 | 77 | 20 | 3 |
+| 5 | Health and Environmental Impacts of Cyanobacteria and Cyanotoxins from Freshwater to Seawater | 2025 | 0.346573 | 43 | 354 | 3 | 3 |
+| 6 | Polymer-Derived Silicon Oxycarbide (SiOC) and Silicon Carbonitride (SiCN) Ceramics for Advanced Electrochemical Energy Storage Applications | 2026 | 0.317384 | 0 | 235 | 2 | 3 |
+| 7 | Modifiable and Nonmodifiable Risk Factors for Breast Cancer: A Comprehensive Scoping Review | 2026 | 0.311691 | 2 | 208 | 4 | 3 |
+| 8 | Advances in the regulation of bone metabolism by central nuclei: a new perspective on the brain-bone axis | 2026 | 0.303282 | 0 | 178 | 6 | 3 |
+| 9 | The distal humerus of Pliobates cataloniae (Primates: Pliopithecoidea): functional and locomotor inferences | 2026 | 0.296177 | 2 | 146 | 8 | 3 |
+| 10 | From Precatalysts to Real Active Phases: Dynamic Reconstruction of CO2 Reduction Electrocatalysts | 2026 | 0.295068 | 0 | 156 | 2 | 3 |
+| 11 | Biological Plausibility Between Long-COVID and Periodontal Disease Development or Progression | 2025 | 0.292504 | 1 | 232 | 3 | 3 |
+| 12 | Advancement and Perspective of Nanozyme in Cancer Diagnosis and Treatment Applications | 2025 | 0.289417 | 3 | 216 | 4 | 3 |
+| 13 | The associations of human genetic variations with airway microbiome, environmental exposures, and respiratory health | 2026 | 0.288096 | 0 | 103 | 18 | 3 |
+| 14 | Thrombospondin-2 in Cardiovascular Disease: Molecular Mechanisms, Biomarker Potential, and Therapeutic Perspectives | 2026 | 0.284986 | 0 | 115 | 5 | 3 |
+| 15 | Pharmacokinetics of nanoparticles: current knowledge, future directions and its implications in drug delivery | 2023 | 0.284723 | 173 | 99 | 2 | 3 |
+| 16 | Neuroimmune regulation of visceral pain: roles of microglia, purinergic signaling, and neuroinflammation | 2026 | 0.284138 | 0 | 112 | 5 | 3 |
+| 17 | Exploiting ER proteostasis in malaria: protein disulphide isomerases as selective antimalarial targets | 2026 | 0.283421 | 0 | 113 | 3 | 3 |
+| 18 | Near‐White Circularly Polarized Luminescence by Color Mixing Utilizing Surface‐Fluorophore‐Modified Cellulose Nanocrystals in Composite Films | 2026 | 0.282901 | 0 | 97 | 11 | 3 |
+| 19 | Development and Validation of a Streamlined Workflow for Proteomic Analysis of Proteins and Post-translational Modifications from Dried Blood | 2026 | 0.281640 | 2 | 91 | 10 | 3 |
+| 20 | CO2 capture and conversion into valuable chemicals using graphitic carbon nitride: A review | 2024 | 0.281482 | 14 | 260 | 3 | 3 |
+| 21 | Recent Advances in Sensing Strategies for the Detection and Discrimination of Tea Polyphenols | 2026 | 0.280771 | 0 | 93 | 9 | 3 |
+| 22 | A review of heat pump water heater system demand flexibility | 2026 | 0.279531 | 0 | 101 | 2 | 3 |
+| 23 | dia-PASEF Enables Rapid Profiling of the Human Secretome for Deeper Insights Into Cellular Dynamics and Inflammatory Mechanisms | 2026 | 0.279381 | 0 | 81 | 13 | 3 |
+| 24 | Obeticholic acid attenuates complete freund’s adjuvant-induced arthritis in rats through FXR-mediated modulation of TGF-β/TAK1/MKK3/p38 MAPK signaling, inflammation, and oxidative stress | 2026 | 0.278206 | 0 | 91 | 5 | 3 |
+| 25 | Human factors in cybersecurity: an interdisciplinary review and framework proposal | 2025 | 0.278120 | 82 | 49 | 2 | 3 |
 
 ## Interpretation
 

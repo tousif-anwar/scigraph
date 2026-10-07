@@ -1,0 +1,30 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261006032716
+Username: DESKTOP-88EMS9T\tousi
+RunAs User: DESKTOP-88EMS9T\tousi
+Configuration Name: 
+Machine: DESKTOP-88EMS9T (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\tousi\Documents\ta_a5\Common\scigraph\scripts\run_pipeline.ps1 -Config configs\production.yaml
+Process ID: 46344
+PSVersion: 5.1.26100.9549
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9549
+BuildVersion: 10.0.26100.9549
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+SciGraph pipeline run
+Config: configs\production.yaml
+Log: logs\pipeline_20261006T032716.log
+Spark UI: check http://localhost:4040 while Spark stages are running.
+
+[2026-10-06T03:27:16] START Acquire OpenAlex
+>>> python -m scigraph.ingestion.acquire_openalex --config configs\production.yaml
+
+**********************
+Windows PowerShell transcript end
+End time: 20261006032716
+**********************

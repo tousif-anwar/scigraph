@@ -104,6 +104,17 @@ paths:
   error_analysis_md: docs/ERROR_ANALYSIS.md
   demo_results_json: reports/results/demo_results.json
   demo_report_md: docs/DEMO.md
+  vector_index_dir: data/gold/vector_index
+  vector_index_report_json: reports/results/vector_index_report.json
+  vector_index_report_md: docs/VECTOR_INDEX.md
+  citation_field_normalized: data/gold/citation_field_normalized
+  citation_field_report_json: reports/results/citation_field_normalized_report.json
+  citation_field_report_md: docs/FIELD_NORMALIZED_CITATIONS.md
+  dashboard_html: docs/dashboard/index.html
+  file_arrival_input_dir: data/streaming/file_arrivals
+  file_arrival_checkpoint_dir: data/gold/streaming_file_arrival_checkpoint
+  file_arrival_report_json: reports/results/streaming_file_arrival_report.json
+  file_arrival_report_md: docs/STREAMING_FILE_ARRIVAL.md
 
 spark:
   app_name: SciGraphMilestone3
@@ -191,3 +202,8 @@ spark:
       - 0.25
       - 0.5
     demo_query: retrieval augmented generation for clinical decision support
+  vector_index:
+    backend: auto
+    max_documents: 5000
+    max_features: 20000
+    n_neighbors: 10

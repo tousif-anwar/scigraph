@@ -53,9 +53,11 @@ def run_pagerank(vertices, edges, config: dict[str, Any]):
     base = pagerank_base_score(vertex_count, damping)
 
     ranks = vertices.select("paper_id").withColumn("pagerank", F.lit(1.0 / vertex_count))
-    out_degree = edges.groupBy("paper_id").agg(F.count("*").alias("out_degree"))
+    out_degree = edges.groupBy("paper_id").agg(F.count("*").alias("out_degree")).cache()
+    out_degree.count()
 
     for _ in range(iterations):
+        previous_ranks = ranks
         contributions = (
             edges.join(ranks, on="paper_id", how="inner")
             .join(out_degree, on="paper_id", how="inner")
@@ -84,7 +86,9 @@ def run_pagerank(vertices, edges, config: dict[str, Any]):
             .cache()
         )
         ranks.count()
+        previous_ranks.unpersist()
 
+    out_degree.unpersist()
     return ranks
 
 
