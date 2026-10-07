@@ -1,35 +1,35 @@
 # ML Citation Prediction
 
-Generated on 2026-10-05.
+Generated on 2026-10-06.
 
 ## Summary
 
 - Status: success
-- Records: 1000
+- Records: 2500
 - Citation threshold: 4.0
-- Train rows: 713
-- Test rows: 287
-- Positive labels: 264
-- Negative labels: 736
-- Area under ROC: 0.8559
-- Accuracy: 0.7735
-- Majority baseline accuracy: 0.7360
+- Train rows: 1783
+- Test rows: 717
+- Positive labels: 663
+- Negative labels: 1837
+- Area under ROC: 0.9174
+- Accuracy: 0.8494
+- Majority baseline accuracy: 0.7348
 
 ## Confusion Matrix
 
 | true positive | false positive | true negative | false negative |
 | ---: | ---: | ---: | ---: |
-| 30 | 6 | 192 | 59 |
+| 84 | 10 | 525 | 98 |
 
 ## Feature Coefficients
 
 | feature | coefficient |
 | --- | ---: |
-| publication_year_index | -0.268415 |
-| reference_count | 0.023072 |
-| author_count | 0.078583 |
-| concept_count | 0.014098 |
-| topic_count | 0.258860 |
+| publication_year_index | -0.294224 |
+| reference_count | 0.020846 |
+| author_count | 0.083332 |
+| concept_count | 0.015755 |
+| topic_count | 0.250930 |
 | abstract_available_numeric | 0.000000 |
 
 ## Interpretation

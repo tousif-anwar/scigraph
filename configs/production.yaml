@@ -7,7 +7,7 @@ dataset:
   source_url: https://api.openalex.org/works
   documentation_url: https://help.openalex.org/data/works/attributes/
   license: CC0
-  sample_size: 1000000
+  sample_size: 100000
   seed: 660
   api_page_size: 200
   contact_email: ""

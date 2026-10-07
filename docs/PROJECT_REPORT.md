@@ -6,29 +6,29 @@ Generated on 2026-10-06.
 
 SciGraph is a milestone-built scientific literature analytics project over OpenAlex Works metadata. The project is not a RAG application. It implements a reproducible Spark-based data pipeline and a set of distributed analytics experiments covering data quality, text analysis, clustering, citation graphs, author collaboration graphs, temporal trends, streaming-style monitoring, sparse retrieval, supervised ML, composite ranking, and an integrated publication feature mart.
 
-The current development run uses 1,000 OpenAlex article records from publication years 2020-2026. Raw data is preserved, Silver and Gold analysis tables are produced as Parquet, each analytic stage writes machine-readable JSON plus human-readable Markdown reports, and the final visualization gallery includes 13 generated figures. The project currently has 50 passing tests.
+The current development run uses 2,500 OpenAlex article records from publication years 2020-2026. Raw data is preserved, Silver and Gold analysis tables are produced as Parquet, each analytic stage writes machine-readable JSON plus human-readable Markdown reports, and the final visualization gallery includes 13 generated figures. The project currently has 50 passing tests.
 
 Key measured outputs:
 
 | Area | Result |
 | --- | --- |
-| Raw sample | 1,000 OpenAlex article records |
+| Raw sample | 2,500 OpenAlex article records |
 | Publication year range | 2020-2026 |
-| Unique publications | 1,000 |
-| Unique authors | 3,721 |
-| Referenced works observed | 22,329 before self-citation removal |
-| Gold citation edges | 22,321 |
-| Text documents analyzed | 738 English-language documents |
-| Text vocabulary | 16,091 retained terms |
-| Clustering | K=3 selected, weak silhouette, exploratory only |
-| Citation graph | 23,177 expanded vertices, 22,321 edges, 0 in-sample citation edges |
-| Author collaboration graph | 3,721 authors, 11,508 coauthor edges |
-| Temporal analysis | 7 yearly buckets, 2,477 topic-year rows |
-| Streaming simulation | 10 micro-batches, 1,000 records processed, 0 alerts |
-| Retrieval ablation | BM25 precision@10 = 0.38; best NDCG@10 = 0.6609 with hybrid reranked graph-aware retrieval |
-| Citation prediction | AUC = 0.8559, accuracy = 0.7735, majority baseline = 0.7360 |
-| Composite ranking | 1,000 ranked publications, mean score = 0.1861 |
-| Feature mart | 1,000 rows, 34 columns |
+| Unique publications | 2,500 |
+| Unique authors | 9,274 |
+| Referenced works observed | 53,900 before self-citation removal |
+| Gold citation edges | 53,877 |
+| Text documents analyzed | 1,793 English-language documents |
+| Text vocabulary | 26,728 retained terms |
+| Clustering | K=5 selected, exploratory only |
+| Citation graph | 2,500 sampled vertices, 53,877 edges, 0 in-sample citation edges |
+| Author collaboration graph | 9,274 authors, 33,104 coauthor edges |
+| Temporal analysis | 7 yearly buckets, 5,566 topic-year rows |
+| Streaming simulation | 10 micro-batches, 2,500 records processed, 0 alerts |
+| Retrieval ablation | BM25 precision@10 = 0.48; best NDCG@10 = 0.6188 with hybrid reranked graph-aware retrieval |
+| Citation prediction | AUC = 0.9174, accuracy = 0.8494 |
+| Composite ranking | 2,500 ranked publications, mean score = 0.1843 |
+| Feature mart | 2,500 rows, 34 columns |
 | Visualizations | 13 PNG figures generated from measured JSON/Parquet-derived reports |
 
 ## Project Objective

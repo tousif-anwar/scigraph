@@ -1,12 +1,12 @@
 # Composite Ranking
 
-Generated on 2026-10-05.
+Generated on 2026-10-06.
 
 ## Summary
 
-- Ranked publications: 1000
+- Ranked publications: 2500
 - Top N reported: 25
-- Mean composite score: 0.186090
+- Mean composite score: 0.184335
 
 ## Weights
 
@@ -23,31 +23,31 @@ Generated on 2026-10-05.
 
 | rank | title | year | score | cited_by_count | references | authors | topics |
 | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | The global costs of extreme weather that are attributable to climate change | 2023 | 0.640066 | 554 | 46 | 2 | 3 |
-| 2 | Inflammation-Induced Tumorigenesis and Metastasis | 2021 | 0.469727 | 293 | 350 | 7 | 3 |
-| 3 | Microbial Secondary Metabolites and Their Use in Achieving Sustainable Agriculture: Present Achievements and Future Challenges | 2025 | 0.316102 | 27 | 232 | 3 | 3 |
-| 4 | Recent advances in lubricants for hot metal forming: A review | 2026 | 0.288835 | 0 | 109 | 8 | 3 |
-| 5 | Parallels between bipolar disorder and ATP1A3-related diseases: a window into the investigation of lithium for alternating hemiplegia of childhood | 2026 | 0.288703 | 0 | 122 | 4 | 3 |
-| 6 | A global review of air quality and public health research: geo-temporal patterns, methods and issues | 2026 | 0.283801 | 1 | 102 | 4 | 3 |
-| 7 | Multi-Stage Corn Yield Prediction Using High-Resolution UAV Multispectral Data and Machine Learning Models | 2023 | 0.282117 | 95 | 88 | 5 | 3 |
-| 8 | An update on multimodal imaging strategies for nipple discharge: from detection to decision | 2025 | 0.280378 | 7 | 147 | 8 | 3 |
-| 9 | The effect of type 2 diabetes genetic predisposition on non-cardiovascular comorbidities | 2025 | 0.279196 | 8 | 103 | 19 | 3 |
-| 10 | Tissue-specific metabolomic profiling reveals cultivar-dependent drought tolerance mechanisms in rice (Oryza sativa L.) | 2026 | 0.278583 | 5 | 69 | 5 | 3 |
-| 11 | CarvGPT: a multi-agent collaborative framework for cultural translation and digital innovation in traditional craft design | 2026 | 0.278082 | 0 | 68 | 9 | 3 |
-| 12 | Tailoring Interfaces for Enhanced Methanol Production from Photoelectrochemical CO 2 Reduction | 2024 | 0.277803 | 59 | 44 | 18 | 3 |
-| 13 | Incidence of azole resistance among clinical isolates of Candida parapsilosis: Results from the French nationwide multicenter prospective study “ReCap” 2022-2024 | 2026 | 0.276433 | 1 | 19 | 21 | 3 |
-| 14 | Optimising Regional Land Use to Enhance Water Productivity Under Climate Uncertainty: The Role of Perennial Crops | 2026 | 0.276132 | 0 | 78 | 4 | 3 |
-| 15 | Electrical resistivity of geopolymer concrete: Understanding microstructure and pore solution chemistry to establish transport-based specifications | 2026 | 0.274912 | 0 | 67 | 6 | 3 |
-| 16 | Do Environmental Taxes Prioritise Environmental Effectiveness or Revenue-Raising Motivation? Evidence from OECD Countries | 2026 | 0.272885 | 0 | 70 | 3 | 3 |
-| 17 | Nanoformulation of Azadirachtin Improves Its Control on Cotton Pests | 2026 | 0.272582 | 1 | 56 | 6 | 3 |
-| 18 | Exploring peer-to-peer paid carpooling in Bogotá: A path to sustainable shared mobility | 2026 | 0.272341 | 0 | 58 | 6 | 3 |
-| 19 | Comprehensive profiling of Lepidium sativum L. seed oil and seed meal as a source for nutritional and functional health supplements | 2026 | 0.272132 | 0 | 64 | 4 | 3 |
-| 20 | The Role of Mindfulness in Hemodialysis Patients: A Scoping Review | 2026 | 0.271923 | 0 | 70 | 2 | 3 |
-| 21 | Green finance curbs direct carbon emissions but exacerbates lifecycle carbon emissions in China’s electricity sector | 2026 | 0.271769 | 0 | 56 | 6 | 3 |
-| 22 | A theoretical framework for the methodology of carbon sink assessment in China: A literature review | 2025 | 0.270878 | 1 | 151 | 2 | 3 |
-| 23 | The Role of Multidisciplinary Expertise in AI Training Data: Quantifying Variability in Prostate and Urethral MRI Segmentation | 2026 | 0.270632 | 0 | 15 | 17 | 3 |
-| 24 | Fluvial dynamics in a deltaic environment under Little Ice Age intense climatic forcing (Bras de Fer, Rhône delta, France) | 2025 | 0.269995 | 0 | 107 | 15 | 3 |
-| 25 | Prioritization pathways of renewal for old residential communities in small and medium-sized cities based on multi-model fusion: a case study of Jiefang District, Jiaozuo | 2026 | 0.269951 | 0 | 53 | 5 | 3 |
+| 1 | The global costs of extreme weather that are attributable to climate change | 2023 | 0.639143 | 554 | 46 | 2 | 3 |
+| 2 | Inflammation-Induced Tumorigenesis and Metastasis | 2021 | 0.466496 | 293 | 350 | 7 | 3 |
+| 3 | Long-Term Outcomes of Laparoscopic Distal Gastrectomy for Locally Advanced Gastric Cancer: The KLASS-02-RCT Randomized Clinical Trial | 2020 | 0.455263 | 416 | 24 | 21 | 3 |
+| 4 | TMPRSS2 and COVID-19: Serendipity or Opportunity for Intervention? | 2020 | 0.440479 | 408 | 23 | 5 | 3 |
+| 5 | Benefits of gamification in medical education | 2022 | 0.379275 | 247 | 81 | 11 | 3 |
+| 6 | CitySim: A Drone-Based Vehicle Trajectory Dataset for Safety-Oriented Research and Digital Twins | 2023 | 0.367647 | 218 | 44 | 6 | 3 |
+| 7 | Adversarial Attacks in Modulation Recognition With Convolutional Neural Networks | 2020 | 0.360166 | 294 | 66 | 5 | 3 |
+| 8 | A signature for pan-cancer prognosis based on neutrophil extracellular traps | 2022 | 0.354439 | 229 | 47 | 10 | 3 |
+| 9 | A Review of Light-Emitting Diodes and Ultraviolet Light-Emitting Diodes and Their Applications | 2024 | 0.332274 | 91 | 199 | 3 | 3 |
+| 10 | Microbial Secondary Metabolites and Their Use in Achieving Sustainable Agriculture: Present Achievements and Future Challenges | 2025 | 0.314717 | 27 | 232 | 3 | 3 |
+| 11 | New opportunities for bioscaffold‐enabled spinal cord injury repair | 2025 | 0.314490 | 5 | 278 | 12 | 3 |
+| 12 | On soil health and the pivotal role of sensing | 2026 | 0.307704 | 5 | 179 | 5 | 3 |
+| 13 | Engineering of Coordination Environment and Multiscale Structure in Single-Site Copper Catalyst for Superior Electrocatalytic Oxygen Reduction | 2020 | 0.305609 | 230 | 43 | 13 | 3 |
+| 14 | Ultra-selective uranium separation by in-situ formation of π-f conjugated 2D uranium-organic framework | 2024 | 0.299968 | 101 | 47 | 9 | 3 |
+| 15 | The Water Surrounding the Iceberg: Cultural Racism and Health Inequities | 2023 | 0.297738 | 52 | 273 | 5 | 3 |
+| 16 | Tiryāq in traditional Persian medicine: a survey of antidotal plants and their modern pharmacological potential | 2025 | 0.288071 | 0 | 212 | 5 | 3 |
+| 17 | Parallels between bipolar disorder and ATP1A3-related diseases: a window into the investigation of lithium for alternating hemiplegia of childhood | 2026 | 0.286857 | 0 | 122 | 4 | 3 |
+| 18 | Recent advances in lubricants for hot metal forming: A review | 2026 | 0.285143 | 0 | 109 | 8 | 3 |
+| 19 | High concentration formulation developability approaches and considerations | 2023 | 0.283737 | 95 | 100 | 6 | 3 |
+| 20 | Research progress and prospects of intelligent flow control based on reinforcement learning | 2026 | 0.283223 | 3 | 99 | 5 | 3 |
+| 21 | A global review of air quality and public health research: geo-temporal patterns, methods and issues | 2026 | 0.281955 | 1 | 102 | 4 | 3 |
+| 22 | Multi-Stage Corn Yield Prediction Using High-Resolution UAV Multispectral Data and Machine Learning Models | 2023 | 0.279809 | 95 | 88 | 5 | 3 |
+| 23 | The genome landscape of Hong Kong feral cattle as a unique genetic resource | 2026 | 0.278955 | 1 | 74 | 14 | 3 |
+| 24 | Exploring AI adoption in manufacturing: An empirical study on effects of AI readiness | 2025 | 0.277919 | 5 | 164 | 4 | 3 |
+| 25 | Membrane vesicles produced by next-generation probiotics from the gut as innovative tools for human health | 2025 | 0.277460 | 20 | 118 | 5 | 3 |
 
 ## Interpretation
 

@@ -1,0 +1,141 @@
+{"kind":"deck","id":"pr/uhm8n1","name":"Deck"}
+{"kind":"layout","layoutId":"105e32c9-3e75-41d1-87a9-c011be5871b4","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"b5504ff1-ec85-45b6-ab82-a24f6408b2b5","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/99hxm8","slide":1,"title":"SciGraph","textShapes":9}
+{"kind":"shape","id":"sh/zyh8b65k","slide":1,"bbox":[0,615,1280,105]}
+{"kind":"textbox","id":"sh/0zq94b65","slide":1,"text":"SciGraph","textPreview":"SciGraph","textChars":8,"textLines":1,"bbox":[72,96,760,80]}
+{"kind":"textbox","id":"sh/l0zqdgnq","slide":1,"text":"Scalable scientific literature intelligence over OpenAlex metadata","textPreview":"Scalable scientific literature intelligence over OpenAlex metadata","textChars":66,"textLines":1,"bbox":[76,176,820,52]}
+{"kind":"textbox","id":"sh/q98ryho3","slide":1,"text":"A reproducible Spark pipeline with text, graph, temporal, retrieval, ML, ranking, and visualization outputs.","textPreview":"A reproducible Spark pipeline with text, graph, temporal, retrieval, ML, ranking, and visualization outputs.","textChars":108,"textLines":1,"bbox":[76,270,760,86]}
+{"kind":"textbox","id":"sh/bah87mpo","slide":1,"text":"2,500","textPreview":"2,500","textChars":5,"textLines":1,"bbox":[78,458,210,52]}
+{"kind":"textbox","id":"sh/cbq90r69","slide":1,"text":"OpenAlex article records","textPreview":"OpenAlex article records","textChars":24,"textLines":1,"bbox":[78,506,230,44]}
+{"kind":"textbox","id":"sh/dczq9w7u","slide":1,"text":"53,877","textPreview":"53,877","textChars":6,"textLines":1,"bbox":[328,458,210,52]}
+{"kind":"textbox","id":"sh/25o7uho7","slide":1,"text":"Gold citation edges","textPreview":"Gold citation edges","textChars":19,"textLines":1,"bbox":[328,506,230,44]}
+{"kind":"textbox","id":"sh/36x83mpc","slide":1,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[578,458,210,52]}
+{"kind":"textbox","id":"sh/vidgzut0","slide":1,"text":"Generated figures","textPreview":"Generated figures","textChars":17,"textLines":1,"bbox":[578,506,230,44]}
+{"kind":"notes","id":"nt/99hxm8","slide":1,"text":"Sources: reports/results/schema_summary.json; reports/results/bronze_silver_gold_report.json; docs/VISUALIZATIONS.md. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/c4xhz4","slide":2,"title":"Project Objective","textShapes":8}
+{"kind":"shape","id":"sh/hwvqhgje","slide":2,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/utk761k3","slide":2,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/fut8f61o","slide":2,"text":"Project Objective","textPreview":"Project Objective","textChars":17,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/sr2p4r2x","slide":2,"text":"Build a transparent literature analytics system without relying on an LLM-only workflow","textPreview":"Build a transparent literature analytics system without relying on an LLM-only workflow","textChars":87,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"textbox","id":"sh/tsbqdwji","slide":2,"text":"The project turns raw scholarly metadata into analysis-ready tables, reports, and visual evidence. The emphasis is on reproducibility, measured results, and clear limitations.","textPreview":"The project turns raw scholarly metadata into analysis-ready tables, reports, and visual evidence. The emphasis is on reproducibility, me...","textChars":175,"textLines":1,"bbox":[74,150,520,126]}
+{"kind":"textbox","id":"sh/65k721kr","slide":2,"text":"1. Acquire OpenAlex article records with abstracts","textPreview":"1. Acquire OpenAlex article records with abstracts","textChars":50,"textLines":1,"bbox":[112,326,650,34]}
+{"kind":"textbox","id":"sh/7qt8b61c","slide":2,"text":"2. Normalize nested metadata with Spark","textPreview":"2. Normalize nested metadata with Spark","textChars":39,"textLines":1,"bbox":[112,372,650,34]}
+{"kind":"textbox","id":"sh/cnm9gv21","slide":2,"text":"3. Analyze text, citation links, collaboration, and time","textPreview":"3. Analyze text, citation links, collaboration, and time","textChars":56,"textLines":1,"bbox":[112,418,650,34]}
+{"kind":"textbox","id":"sh/dofqp0jm","slide":2,"text":"4. Compare sparse, dense, hybrid, and graph-aware retrieval","textPreview":"4. Compare sparse, dense, hybrid, and graph-aware retrieval","textChars":59,"textLines":1,"bbox":[112,464,650,34]}
+{"kind":"textbox","id":"sh/9cr2x0jy","slide":2,"text":"5. Publish a feature mart, figures, notebook, and final report","textPreview":"5. Publish a feature mart, figures, notebook, and final report","textChars":62,"textLines":1,"bbox":[112,510,650,34]}
+{"kind":"image","id":"im/7ad4jy9c","slide":2,"name":"","alt":"Feature mart availability chart","bbox":[760,154,430,360]}
+{"kind":"notes","id":"nt/c4xhz4","slide":2,"text":"Sources: docs/PROJECT_REPORT.md; reports/figures/feature_mart_availability.png. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/vvmre9","slide":3,"title":"System Architecture","textShapes":15}
+{"kind":"shape","id":"sh/1wv6l4j6","slide":3,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/etk7a9kf","slide":3,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/fudoju10","slide":3,"text":"System Architecture","textPreview":"System Architecture","textChars":19,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/sr258z29","slide":3,"text":"A layered pipeline keeps raw data, normalized tables, and analysis outputs separate","textPreview":"A layered pipeline keeps raw data, normalized tables, and analysis outputs separate","textChars":83,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"shape","id":"sh/tsb6h4ju","slide":3,"bbox":[58,220,160,155]}
+{"kind":"textbox","id":"sh/6pkn6pkj","slide":3,"text":"OpenAlex API","textPreview":"OpenAlex API","textChars":12,"textLines":1,"bbox":[72,242,130,34]}
+{"kind":"textbox","id":"sh/rqtofu14","slide":3,"text":"Raw JSONL metadata","textPreview":"Raw JSONL metadata","textChars":18,"textLines":1,"bbox":[72,292,128,62]}
+{"kind":"shape","id":"sh/cn6pkj2t","slide":3,"bbox":[220,272,54,46]}
+{"kind":"shape","id":"sh/dof6toje","slide":3,"bbox":[238,220,160,155]}
+{"kind":"textbox","id":"sh/9obq943y","slide":3,"text":"Bronze","textPreview":"Bronze","textChars":6,"textLines":1,"bbox":[252,242,130,34]}
+{"kind":"textbox","id":"sh/on2pgzmd","slide":3,"text":"Raw nested Spark table","textPreview":"Raw nested Spark table","textChars":22,"textLines":1,"bbox":[252,292,128,62]}
+{"kind":"shape","id":"sh/nmt87uls","slide":3,"bbox":[400,272,54,46]}
+{"kind":"shape","id":"sh/mlk7ep47","slide":3,"bbox":[418,220,160,155]}
+{"kind":"textbox","id":"sh/1kbq5k3m","slide":3,"text":"Silver","textPreview":"Silver","textChars":6,"textLines":1,"bbox":[432,242,130,34]}
+{"kind":"textbox","id":"sh/0j2pczm1","slide":3,"text":"Publication-level normalization","textPreview":"Publication-level normalization","textChars":31,"textLines":1,"bbox":[432,292,128,62]}
+{"kind":"shape","id":"sh/zito3ulg","slide":3,"bbox":[580,272,54,46]}
+{"kind":"shape","id":"sh/eh07ap4b","slide":3,"bbox":[598,220,160,155]}
+{"kind":"textbox","id":"sh/lgvqho36","slide":3,"text":"Gold","textPreview":"Gold","textChars":4,"textLines":1,"bbox":[612,242,130,34]}
+{"kind":"textbox","id":"sh/kfmpojml","slide":3,"text":"Publications, authors, citations, topics","textPreview":"Publications, authors, citations, topics","textChars":40,"textLines":1,"bbox":[612,292,128,62]}
+{"kind":"shape","id":"sh/4ve10ryt","slide":3,"bbox":[760,272,54,46]}
+{"kind":"shape","id":"sh/5wni9wfe","slide":3,"bbox":[778,220,160,155]}
+{"kind":"textbox","id":"sh/itwjyhgn","slide":3,"text":"Analysis","textPreview":"Analysis","textChars":8,"textLines":1,"bbox":[792,242,130,34]}
+{"kind":"textbox","id":"sh/3u507mx8","slide":3,"text":"Text, graph, temporal, retrieval, ML","textPreview":"Text, graph, temporal, retrieval, ML","textChars":36,"textLines":1,"bbox":[792,292,128,62]}
+{"kind":"shape","id":"sh/g7e1w7yx","slide":3,"bbox":[940,272,54,46]}
+{"kind":"shape","id":"sh/h8ni5cf2","slide":3,"bbox":[958,220,160,155]}
+{"kind":"textbox","id":"sh/u5cjuhgr","slide":3,"text":"Outputs","textPreview":"Outputs","textChars":7,"textLines":1,"bbox":[972,242,130,34]}
+{"kind":"textbox","id":"sh/v65032xc","slide":3,"text":"Reports, figures, tables, notebook","textPreview":"Reports, figures, tables, notebook","textChars":34,"textLines":1,"bbox":[972,292,128,62]}
+{"kind":"textbox","id":"sh/83u1s7yl","slide":3,"text":"Storage pattern: Parquet tables for data, JSON for metrics, Markdown for interpretation, PNG for figures.","textPreview":"Storage pattern: Parquet tables for data, JSON for metrics, Markdown for interpretation, PNG for figures.","textChars":105,"textLines":1,"bbox":[112,470,980,54]}
+{"kind":"notes","id":"nt/vvmre9","slide":3,"text":"Sources: docs/ARCHITECTURE.md; docs/PROJECT_REPORT.md. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/6nvet7","slide":4,"title":"Dataset And Scale","textShapes":3}
+{"kind":"shape","id":"sh/upk3yx0z","slide":4,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/hsvmtczq","slide":4,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/wrml07i5","slide":4,"text":"Dataset And Scale","textPreview":"Dataset And Scale","textChars":17,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/jud4vmhw","slide":4,"text":"The completed run uses a larger 2,500-record sample","textPreview":"The completed run uses a larger 2,500-record sample","textChars":51,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"textbox","id":"sh/4vml47i1","slide":4,"text":"The sample remains heterogeneous, which helps test the pipeline but weakens claims about field-specific clusters.","textPreview":"The sample remains heterogeneous, which helps test the pipeline but weakens claims about field-specific clusters.","textChars":113,"textLines":1,"bbox":[84,558,980,48]}
+{"kind":"table","id":"tb/bep8b69s","slide":4,"name":"","rows":6,"cols":2,"preview":"Metric | Value","bbox":[70,150,470,310]}
+{"kind":"image","id":"im/kf210z65","slide":4,"name":"","alt":"Publications by year","bbox":[620,135,540,380]}
+{"kind":"notes","id":"nt/6nvet7","slide":4,"text":"Sources: reports/results/schema_summary.json; reports/figures/dataset_publications_by_year.png. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/kjgjpg","slide":5,"title":"Data Quality And Spark Outputs","textShapes":8}
+{"kind":"shape","id":"sh/tczqpgna","slide":5,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/6987u1oj","slide":5,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/rah8n654","slide":5,"text":"Data Quality And Spark Outputs","textPreview":"Data Quality And Spark Outputs","textChars":30,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/gza90v61","slide":5,"text":"No blocking quality errors appeared in the completed run","textPreview":"No blocking quality errors appeared in the completed run","textChars":56,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"textbox","id":"sh/10jqtgn6","slide":5,"text":"2500","textPreview":"2500","textChars":4,"textLines":1,"bbox":[74,152,210,52]}
+{"kind":"textbox","id":"sh/ed87ylov","slide":5,"text":"Gold publications","textPreview":"Gold publications","textChars":17,"textLines":1,"bbox":[74,200,230,44]}
+{"kind":"textbox","id":"sh/fy18rq5g","slide":5,"text":"9274","textPreview":"9274","textChars":4,"textLines":1,"bbox":[316,152,210,52]}
+{"kind":"textbox","id":"sh/w36por6h","slide":5,"text":"Gold authors","textPreview":"Gold authors","textChars":12,"textLines":1,"bbox":[316,200,230,44]}
+{"kind":"textbox","id":"sh/h4fqhwn2","slide":5,"text":"53877","textPreview":"53877","textChars":5,"textLines":1,"bbox":[558,152,210,52]}
+{"kind":"textbox","id":"sh/14f6l8ji","slide":5,"text":"Citation edges","textPreview":"Citation edges","textChars":14,"textLines":1,"bbox":[558,200,230,44]}
+{"kind":"image","id":"im/7ytona9w","slide":5,"name":"","alt":"Data quality checks","bbox":[92,292,455,300]}
+{"kind":"image","id":"im/8z25gfah","slide":5,"name":"","alt":"Pipeline stage counts","bbox":[654,292,455,300]}
+{"kind":"notes","id":"nt/kjgjpg","slide":5,"text":"Sources: reports/results/data_quality_report.json; reports/results/bronze_silver_gold_report.json; reports/figures/data_quality_checks.png; reports/figures/pipeline_stage_counts.png. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/reb302","slide":6,"title":"Text Analysis And Clustering","textShapes":8}
+{"kind":"shape","id":"sh/qpwrapgf","slide":6,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/dsnqlkf6","slide":6,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/sre9cfyl","slide":6,"text":"Text Analysis And Clustering","textPreview":"Text Analysis And Clustering","textChars":28,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/fup8nuxc","slide":6,"text":"Text features scale, but clusters remain exploratory","textPreview":"Text features scale, but clusters remain exploratory","textChars":52,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"textbox","id":"sh/etwrepgr","slide":6,"text":"1793","textPreview":"1793","textChars":4,"textLines":1,"bbox":[72,142,210,52]}
+{"kind":"textbox","id":"sh/1w7qp4f2","slide":6,"text":"English text documents","textPreview":"English text documents","textChars":22,"textLines":1,"bbox":[72,190,230,44]}
+{"kind":"textbox","id":"sh/0vy9gzyh","slide":6,"text":"26728","textPreview":"26728","textChars":5,"textLines":1,"bbox":[340,142,210,52]}
+{"kind":"textbox","id":"sh/nypsrex8","slide":6,"text":"Retained vocabulary","textPreview":"Retained vocabulary","textChars":19,"textLines":1,"bbox":[340,190,230,44]}
+{"kind":"textbox","id":"sh/2xgri9gn","slide":6,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[608,142,210,52]}
+{"kind":"textbox","id":"sh/8z2xoba9","slide":6,"text":"Selected K","textPreview":"Selected K","textChars":10,"textLines":1,"bbox":[608,190,230,44]}
+{"kind":"image","id":"im/qtsfy90b","slide":6,"name":"","alt":"Top text terms","bbox":[72,288,500,300]}
+{"kind":"image","id":"im/dw3etoz2","slide":6,"name":"","alt":"Clustering results","bbox":[646,288,500,300]}
+{"kind":"notes","id":"nt/reb302","slide":6,"text":"Sources: reports/results/text_analysis_report.json; reports/results/clustering_report.json; reports/figures/text_top_terms.png; reports/figures/clustering_results.png. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/3m2qid","slide":7,"title":"Graph And Temporal Signals","textShapes":5}
+{"kind":"shape","id":"sh/ml0ba5s3","slide":7,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/9orulkbu","slide":7,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/8nidcfa9","slide":7,"text":"Graph And Temporal Signals","textPreview":"Graph And Temporal Signals","textChars":26,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/zipcfatc","slide":7,"text":"Collaboration is informative, while sampled citation links remain sparse","textPreview":"Collaboration is informative, while sampled citation links remain sparse","textChars":72,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"textbox","id":"sh/yhgb65s7","slide":7,"text":"Citation graph: 53,877 full edges, but 0 in-sample citation edges. PageRank is therefore limited for ranking sampled papers.","textPreview":"Citation graph: 53,877 full edges, but 0 in-sample citation edges. PageRank is therefore limited for ranking sampled papers.","textChars":124,"textLines":1,"bbox":[74,142,500,78]}
+{"kind":"textbox","id":"sh/lkruhkbi","slide":7,"text":"Author graph: 9,274 authors and 33,104 coauthor edges across the current sample.","textPreview":"Author graph: 9,274 authors and 33,104 coauthor edges across the current sample.","textChars":80,"textLines":1,"bbox":[74,238,500,64]}
+{"kind":"textbox","id":"sh/0jyt8fax","slide":7,"text":"Temporal analysis: 7 year buckets and 5,566 topic-year rows.","textPreview":"Temporal analysis: 7 year buckets and 5,566 topic-year rows.","textChars":60,"textLines":1,"bbox":[74,320,500,58]}
+{"kind":"image","id":"im/65kve10b","slide":7,"name":"","alt":"Author collaboration summary","bbox":[650,126,455,235]}
+{"kind":"image","id":"im/r6twn61w","slide":7,"name":"","alt":"Temporal yearly metrics","bbox":[650,382,455,210]}
+{"kind":"notes","id":"nt/3m2qid","slide":7,"text":"Sources: reports/results/citation_graph_report.json; reports/results/author_collaboration_report.json; reports/results/temporal_analysis_report.json. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/rbiv94","slide":8,"title":"Retrieval And ML Results","textShapes":8}
+{"kind":"shape","id":"sh/4r2d4va5","slide":8,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/36tcbqtk","slide":8,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/250v2lsf","slide":8,"text":"Retrieval And ML Results","textPreview":"Retrieval And ML Results","textChars":24,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/dwbuh0b2","slide":8,"text":"Graph-aware reranking produced the strongest NDCG in the current comparison","textPreview":"Graph-aware reranking produced the strongest NDCG in the current comparison","textChars":75,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"textbox","id":"sh/rutcfqtw","slide":8,"text":"0.6188","textPreview":"0.6188","textChars":6,"textLines":1,"bbox":[825,150,210,52]}
+{"kind":"textbox","id":"sh/qtkv65sb","slide":8,"text":"Best NDCG@10","textPreview":"Best NDCG@10","textChars":12,"textLines":1,"bbox":[825,198,230,44]}
+{"kind":"textbox","id":"sh/t0ru5gbi","slide":8,"text":"0.36","textPreview":"0.36","textChars":4,"textLines":1,"bbox":[825,282,210,52]}
+{"kind":"textbox","id":"sh/szidwbax","slide":8,"text":"Sparse P@10","textPreview":"Sparse P@10","textChars":11,"textLines":1,"bbox":[825,330,230,44]}
+{"kind":"textbox","id":"sh/6psnq58r","slide":8,"text":"0.9174","textPreview":"0.9174","textChars":6,"textLines":1,"bbox":[825,414,210,52]}
+{"kind":"textbox","id":"sh/7ql4ja9c","slide":8,"text":"Citation model AUC","textPreview":"Citation model AUC","textChars":18,"textLines":1,"bbox":[825,462,230,44]}
+{"kind":"table","id":"tb/twvy9gjm","slide":8,"name":"","rows":6,"cols":5,"preview":"System | P@10 | Recall@10 | MRR | NDCG@10","bbox":[58,138,700,305]}
+{"kind":"notes","id":"nt/rbiv94","slide":8,"text":"Sources: reports/results/retrieval_report.json; reports/results/advanced_retrieval_results.json; reports/results/ml_citation_prediction_report.json. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/h3j7jk","slide":9,"title":"Feature Mart And Review Artifacts","textShapes":4}
+{"kind":"shape","id":"sh/943q5cje","slide":9,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/mhcrax03","slide":9,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/n2l8321o","slide":9,"text":"Feature Mart And Review Artifacts","textPreview":"Feature Mart And Review Artifacts","textChars":33,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/0fa987ix","slide":9,"text":"The project now has a single inspection surface plus presentation-ready outputs","textPreview":"The project now has a single inspection surface plus presentation-ready outputs","textChars":79,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"textbox","id":"sh/lgjq1cji","slide":9,"text":"The feature mart preserves 2,500 publication rows and 34 columns. Text-derived features cover 71.7% of rows, while ranking features cover 100.0%.","textPreview":"The feature mart preserves 2,500 publication rows and 34 columns. Text-derived features cover 71.7% of rows, while ranking features cover...","textChars":145,"textLines":1,"bbox":[70,146,520,92]}
+{"kind":"textbox","id":"sh/kbe9kri1","slide":9,"text":"Review paths: PROJECT_REPORT.md, VISUALIZATIONS.md, reports/tables CSV files, and notebooks/scigraph_visual_summary.ipynb.","textPreview":"Review paths: PROJECT_REPORT.md, VISUALIZATIONS.md, reports/tables CSV files, and notebooks/scigraph_visual_summary.ipynb.","textChars":122,"textLines":1,"bbox":[84,524,820,48]}
+{"kind":"image","id":"im/b29srq1s","slide":9,"name":"","alt":"Feature mart availability","bbox":[670,126,430,245]}
+{"kind":"image","id":"im/q10by50n","slide":9,"name":"","alt":"Top ranked publications","bbox":[670,394,430,210]}
+{"kind":"notes","id":"nt/h3j7jk","slide":9,"text":"Sources: reports/results/feature_mart_report.json; docs/PROJECT_REPORT.md; docs/VISUALIZATIONS.md. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}
+{"kind":"slide","id":"sl/18b4bp","slide":10,"title":"Limitations And Next Steps","textShapes":7}
+{"kind":"shape","id":"sh/9oru987u","slide":10,"bbox":[0,0,1280,18]}
+{"kind":"shape","id":"sh/mlgbeto3","slide":10,"bbox":[0,702,1280,18]}
+{"kind":"textbox","id":"sh/nmpc7ypo","slide":10,"text":"Limitations And Next Steps","textPreview":"Limitations And Next Steps","textChars":26,"textLines":1,"bbox":[64,44,900,52]}
+{"kind":"textbox","id":"sh/writkn6l","slide":10,"text":"The strongest deliverable is the reproducible system and its measured evidence","textPreview":"The strongest deliverable is the reproducible system and its measured evidence","textChars":78,"textLines":1,"bbox":[66,94,880,32]}
+{"kind":"textbox","id":"sh/ap0bidof","slide":10,"text":"Recommended extensions","textPreview":"Recommended extensions","textChars":22,"textLines":1,"bbox":[835,148,300,32]}
+{"kind":"textbox","id":"sh/bq9cbip0","slide":10,"text":"1. Acquire a field-specific or citation-neighborhood sample","textPreview":"1. Acquire a field-specific or citation-neighborhood sample","textChars":59,"textLines":1,"bbox":[835,196,320,46]}
+{"kind":"textbox","id":"sh/kf2don6h","slide":10,"text":"2. Add human relevance judgments for retrieval","textPreview":"2. Add human relevance judgments for retrieval","textChars":46,"textLines":1,"bbox":[835,262,320,46]}
+{"kind":"textbox","id":"sh/lgbuhs72","slide":10,"text":"3. Build a semantic index with FAISS or Chroma","textPreview":"3. Build a semantic index with FAISS or Chroma","textChars":46,"textLines":1,"bbox":[835,328,320,46]}
+{"kind":"textbox","id":"sh/pwfqhs3q","slide":10,"text":"4. Turn the notebook into an interactive dashboard","textPreview":"4. Turn the notebook into an interactive dashboard","textChars":50,"textLines":1,"bbox":[835,394,320,46]}
+{"kind":"table","id":"tb/kri14vil","slide":10,"name":"","rows":5,"cols":2,"preview":"Current limitation | Why it matters","bbox":[70,145,690,330]}
+{"kind":"notes","id":"nt/18b4bp","slide":10,"text":"Sources: docs/LIMITATIONS.md; docs/PROJECT_REPORT.md. Metrics reflect the completed 2,500-record development run, not the in-progress 1,000,000-record production acquisition."}

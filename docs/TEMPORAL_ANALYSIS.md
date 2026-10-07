@@ -1,56 +1,56 @@
 # Temporal Analysis
 
-Generated on 2026-10-05.
+Generated on 2026-10-06.
 
 ## Summary
 
 - Publication year range: 2020 - 2026
-- Publications with valid years: 1000
+- Publications with valid years: 2500
 - Year buckets: 7
-- Topic-year rows: 2477
+- Topic-year rows: 5566
 - Latest sampled year: 2026
 
 ## Yearly Metrics
 
 | year | publications | YoY growth | avg cited_by_count | citations/publication | avg authors |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2020 | 135 |  | 12.8296 | 12.8296 | 3.7556 |
-| 2021 | 106 | -0.2148 | 10.2830 | 10.2830 | 4.0755 |
-| 2022 | 146 | 0.3774 | 4.9658 | 4.9658 | 3.9589 |
-| 2023 | 139 | -0.0479 | 11.4748 | 11.4748 | 4.3669 |
-| 2024 | 142 | 0.0216 | 3.9085 | 3.9085 | 3.8803 |
-| 2025 | 183 | 0.2887 | 1.5956 | 1.5956 | 4.0328 |
-| 2026 | 149 | -0.1858 | 0.1611 | 0.1611 | 3.7987 |
+| 2020 | 339 |  | 14.5605 | 14.5605 | 3.6932 |
+| 2021 | 280 | -0.1740 | 10.6607 | 10.6607 | 4.3036 |
+| 2022 | 349 | 0.2464 | 7.8510 | 7.8510 | 4.3610 |
+| 2023 | 337 | -0.0344 | 8.5460 | 8.5460 | 4.3887 |
+| 2024 | 359 | 0.0653 | 3.6713 | 3.6713 | 3.7716 |
+| 2025 | 465 | 0.2953 | 1.2817 | 1.2817 | 3.8774 |
+| 2026 | 371 | -0.2022 | 0.1887 | 0.1887 | 3.6981 |
 
 ## Top Latest-Year Topics
 
 | rank | topic | latest-year publications | previous-year publications | absolute growth | growth ratio |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 1 | Historical Geopolitical and Social Dynamics | 4 | 0 | 4 |  |
-| 2 | Healthcare professionals’ stress and burnout | 4 | 1 | 3 | 3.0000 |
-| 3 | Ethics and Social Impacts of AI | 3 | 0 | 3 |  |
-| 4 | Artificial Intelligence in Healthcare and Education | 3 | 1 | 2 | 2.0000 |
-| 5 | Aging, Health, and Disability | 2 | 0 | 2 |  |
-| 6 | Bariatric Surgery and Outcomes | 2 | 0 | 2 |  |
-| 7 | Blockchain Technology in Education and Learning | 2 | 0 | 2 |  |
-| 8 | Climate Change Policy and Economics | 2 | 0 | 2 |  |
-| 9 | Communism, Protests, Social Movements | 2 | 0 | 2 |  |
-| 10 | Diagnosis and treatment of tuberculosis | 2 | 0 | 2 |  |
-| 11 | Dialysis and Renal Disease Management | 2 | 0 | 2 |  |
-| 12 | Educational Outcomes and Influences | 2 | 0 | 2 |  |
-| 13 | Energy, Environment, Economic Growth | 2 | 0 | 2 |  |
-| 14 | Folklore, Mythology, and Literature Studies | 2 | 0 | 2 |  |
-| 15 | Geological and Geochemical Analysis | 2 | 0 | 2 |  |
-| 16 | High-pressure geophysics and materials | 2 | 0 | 2 |  |
-| 17 | Impact of Technology on Adolescents | 2 | 0 | 2 |  |
-| 18 | Linguistic Variation and Morphology | 2 | 0 | 2 |  |
-| 19 | Relativity and Gravitational Theory | 2 | 0 | 2 |  |
-| 20 | Reproductive tract infections research | 2 | 0 | 2 |  |
-| 21 | Urbanization and City Planning | 2 | 0 | 2 |  |
-| 22 | Dementia and Cognitive Impairment Research | 3 | 2 | 1 | 0.5000 |
-| 23 | Cervical Cancer and HPV Research | 2 | 1 | 1 | 1.0000 |
-| 24 | Digital Marketing and Social Media | 2 | 1 | 1 | 1.0000 |
-| 25 | Legal and Policy Analysis in Indonesia | 2 | 1 | 1 | 1.0000 |
+| 1 | Energy, Environment, Economic Growth | 4 | 0 | 4 |  |
+| 2 | Historical Geopolitical and Social Dynamics | 4 | 0 | 4 |  |
+| 3 | Noncommutative and Quantum Gravity Theories | 4 | 0 | 4 |  |
+| 4 | Ethics and Social Impacts of AI | 4 | 1 | 3 | 3.0000 |
+| 5 | Healthcare professionals’ stress and burnout | 4 | 1 | 3 | 3.0000 |
+| 6 | Aging, Health, and Disability | 3 | 0 | 3 |  |
+| 7 | Diverse Aspects of Tourism Research | 3 | 0 | 3 |  |
+| 8 | Health and Education Studies | 3 | 0 | 3 |  |
+| 9 | Inflammasome and immune disorders | 3 | 0 | 3 |  |
+| 10 | Muscle Physiology and Disorders | 3 | 0 | 3 |  |
+| 11 | Quantum and Classical Electrodynamics | 3 | 0 | 3 |  |
+| 12 | Relativity and Gravitational Theory | 3 | 0 | 3 |  |
+| 13 | Religious Tourism and Spaces | 3 | 0 | 3 |  |
+| 14 | Cervical Cancer and HPV Research | 4 | 2 | 2 | 1.0000 |
+| 15 | Anesthesia and Pain Management | 3 | 1 | 2 | 2.0000 |
+| 16 | Blockchain Technology in Education and Learning | 3 | 1 | 2 | 2.0000 |
+| 17 | Brazilian Legal Issues | 3 | 1 | 2 | 2.0000 |
+| 18 | Impact of Technology on Adolescents | 3 | 1 | 2 | 2.0000 |
+| 19 | Neuroscience, Education and Cognitive Function | 3 | 1 | 2 | 2.0000 |
+| 20 | Pancasila Values in Education | 3 | 1 | 2 | 2.0000 |
+| 21 | Tuberculosis Research and Epidemiology | 3 | 1 | 2 | 2.0000 |
+| 22 | 2D Materials and Applications | 2 | 0 | 2 |  |
+| 23 | Academic Research in Diverse Fields | 2 | 0 | 2 |  |
+| 24 | Advanced Malware Detection Techniques | 2 | 0 | 2 |  |
+| 25 | Aging and Gerontology Research | 2 | 0 | 2 |  |
 
 ## Interpretation
 

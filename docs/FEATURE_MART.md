@@ -4,28 +4,28 @@ Generated on 2026-10-06.
 
 ## Summary
 
-- Publication rows: 1000
+- Publication rows: 2500
 - Feature columns: 34
-- Text feature availability: 0.7380
-- Cluster availability: 0.7380
-- ML prediction availability: 0.2870
+- Text feature availability: 0.7172
+- Cluster availability: 0.7172
+- ML prediction availability: 0.2868
 - Composite rank availability: 1.0000
-- Average document word count: 163.8220
+- Average document word count: 156.0220
 
 ## Top Composite-Ranked Rows In Mart
 
 | rank | title | year | score | cluster | high-citation label | ML prediction |
 | ---: | --- | ---: | ---: | ---: | ---: | ---: |
-| 1 | The global costs of extreme weather that are attributable to climate change | 2023 | 0.640066 | 0 | 1.0 | None |
-| 2 | Inflammation-Induced Tumorigenesis and Metastasis | 2021 | 0.469727 | 2 | 1.0 | None |
-| 3 | Microbial Secondary Metabolites and Their Use in Achieving Sustainable Agriculture: Present Achievements and Future Challenges | 2025 | 0.316102 | 0 | 1.0 | None |
-| 4 | Recent advances in lubricants for hot metal forming: A review | 2026 | 0.288835 | 0 | 0.0 | 1.0 |
-| 5 | Parallels between bipolar disorder and ATP1A3-related diseases: a window into the investigation of lithium for alternating hemiplegia of childhood | 2026 | 0.288703 | 2 | 0.0 | 1.0 |
-| 6 | A global review of air quality and public health research: geo-temporal patterns, methods and issues | 2026 | 0.283801 | 2 | 0.0 | None |
-| 7 | Multi-Stage Corn Yield Prediction Using High-Resolution UAV Multispectral Data and Machine Learning Models | 2023 | 0.282117 | 0 | 1.0 | None |
-| 8 | An update on multimodal imaging strategies for nipple discharge: from detection to decision | 2025 | 0.280378 | 2 | 1.0 | None |
-| 9 | The effect of type 2 diabetes genetic predisposition on non-cardiovascular comorbidities | 2025 | 0.279196 | 2 | 1.0 | None |
-| 10 | Tissue-specific metabolomic profiling reveals cultivar-dependent drought tolerance mechanisms in rice (Oryza sativa L.) | 2026 | 0.278583 | 0 | 1.0 | None |
+| 1 | The global costs of extreme weather that are attributable to climate change | 2023 | 0.639143 | 0 | 1.0 | None |
+| 2 | Inflammation-Induced Tumorigenesis and Metastasis | 2021 | 0.466496 | 0 | 1.0 | None |
+| 3 | Long-Term Outcomes of Laparoscopic Distal Gastrectomy for Locally Advanced Gastric Cancer: The KLASS-02-RCT Randomized Clinical Trial | 2020 | 0.455263 | 2 | 1.0 | 1.0 |
+| 4 | TMPRSS2 and COVID-19: Serendipity or Opportunity for Intervention? | 2020 | 0.440479 | 0 | 1.0 | None |
+| 5 | Benefits of gamification in medical education | 2022 | 0.379275 | 3 | 1.0 | None |
+| 6 | CitySim: A Drone-Based Vehicle Trajectory Dataset for Safety-Oriented Research and Digital Twins | 2023 | 0.367647 | 0 | 1.0 | 0.0 |
+| 7 | Adversarial Attacks in Modulation Recognition With Convolutional Neural Networks | 2020 | 0.360166 | 0 | 1.0 | None |
+| 8 | A signature for pan-cancer prognosis based on neutrophil extracellular traps | 2022 | 0.354439 | 2 | 1.0 | None |
+| 9 | A Review of Light-Emitting Diodes and Ultraviolet Light-Emitting Diodes and Their Applications | 2024 | 0.332274 | 0 | 1.0 | None |
+| 10 | Microbial Secondary Metabolites and Their Use in Achieving Sustainable Agriculture: Present Achievements and Future Challenges | 2025 | 0.314717 | 0 | 1.0 | None |
 
 ## Interpretation
 

@@ -8,16 +8,16 @@ These are measured Spark results from the current development sample. They shoul
 
 | records | seconds | records/sec | partitions | output bytes |
 | ---: | ---: | ---: | ---: | ---: |
-| 500 | 8.7962 | 56.8427 | 1 | 1877571 |
-| 1000 | 5.5265 | 180.9463 | 1 | 3657777 |
-| 2500 | 5.5565 | 449.9235 | 1 | 8558948 |
+| 74600 | 55.2021 | 1351.3979 | 1 | 435052525 |
+| 74600 | 113.859 | 655.1963 | 1 | 435052525 |
+| 74600 | 121.4221 | 614.3857 | 1 | 435052525 |
 
 ## Cache Experiment
 
 | technique | records | seconds | records/sec |
 | --- | ---: | ---: | ---: |
-| uncached | 2500 | 0.4806 | 5201.831 |
-| cached | 2500 | 0.5512 | 4535.5588 |
+| uncached | 74600 | 23.9509 | 3114.7055 |
+| cached | 74600 | 19.4348 | 3838.4753 |
 
 ## Interpretation
 

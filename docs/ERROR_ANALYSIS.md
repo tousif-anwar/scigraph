@@ -16,8 +16,8 @@ Errors were inspected using the shared query set and OpenAlex topic-name proxy r
 
 ## Per-Query Notes
 
-- `artificial intelligence healthcare education`: best NDCG@K system was `hybrid_reranked` with NDCG@K 0.5484; relevant proxy documents available: 31.
-- `climate change policy economics`: best NDCG@K system was `hybrid_reranked` with NDCG@K 0.5856; relevant proxy documents available: 23.
-- `tuberculosis diagnosis treatment`: best NDCG@K system was `bm25` with NDCG@K 0.8922; relevant proxy documents available: 6.
-- `digital marketing social media`: best NDCG@K system was `bm25` with NDCG@K 0.5816; relevant proxy documents available: 9.
-- `dementia cognitive impairment`: best NDCG@K system was `hybrid_reranked` with NDCG@K 0.9218; relevant proxy documents available: 4.
+- `artificial intelligence healthcare education`: best NDCG@K system was `hybrid_reranked` with NDCG@K 0.6744; relevant proxy documents available: 64.
+- `climate change policy economics`: best NDCG@K system was `hybrid_reranked` with NDCG@K 0.5791; relevant proxy documents available: 54.
+- `tuberculosis diagnosis treatment`: best NDCG@K system was `bm25` with NDCG@K 0.9157; relevant proxy documents available: 8.
+- `digital marketing social media`: best NDCG@K system was `bm25` with NDCG@K 0.5266; relevant proxy documents available: 20.
+- `dementia cognitive impairment`: best NDCG@K system was `graph_alpha_0.5` with NDCG@K 0.6005; relevant proxy documents available: 4.

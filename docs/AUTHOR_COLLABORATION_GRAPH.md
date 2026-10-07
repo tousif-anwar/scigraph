@@ -1,75 +1,75 @@
 # Author Collaboration Graph
 
-Generated on 2026-10-05.
+Generated on 2026-10-06.
 
 ## Summary
 
-- Authors: 3721
-- Author-publication rows: 3726
-- Multi-author publications: 709
-- Solo-author publications: 239
-- Collaboration edges: 11508
-- Graph density: 0.00166275
+- Authors: 9274
+- Author-publication rows: 9299
+- Multi-author publications: 1773
+- Solo-author publications: 594
+- Collaboration edges: 33104
+- Graph density: 0.00076988
 
 ## Top Authors By Collaborator Count
 
 | rank | author | publications | collaborators | weighted collaborations | solo publications |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 1 | Masato Onodera | 1 | 49 | 49 | 0 |
-| 2 | Michael Rauch | 1 | 49 | 49 | 0 |
-| 3 | Seiji Fujimoto | 1 | 49 | 49 | 0 |
-| 4 | Shinobu Ozaki | 1 | 49 | 49 | 0 |
-| 5 | Tsutomu T. Takeuchi | 1 | 49 | 49 | 0 |
-| 6 | Yutaka Hirai | 1 | 49 | 49 | 0 |
-| 7 | Kiyoto Yabe | 1 | 49 | 49 | 0 |
-| 8 | Keita Fukushima | 1 | 49 | 49 | 0 |
-| 9 | Kuria Watanabe | 1 | 49 | 49 | 0 |
-| 10 | Takashi J. Moriya | 1 | 49 | 49 | 0 |
-| 11 | Hidenobu Yajima | 1 | 49 | 49 | 0 |
-| 12 | Chien‐Hsiu Lee | 1 | 49 | 49 | 0 |
-| 13 | Tomoki Saito | 1 | 49 | 49 | 0 |
-| 14 | Kai Murai | 1 | 49 | 49 | 0 |
-| 15 | Éric Emsellem | 1 | 49 | 49 | 0 |
-| 16 | Yuma Sugahara | 1 | 49 | 49 | 0 |
-| 17 | Tohru Nagao | 1 | 49 | 49 | 0 |
-| 18 | Kohei Hayashi | 1 | 49 | 49 | 0 |
-| 19 | Masami Ouchi | 1 | 49 | 49 | 0 |
-| 20 | Yutaka Komiyama | 1 | 49 | 49 | 0 |
-| 21 | Yuichi Harikane | 1 | 49 | 49 | 0 |
-| 22 | Gen Chiaki | 1 | 49 | 49 | 0 |
-| 23 | Yoshiaki Ono | 1 | 49 | 49 | 0 |
-| 24 | Ken Mawatari | 1 | 49 | 49 | 0 |
-| 25 | Masayuki Umemura | 1 | 49 | 49 | 0 |
+| 1 | M. Del Tutto | 1 | 99 | 99 | 0 |
+| 2 | J. Y. Book | 1 | 99 | 99 | 0 |
+| 3 | A. P. Furmanski | 1 | 99 | 99 | 0 |
+| 4 | M. Kirby | 1 | 99 | 99 | 0 |
+| 5 | Andrew Mastbaum | 1 | 99 | 99 | 0 |
+| 6 | G. B. Cerati | 1 | 99 | 99 | 0 |
+| 7 | L. Hagaman | 1 | 99 | 99 | 0 |
+| 8 | M. Bishai | 1 | 99 | 99 | 0 |
+| 9 | L. Bathe-Peters | 1 | 99 | 99 | 0 |
+| 10 | S. Balasubramanian | 1 | 99 | 99 | 0 |
+| 11 | Kirsty Elizabeth Duffy | 1 | 99 | 99 | 0 |
+| 12 | N. Kamp | 1 | 99 | 99 | 0 |
+| 13 | Giles Barr | 1 | 99 | 99 | 0 |
+| 14 | F. Cavanna | 1 | 99 | 99 | 0 |
+| 15 | Bruce R. Baller | 1 | 99 | 99 | 0 |
+| 16 | R. A. Johnson | 1 | 99 | 99 | 0 |
+| 17 | Janet M. Conrad | 1 | 99 | 99 | 0 |
+| 18 | J. Anthony | 1 | 99 | 99 | 0 |
+| 19 | D. Caratelli | 1 | 99 | 99 | 0 |
+| 20 | A. Hourlier | 1 | 99 | 99 | 0 |
+| 21 | K. Lin | 1 | 99 | 99 | 0 |
+| 22 | L. Cooper-Troendle | 1 | 99 | 99 | 0 |
+| 23 | D. Marsden | 1 | 99 | 99 | 0 |
+| 24 | V. Meddage | 1 | 99 | 99 | 0 |
+| 25 | Joshua Mills | 1 | 99 | 99 | 0 |
 
 ## Strongest Collaboration Edges
 
 | rank | author A | author B | shared publications |
 | ---: | --- | --- | ---: |
-| 1 | Bettina Berquó Marks | Marco Antônio Nogueira | 1 |
-| 2 | Bettina Berquó Marks | Mariangela Hungría | 1 |
-| 3 | Ratih Puspita Febrinasari | Arsita Eka Prasetyawati | 1 |
-| 4 | Ratih Puspita Febrinasari | Vitri Widyaningsih | 1 |
-| 5 | Ratih Puspita Febrinasari | Selfi Handayani | 1 |
-| 6 | Ratih Puspita Febrinasari | Fajar Yunita Sari | 1 |
-| 7 | Edith T. Zemanick | Tim Vigers | 1 |
-| 8 | Edith T. Zemanick | Antoinette Moran | 1 |
-| 9 | Edith T. Zemanick | Laura Pyle | 1 |
-| 10 | Edith T. Zemanick | Scott D. Sagel | 1 |
-| 11 | Edith T. Zemanick | Kristen Miller | 1 |
-| 12 | Edith T. Zemanick | Christine L. Chan | 1 |
-| 13 | Edith T. Zemanick | C Köhler | 1 |
-| 14 | Shang Cai | Hao Zhou | 1 |
-| 15 | Shang Cai | Ming Li | 1 |
-| 16 | Shang Cai | Ye Tian | 1 |
-| 17 | Shang Cai | Liwei Xie | 1 |
-| 18 | Shang Cai | Jiayu Xu | 1 |
-| 19 | Shang Cai | Linfeng Tang | 1 |
-| 20 | Shang Cai | Chao Yang | 1 |
-| 21 | Kevin L. Ong | Venura Herath | 1 |
-| 22 | Kevin L. Ong | Cesar D. Urrutia | 1 |
-| 23 | Kevin L. Ong | Mathieu Gayral | 1 |
-| 24 | Kevin L. Ong | Jeanmarie Verchot | 1 |
-| 25 | Kevin L. Ong | David Byrne | 1 |
+| 1 | Yuji Shimoda | Kenichi Urakami | 2 |
+| 2 | Yuji Shimoda | Hirotsugu Kenmotsu | 2 |
+| 3 | Yuji Shimoda | Akio Shiomi | 2 |
+| 4 | Yuji Shimoda | Takeshi Nagashima | 2 |
+| 5 | Yuji Shimoda | Yasuto Akiyama | 2 |
+| 6 | Yuji Shimoda | Ken Yamaguchi | 2 |
+| 7 | Yuji Shimoda | Keiichi Ohshima | 2 |
+| 8 | Kenichi Urakami | Hirotsugu Kenmotsu | 2 |
+| 9 | Kenichi Urakami | Akio Shiomi | 2 |
+| 10 | Kenichi Urakami | Takeshi Nagashima | 2 |
+| 11 | Kenichi Urakami | Yasuto Akiyama | 2 |
+| 12 | Kenichi Urakami | Ken Yamaguchi | 2 |
+| 13 | Kenichi Urakami | Keiichi Ohshima | 2 |
+| 14 | Hirotsugu Kenmotsu | Akio Shiomi | 2 |
+| 15 | Hirotsugu Kenmotsu | Takeshi Nagashima | 2 |
+| 16 | Hirotsugu Kenmotsu | Yasuto Akiyama | 2 |
+| 17 | Hirotsugu Kenmotsu | Ken Yamaguchi | 2 |
+| 18 | Hirotsugu Kenmotsu | Keiichi Ohshima | 2 |
+| 19 | Akio Shiomi | Takeshi Nagashima | 2 |
+| 20 | Akio Shiomi | Yasuto Akiyama | 2 |
+| 21 | Akio Shiomi | Ken Yamaguchi | 2 |
+| 22 | Akio Shiomi | Keiichi Ohshima | 2 |
+| 23 | Takeshi Nagashima | Yasuto Akiyama | 2 |
+| 24 | Takeshi Nagashima | Ken Yamaguchi | 2 |
+| 25 | Takeshi Nagashima | Keiichi Ohshima | 2 |
 
 ## Interpretation
 
